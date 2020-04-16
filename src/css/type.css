@@ -30,8 +30,6 @@
 /* ex. PIXELS / lead */
 h1 {
   font-family: "OnePixel";
-  font-style: normal;
-  font-weight: normal;
   font-size: 70px;
   line-height: 67px;
   text-transform: uppercase;
@@ -40,36 +38,58 @@ h1 {
 /* ex. MY LITTLE PROJECT / head */
 h2 {
   font-family: "OnePixel";
-  font-style: normal;
-  font-weight: normal;
   font-size: 36px;
   line-height: 34px;
   text-transform: uppercase;
-  text-transform: uppercase;
 }
 
-/* ex. SEE OUR STORY / action */
+/* ex. SEE OUR STORY / actions */
 h3 {
   font-family: "OnePixel";
-  font-style: normal;
-  font-weight: normal;
   font-size: 26px;
   line-height: 50px;
 }
 
+/* ex. Small My Little Project + Hero Paragraph */
 h4 {
   font-family: "SuisseIntl Regular";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 140%;
 }
 
 p {
   font-family: "SuisseIntl Regular";
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 150%;
 }
 
+/* DESKTOP */
+
+@media only screen and (max-width: 600px) {
+
+/* Typography Sizing -- Mobile*/
+/* ex. PIXELS / lead */
+h1 {
+  font-size: 184.906px;
+  line-height: 176px;
+}
+
+/* ex. MY LITTLE PROJECT / head */
+h2 {
+  font-size: 56px;
+  line-height: 53px;
+}
+
+/* ex. SEE OUR STORY / actions */
+h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* ex. Small My Little Project + Hero Paragraph */
+h4 {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+}
