@@ -27,8 +27,9 @@
   }
 
 /* Typography Sizing -- Mobile*/
+/* ex. PIXELS / lead */
 h1 {
-  font-family: OnePixel;
+  font-family: "OnePixel";
   font-style: normal;
   font-weight: normal;
   font-size: 70px;
@@ -36,8 +37,9 @@ h1 {
   text-transform: uppercase;
 }
 
+/* ex. MY LITTLE PROJECT / head */
 h2 {
-  font-family: OnePixel;
+  font-family: "OnePixel";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -45,3 +47,29 @@ h2 {
   text-transform: uppercase;
   text-transform: uppercase;
 }
+
+/* ex. SEE OUR STORY / action */
+h3 {
+  font-family: "OnePixel";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 50px;
+}
+
+h4 {
+  font-family: "SuisseIntl Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+p {
+  font-family: "SuisseIntl Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
