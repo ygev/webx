@@ -5,8 +5,9 @@
   </a>
 </p>
 <h1 align="center">
-  Pixels: Maryland Institute College of Art's Graphic Design BFA 2020 Exhibition
+  Pixels
 </h1>
+<h2 align="center"> Maryland Institute College of Art's Graphic Design BFA 2020 Exhibition </h2>
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
