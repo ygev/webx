@@ -26,12 +26,22 @@
          url('../fonts/Suisse/SuisseIntl-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
+/* Typography Sizing -- Mobile*/
+h1 {
+  font-family: OnePixel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 67px;
+  text-transform: uppercase;
+}
 
-/* Color Variables */
-
-:root {
-    --accent: #11EDD3;
-    --black: #161616;
-    --gray: #7B7B7B;
-    --white: #ffffff;
-  }
+h2 {
+  font-family: OnePixel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 34px;
+  text-transform: uppercase;
+  text-transform: uppercase;
+}

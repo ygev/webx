@@ -1,0 +1,9 @@
+/* Color Variables */
+
+:root {
+    --accent: #11EDD3; /* Use for Accents */
+    --black: #161616; /* Use for Text */
+    --gray: #7B7B7B; /* Use for Grid */
+    --white: #ffffff;
+  }
+
