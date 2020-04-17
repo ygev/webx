@@ -12,7 +12,7 @@ function buildGrid(numRows) {
   var numCols;
   if (window.matchMedia("(min-width: 768px) and (max-width: 1023px)").matches) {
     numCols = 8;
-  } else if (window.matchMedia("(min-width: 102 4px)").matches) {
+  } else if (window.matchMedia("(min-width: 1024px)").matches) {
     numCols = 12
   } else {
     numCols = 4;
@@ -25,8 +25,8 @@ function buildGrid(numRows) {
   }
   return sqArray;
 
-
 }
+
 
 export default props => (
   <>
