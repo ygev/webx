@@ -10,19 +10,40 @@
 }
 
 .header__txt {
-    font-family: OnePixel;
+    font-family: "OnePixel";
     font-size: 16px;
     line-height: 15px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--black);
+    background-position: 0;
+    background-size: 200%;
+    transition: all 0.4s;
+    background-image: linear-gradient(to right, var(--white) 50%, var(--accent) 50%);
+}
+.header__txt:hover {
+    background-position: -100%;
+    transition: 250ms;
 }
 
-@media only screen and (min-width: 768px) {
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header__wrapper {
+        height: calc(var(--sqTablet)/2);
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
     .header__txt {
         font-size: 24px;
         line-height: 23px;
     }
 
+    .header__wrapper {
+        height: calc(var(--sqDesktop)/2);
+    }
 }
+
