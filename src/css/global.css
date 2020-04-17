@@ -1,10 +1,11 @@
-/* Color Variables */
-
 :root {
+  /* Color Variables */
     --accent: #11EDD3; /* Use for Accents */
     --black: #161616; /* Use for Text */
     --gray: #7B7B7B; /* Use for Grid */
     --white: #ffffff;
+    
+/* Square-Wise Sizing Variables */
     --sqDesktop: calc(100vw / 12);
     --sqTablet: calc(100vw / 8);
     --sqMobile: calc(100vw / 4);
