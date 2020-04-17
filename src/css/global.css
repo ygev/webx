@@ -4,10 +4,26 @@
     --black: #161616; /* Use for Text */
     --gray: #7B7B7B; /* Use for Grid */
     --white: #ffffff;
-    
+
 /* Square-Wise Sizing Variables */
-    --sqDesktop: calc(100vw / 12);
-    --sqTablet: calc(100vw / 8);
-    --sqMobile: calc(100vw / 4);
+    --sqWidth: calc(100vw / 4);
+    --sqCol: 4;
   }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+:root {
+  --sqWidth: calc(100vw / 8);
+  --sqCol: 8; 
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  :root {
+    --sqWidth: calc(100vw / 12);
+    --sqCol: 12;
+  }
+  
+}
