@@ -1,0 +1,28 @@
+.header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    height: calc(var(--sqMobile)/2);
+    border-bottom: var(--black) 1px solid;
+}
+
+.header__txt {
+    font-family: OnePixel;
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header__txt {
+        font-size: 24px;
+        line-height: 23px;
+    }
+
+}

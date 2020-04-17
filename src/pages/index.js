@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
+import Header from "../components/header/header"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Our Pixels" />
-  </Layout>
+const Index = () => (
+  <>
+    <SEO title="Pixelation" />
+    <Header />
+  </>
 )
 
-export default IndexPage
+export default Index

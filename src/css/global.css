@@ -5,5 +5,8 @@
     --black: #161616; /* Use for Text */
     --gray: #7B7B7B; /* Use for Grid */
     --white: #ffffff;
+    --sqDesktop: calc(100vw / 12);
+    --sqTablet: calc(100vw / 8);
+    --sqMobile: calc(100vw / 4);
   }
 

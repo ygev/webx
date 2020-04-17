@@ -65,7 +65,7 @@ p {
 
 /* DESKTOP */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 768px) {
 
 /* Typography Sizing -- Mobile*/
 /* ex. PIXELS / lead */
