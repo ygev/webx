@@ -15,7 +15,7 @@ export default props => (
         <main className="hero">
             <p className="hero__brow">MICA GD BFA 2020 Degree Show</p>
             <header className="hero__lead--wrapper">
-                <h1 className="hero__lead"><Pixelator content="Welcome to Our Webxhibition"/></h1>
+                <h1 className="hero__lead"><Pixelator content="Welcome to Our Webxhibition"/><img src={smiley} alt="Smiley face" className="hero__smiley" align="middle"/></h1>
                 {/* <img className="hero__smiley" src={smiley} alt=""/> */}
             </header>
             <h4 className="hero__paragraph">Weclome to our MICA Graphic Design degree show consisting of over 70 students of Class of 2020.  We are the pixels of MICA grid!</h4>

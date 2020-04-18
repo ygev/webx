@@ -19,8 +19,7 @@
 }
 
 .hero__smiley {
-  height: 14vw;
-  margin-left: 16px;
+  height: 6.5vw;
 }
 
 .hero__brow {
@@ -38,7 +37,7 @@
   transition: 150ms ease-in-out;
 }
 
-.linkDown:hover {
+.arrowDown:hover {
   background-color: var(--accent);
   transition: 150ms ease-in-out;
 }
@@ -69,19 +68,12 @@
   }
 
   .hero__smiley {
-    height: 10vw;
+    height: 5vw;
   }
 
   .linkDown {
     grid-column: 8 / span 8;
     grid-row: 6 / 7;
-  }
-
-  .linkDown__txt {
-    padding-left: 6vw;
-    padding-right: 6vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
   }
 
 }
@@ -100,8 +92,7 @@
   }
 
   .hero__smiley {
-    height: 9vw;
-    margin-left: 24px;
+    height: 2.8vw;
   }
 
   .hero__paragraph {
@@ -116,12 +107,5 @@
   .arrowDown {
     width: 4vw;
     height: 4vw;
-  }
-
-  .linkDown__txt {
-    padding-left: 6vw;
-    padding-right: 6vw;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }
