@@ -3,15 +3,16 @@ import "../../css/global.css"
 import "../../css/type.css"
 import "./pixelator.css"
   
-function pixelate(props) {
-    console.log("HERE I AM");
-    console.log (props.children.content);
-    var splitStr = props.content.split(' ');
-    console.log (props.children.split(''));
+function pixelate(input) {
+    var output = [];
+
+    var splitStr = input.split(' ');
     for (var i = 0; i < splitStr.length; i++) {
-        splitStr[i] = " <span class='pixelate'>" + splitStr[i] + "</span>";     
+        output.push(<span class="pixelate">{splitStr[i][0]}</span>);
+        output.push(<span>{splitStr[i].substring(1) + ' '}</span>);
     }
-    return splitStr.join(' '); 
+    console.log (output);
+    return output; 
 }
 
 export default props => (

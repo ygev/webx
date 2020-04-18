@@ -1,7 +1,3 @@
-.pixelate::first-letter {
-    font-family: OnePixel;
-  }
-  
-  .pixelate {
-    display: inline-block;
-  }
+.pixelate {
+  font-family: OnePixel;
+}
