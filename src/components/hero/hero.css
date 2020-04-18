@@ -37,6 +37,12 @@
   display: flex;
   justify-content: space-between;
   box-shadow: var(--sqBorder);
+  transition: 150ms ease-in-out;
+}
+
+.linkLeft:hover {
+  background-color: var(--accent);
+  transition: 150ms ease-in-out;
 }
 
 .linkLeft__txt {
