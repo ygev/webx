@@ -6,7 +6,9 @@
     padding-left: 6vw;
     padding-right: 6vw;
     height: calc(var(--sqWidth)/2);
-    border-bottom: var(--gray) 1px solid;
+    -webkit-box-shadow: inset 0px 0px 0px 1px var(--gray);
+    -moz-box-shadow: inset 0px 0px 0px 1px var(--gray);
+    box-shadow: inset 0px 0px 0px 1px var(--gray);
 }
 
 .header__txt {

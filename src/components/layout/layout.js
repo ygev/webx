@@ -3,35 +3,51 @@ import "../../css/global.css"
 import "../../css/type.css"
 import "./layout.css"
 
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.mediaQueryState = {
+      mobile: true,
+      tablet: false,
+      desktop: false
+    };
 
-// By default 4.
-// If 768 and above, 8
-// If 1024 and above, 12.
-
-function buildGrid(numRows) {
-  var numCols;
-  if (window.matchMedia("(min-width: 768px) and (max-width: 1023px)").matches) {
-    numCols = 8;
-  } else if (window.matchMedia("(min-width: 1024px)").matches) {
-    numCols = 12
-  } else {
-    numCols = 4;
+    this.mobile = window.matchMedia("(max-width: 767px");
+    this.tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)");
+    this.desktop = window.matchMedia("(min-width: 1024px)");
+    
+    this.mobile.addListener((e) => { this.mediaQueryState.mobile = e.matches; this.forceUpdate(); });
+    this.tablet.addListener((e) => { this.mediaQueryState.tablet = e.matches; this.forceUpdate(); });
+    this.desktop.addListener((e) => { this.mediaQueryState.desktop = e.matches; this.forceUpdate(); });
   }
 
-  console.log(numCols);
-  var sqArray = []
-  for (var i = 0; i < numRows*numCols; i++) {
-    sqArray.push(<div id="js-square" className="square"></div>);
-  }
-  return sqArray;
+  buildGrid(numRows) {
+    var numCols;
+    if (this.tablet.matches) {
+      numCols = 8;
+    } else if (this.desktop.matches) {
+      numCols = 12
+    } else {
+      numCols = 4;
+    }
 
+    var sqArray = []
+    for (var i = 0; i < numRows*numCols; i++) {
+      sqArray.push(<div id="js-square" className="square"></div>);
+    }
+    return sqArray;
+  }
+
+  render() {
+    return (
+      <>
+        <div id="js-rowContainer" className="row-container">
+          {this.buildGrid(this.props.rows)}
+        </div>
+      </>
+      );  
+  }
 }
 
-
-export default props => (
-  <>
-    <div id="js-rowContainer" className="row-container">
-      {buildGrid(3)}
-    </div>
-  </>
-);  
+export default Layout;

@@ -1,7 +1,9 @@
 .square {
   width: var(--sqWidth);
   height: var(--sqWidth);
-  border: var(--gray) 1px solid;
+  -webkit-box-shadow: inset 0px 0px 0px 1px var(--gray);
+  -moz-box-shadow: inset 0px 0px 0px 1px var(--gray);
+  box-shadow: inset 0px 0px 0px 1px var(--gray);
 }
 
 .row-container {
