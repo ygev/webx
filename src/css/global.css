@@ -13,6 +13,11 @@
   --sqBorder: inset 0px 0px 0px 1px var(--gray);
 }
 
+* {
+  /* Custom Cursor */
+  cursor: url("/src/images/cursor.gif"), url("/src/images/cursor.cur"), default;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
   :root {
