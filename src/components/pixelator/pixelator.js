@@ -18,6 +18,5 @@ function pixelate(input) {
 export default props => (
     <>
         {pixelate(props.content)}
-        
     </>
 )
