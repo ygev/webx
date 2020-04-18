@@ -3,6 +3,8 @@ import "../../css/global.css"
 import "../../css/type.css"
 import "./layout.css"
 
+
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -13,13 +15,16 @@ class Layout extends React.Component {
       desktop: false
     };
 
-    this.mobile = window.matchMedia("(max-width: 767px");
-    this.tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)");
-    this.desktop = window.matchMedia("(min-width: 1024px)");
-    
-    this.mobile.addListener((e) => { this.mediaQueryState.mobile = e.matches; this.forceUpdate(); });
-    this.tablet.addListener((e) => { this.mediaQueryState.tablet = e.matches; this.forceUpdate(); });
-    this.desktop.addListener((e) => { this.mediaQueryState.desktop = e.matches; this.forceUpdate(); });
+    if (typeof window !== `undefined`) {
+      
+      this.mobile = window.matchMedia("(max-width: 767px");
+      this.tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)");
+      this.desktop = window.matchMedia("(min-width: 1024px)");
+      
+      this.mobile.addListener((e) => { this.mediaQueryState.mobile = e.matches; this.forceUpdate(); });
+      this.tablet.addListener((e) => { this.mediaQueryState.tablet = e.matches; this.forceUpdate(); });
+      this.desktop.addListener((e) => { this.mediaQueryState.desktop = e.matches; this.forceUpdate(); });
+    }
   }
 
   buildGrid(numRows) {

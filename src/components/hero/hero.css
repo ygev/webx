@@ -1,6 +1,6 @@
 .hero {
   grid-column: 1  / span 4;
-  grid-row: 1 / 7;
+  grid-row: 1 / 6;
   box-shadow: var(--sqBorder);
   background-color: var(--white);
   display: flex;
@@ -14,8 +14,8 @@
 .hero__lead--wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 2vw;
-  margin-top: 2vw;
+  margin-bottom: 3vw;
+  margin-top: 3vw;
 }
 
 .hero__smiley {
@@ -28,11 +28,9 @@
   letter-spacing: 0.5px;
 }
 
-.linkLeft {
-  grid-column: 1 / span 4;
-  grid-row: 7 / 8;
-  background-color: var(--white);
-  box-shadow: var(--sqBorder);
+.linkDown {
+  grid-column: 4 / span 4;
+  grid-row: 6 / 7;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -40,20 +38,12 @@
   transition: 150ms ease-in-out;
 }
 
-.linkLeft:hover {
+.linkDown:hover {
   background-color: var(--accent);
   transition: 150ms ease-in-out;
 }
 
-.linkLeft__txt {
-  color: var(--black);
-  padding-left: 6vw;
-  padding-right: 6vw;
-  padding-top: 8vw;
-  padding-bottom: 6vw;
-}
-
-.arrowLeft--wrapper {
+.arrowDown--wrapper {
   background-color: var(--accent);
   width: var(--sqWidth);
   height: var(--sqWidth);
@@ -73,16 +63,21 @@
     grid-row: 2 / 6;
   }
   
+  .hero__lead--wrapper {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+  }
+
   .hero__smiley {
     height: 10vw;
   }
 
-  .linkLeft {
-    grid-column: 5 / span 8;
-    grid-row: 7 / 8;
+  .linkDown {
+    grid-column: 8 / span 8;
+    grid-row: 6 / 7;
   }
 
-  .linkLeft__txt {
+  .linkDown__txt {
     padding-left: 6vw;
     padding-right: 6vw;
     padding-top: 2vw;
@@ -95,8 +90,13 @@
 @media only screen and (min-width: 1024px) {
 
   .hero {
-    grid-column: 2 / 11;
+    grid-column: 2 / 9;
     grid-row: 2 / 6;
+  }
+
+  .hero__lead--wrapper {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
   }
 
   .hero__smiley {
@@ -108,17 +108,17 @@
     max-width: 60vw;
   }
 
-  .linkLeft {
-    grid-column: 7 / 12;
-    grid-row: 7 / 8;
+  .linkDown {
+    grid-column: 11 / 12;
+    grid-row: 5 / 6;
   }
 
-  .arrowLeft {
+  .arrowDown {
     width: 4vw;
     height: 4vw;
   }
 
-  .linkLeft__txt {
+  .linkDown__txt {
     padding-left: 6vw;
     padding-right: 6vw;
     padding-top: 0;

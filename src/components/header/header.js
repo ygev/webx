@@ -9,7 +9,7 @@ export default props => (
   <>
        <header className="header__wrapper">
            <Link to="">
-               <h3 className="header__txt" data-letters="Pixels">Pixels</h3>
+               <h3 className="header__txt" data-letters="Pixels">Pixelation</h3>
            </Link>
            <Link to="">
                <h3 className="header__txt" data-letters="Our Story">Our Story</h3>

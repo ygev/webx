@@ -30,16 +30,16 @@
 
 /* ex. PIXELS / lead */
 h1 {
-  font-family: 'SuisseIntl-Medium';
-  font-size: 16vw;
-  line-height: 20vw;
-  letter-spacing: 3px;
+  font-family: 'SuisseIntl-Medium', sans-serif;
+  font-size: 9vw;
+  line-height: 10vw;
+  letter-spacing: 0px;
   text-transform: uppercase;
 }
 
 /* ex. MY LITTLE PROJECT / head */
 h2 {
-  font-family: 'SuisseIntl-Medium';
+  font-family: 'SuisseIntl-Medium', sans-serif;
   font-size: 11vw;
   line-height: 10vw;
   text-transform: uppercase;
@@ -47,7 +47,7 @@ h2 {
 
 /* ex. SEE OUR STORY / actions */
 h3 {
-  font-family: 'SuisseIntl-Medium';
+  font-family: 'SuisseIntl-Medium', sans-serif;
   font-size: 8vw;
   line-height: 8vw;
   text-transform: uppercase;
@@ -55,13 +55,13 @@ h3 {
 
 /* ex. Small My Little Project + Hero Paragraph */
 h4 {
-  font-family: 'SuisseIntl-Regular';
-  font-size: 5vw;
-  line-height: 140%;
+  font-family: 'SuisseIntl-Regular', sans-serif;
+  font-size: 4vw;
+  line-height: 150%;
 }
 
 p {
-  font-family: 'SuisseIntl-Regular';
+  font-family: 'SuisseIntl-Regular', sans-serif;
   font-size: 14px;
   line-height: 150%;
 }
@@ -71,8 +71,8 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
   h1 {
-    font-size: 14vw;
-    line-height: 14vw;
+    font-size: 7vw;
+    line-height: 7.5vw;
   }
 
   h3 {
@@ -80,7 +80,7 @@ p {
   }
 
   h4 {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 
 }
@@ -90,8 +90,8 @@ p {
 @media only screen and (min-width: 1024px) {
 
   h1 {
-    font-size: 12vw;
-    line-height: 13vw;
+    font-size: 4vw;
+    line-height: 4vw;
   }
 
   h3 {
@@ -99,7 +99,7 @@ p {
   }
 
   h4 {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   p {
