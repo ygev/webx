@@ -49,7 +49,7 @@ h2 {
 h3 {
   font-family: 'SuisseIntl-Medium';
   font-size: 8vw;
-  line-height: var(--sqWidth);
+  line-height: 8vw;
   text-transform: uppercase;
 }
 

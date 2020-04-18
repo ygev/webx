@@ -49,6 +49,8 @@
   color: var(--black);
   padding-left: 6vw;
   padding-right: 6vw;
+  padding-top: 8vw;
+  padding-bottom: 6vw;
 }
 
 .arrowLeft--wrapper {
@@ -80,6 +82,13 @@
     grid-row: 7 / 8;
   }
 
+  .linkLeft__txt {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+
 }
   
 /* DESKTOP */
@@ -107,5 +116,12 @@
   .arrowLeft {
     width: 4vw;
     height: 4vw;
+  }
+
+  .linkLeft__txt {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
