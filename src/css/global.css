@@ -13,8 +13,9 @@
   --sqBorder: inset 0px 0px 0px 1px var(--gray);
 }
 
-* {
+body {
   /* Custom Cursor */
+  background-color: var(--accent);
   cursor: url("/src/images/cursor.gif"), url("/src/images/cursor.cur"), default;
 }
 

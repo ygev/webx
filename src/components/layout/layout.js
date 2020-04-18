@@ -2,6 +2,7 @@ import React from "react"
 import "../../css/global.css"
 import "../../css/type.css"
 import "./layout.css"
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -42,7 +43,7 @@ class Layout extends React.Component {
     var sqArray = []
     for (var i = 1; i < numRows+1; i++) {
       for (var j = 1; j < numCols+1; j++) {
-        sqArray.push(<div id="js-square" className="square" style={{gridArea: i + "/" + j + "/span 1/span 1"}}></div>);
+        sqArray.push(<Zoom duration={500} top cascade><div id="js-square" className="square" style={{gridArea: i + "/" + j + "/span 1/span 1"}}></div></Zoom>);
       }
     }
     return sqArray;
