@@ -7,7 +7,6 @@ import Layout from "../layout/layout"
 import smiley from "../../images/smileyFace.svg" 
 import arrowDown from "../../images/arrowDown.svg" 
 import Pixelator from "../pixelator/pixelator"
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import "./hero.css"
 
