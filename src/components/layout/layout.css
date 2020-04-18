@@ -2,6 +2,13 @@
   width: var(--sqWidth);
   height: var(--sqWidth);
   box-shadow: var(--sqBorder);
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.square:hover {
+  background-color: var(--accent);
+  transition: 250ms ease-in-out;
 }
 
 .row-container {

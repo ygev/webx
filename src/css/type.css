@@ -39,7 +39,7 @@ h1 {
 
 /* ex. MY LITTLE PROJECT / head */
 h2 {
-  font-family: 'SuisseIntl-Regular';
+  font-family: 'SuisseIntl-Medium';
   font-size: 11vw;
   line-height: 10vw;
   text-transform: uppercase;
@@ -47,9 +47,10 @@ h2 {
 
 /* ex. SEE OUR STORY / actions */
 h3 {
-  font-family: 'SuisseIntl-Regular';
-  font-size: 10vw;
-  line-height: 15vw;
+  font-family: 'SuisseIntl-Medium';
+  font-size: 8vw;
+  line-height: var(--sqWidth);
+  text-transform: uppercase;
 }
 
 /* ex. Small My Little Project + Hero Paragraph */
@@ -74,6 +75,10 @@ p {
     line-height: 14vw;
   }
 
+  h3 {
+    font-size: 3vw;
+  }
+
   h4 {
     font-size: 3.5vw;
   }
@@ -89,8 +94,12 @@ p {
     line-height: 13vw;
   }
 
+  h3 {
+    font-size: 2.5vw;
+  }
+
   h4 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   p {

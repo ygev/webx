@@ -5,6 +5,7 @@ import "../../css/reset.css"
 import "../../css/type.css"
 import Layout from "../layout/layout"
 import smiley from "../../images/smileyFace.svg" 
+import arrowLeft from "../../images/arrowLeft.svg" 
 // import Pixelator from "../pixelator/pixelator"
 import "./hero.css"
 
@@ -19,6 +20,12 @@ export default props => (
             </header>
             <h4 className="hero__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</h4>
         </main>
+        <aside className="linkLeft"> 
+            <Link to=""><h3 className="linkLeft__txt">See Our Story</h3></Link>
+            <div className="arrowLeft--wrapper">
+                <img src={arrowLeft} alt="" className="arrowLeft"/>
+            </div>
+        </aside>
     </Layout>
   </>
 );
