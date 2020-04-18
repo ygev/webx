@@ -10,6 +10,7 @@
     -webkit-box-shadow: inset 0px 0px 0px 1px var(--gray);
     -moz-box-shadow: inset 0px 0px 0px 1px var(--gray);
     box-shadow: inset 0px 0px 0px 1px var(--gray);
+    z-index: 2;
 }
 
 .header__txt {
