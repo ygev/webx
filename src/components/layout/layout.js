@@ -4,8 +4,6 @@ import "../../css/type.css"
 import "./layout.css"
 import Zoom from 'react-reveal/Zoom';
 
-
-
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -30,12 +28,14 @@ class Layout extends React.Component {
 
   buildGrid(numRows) {
     var numCols;
-    if (this.tablet.matches) {
+    if (typeof window !== `undefined` && this.tablet.matches) {
       numCols = 8;
-    } else if (this.desktop.matches) {
+    } else if (typeof window !== `undefined` && this.desktop.matches) {
       numCols = 12
-    } else {
+    } else if (typeof window !== `undefined` && this.mobile.matches) {
       numCols = 4;
+    } else {
+      numCols = 0;
     }
 
     numRows = Number(numRows);
@@ -43,6 +43,7 @@ class Layout extends React.Component {
     var sqArray = []
     for (var i = 1; i < numRows+1; i++) {
       for (var j = 1; j < numCols+1; j++) {
+        //console.log("Building grid item (numRows:"+numRows+",numCols:"+numCols+";i:"+i+",j:"+j+")")
         sqArray.push(<Zoom duration={500} top cascade><div id="js-square" className="square" style={{gridArea: i + "/" + j + "/span 1/span 1"}}></div></Zoom>);
       }
     }

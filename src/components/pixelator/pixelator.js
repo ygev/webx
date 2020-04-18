@@ -11,7 +11,6 @@ function pixelate(input) {
         output.push(<span class="pixelate">{splitStr[i][0]}</span>);
         output.push(<span>{splitStr[i].substring(1) + ' '}</span>);
     }
-    console.log (output);
     return output; 
 }
 
