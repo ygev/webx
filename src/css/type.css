@@ -26,12 +26,14 @@
          url('../fonts/Suisse/SuisseIntl-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
-/* Typography Sizing -- Mobile*/
+/* MOBILE/
+
 /* ex. PIXELS / lead */
 h1 {
-  font-family: 'SuisseIntl-Regular';
-  font-size: 20vw;
+  font-family: 'SuisseIntl-Medium';
+  font-size: 16vw;
   line-height: 20vw;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -53,13 +55,13 @@ h3 {
 /* ex. Small My Little Project + Hero Paragraph */
 h4 {
   font-family: 'SuisseIntl-Regular';
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 140%;
 }
 
 p {
   font-family: 'SuisseIntl-Regular';
-  font-size: 5vw;
+  font-size: 14px;
   line-height: 150%;
 }
 
@@ -67,6 +69,14 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+  h1 {
+    font-size: 14vw;
+    line-height: 14vw;
+  }
+
+  h4 {
+    font-size: 3.5vw;
+  }
 
 }
 
@@ -74,5 +84,16 @@ p {
 
 @media only screen and (min-width: 1024px) {
 
+  h1 {
+    font-size: 12vw;
+    line-height: 13vw;
+  }
 
+  h4 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }
