@@ -50,15 +50,21 @@ class Layout extends React.Component {
     return sqArray;
   }
 
+  buildChildren(children) {
+    if (typeof window !== `undefined` ) {
+      return children;
+    }
+  }
+
   render() {
     return (
       <>
         <div id="js-rowContainer" className="row-container">
-          {this.props.children}
           {this.buildGrid(this.props.rows)}
+          {this.buildChildren(this.props.children)}
         </div>
       </>
-      );  
+      );
   }
 }
 
