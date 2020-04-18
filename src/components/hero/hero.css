@@ -38,7 +38,6 @@
 }
 
 .arrowDown:hover {
-  background-color: var(--accent);
   transition: 150ms ease-in-out;
 }
 
