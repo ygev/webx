@@ -9,7 +9,7 @@
   }
 
   @font-face {
-    font-family: 'SuisseIntl Bold';
+    font-family: 'SuisseIntl-Bold';
     src: url('../fonts/Suisse/SuisseIntl-Bold.eot'); /* IE9 Compat Modes */
     src: url('../fonts/Suisse/SuisseIntl-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('../fonts/Suisse/SuisseIntl-Bold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -18,7 +18,7 @@
   }
 
   @font-face {
-    font-family: 'SuisseIntl Regular';
+    font-family: 'SuisseIntl-Regular';
     src: url('../fonts/Suisse/SuisseIntl-Regular.eot'); /* IE9 Compat Modes */
     src: url('../fonts/Suisse/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('../fonts/Suisse/SuisseIntl-Regular.woff2') format('woff2'), /* Super Modern Browsers */
@@ -29,67 +29,50 @@
 /* Typography Sizing -- Mobile*/
 /* ex. PIXELS / lead */
 h1 {
-  font-family: "OnePixel";
-  font-size: 70px;
-  line-height: 67px;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 20vw;
+  line-height: 20vw;
   text-transform: uppercase;
 }
 
 /* ex. MY LITTLE PROJECT / head */
 h2 {
-  font-family: "OnePixel";
-  font-size: 36px;
-  line-height: 34px;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 11vw;
+  line-height: 10vw;
   text-transform: uppercase;
 }
 
 /* ex. SEE OUR STORY / actions */
 h3 {
-  font-family: "OnePixel";
-  font-size: 26px;
-  line-height: 50px;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 10vw;
+  line-height: 15vw;
 }
 
 /* ex. Small My Little Project + Hero Paragraph */
 h4 {
-  font-family: "SuisseIntl Regular";
-  font-size: 20px;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 6vw;
   line-height: 140%;
 }
 
 p {
-  font-family: "SuisseIntl Regular";
-  font-size: 16px;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 5vw;
   line-height: 150%;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+
 }
 
 /* DESKTOP */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
-/* Typography Sizing -- Mobile*/
-/* ex. PIXELS / lead */
-h1 {
-  font-size: 184.906px;
-  line-height: 176px;
-}
-
-/* ex. MY LITTLE PROJECT / head */
-h2 {
-  font-size: 56px;
-  line-height: 53px;
-}
-
-/* ex. SEE OUR STORY / actions */
-h3 {
-  font-size: 40px;
-  line-height: 50px;
-}
-
-/* ex. Small My Little Project + Hero Paragraph */
-h4 {
-  font-size: 24px;
-  line-height: 150%;
-}
 
 }

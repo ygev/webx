@@ -1,13 +1,14 @@
 import React from "react"
-import Layout from "../components/layout/layout"
+// import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Header from "../components/header/header"
+import Hero from "../components/hero/hero"
 
 const Index = () => (
   <>
     <SEO title="Pixelation" />
     <Header />
-    <Layout rows="6"/>
+    <Hero/>
   </>
 )
 

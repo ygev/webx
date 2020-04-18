@@ -32,9 +32,13 @@ class Layout extends React.Component {
       numCols = 4;
     }
 
+    numRows = Number(numRows);
+
     var sqArray = []
-    for (var i = 0; i < numRows*numCols; i++) {
-      sqArray.push(<div id="js-square" className="square"></div>);
+    for (var i = 1; i < numRows+1; i++) {
+      for (var j = 1; j < numCols+1; j++) {
+        sqArray.push(<div id="js-square" className="square" style={{gridArea: i + "/" + j + "/span 1/span 1"}}></div>);
+      }
     }
     return sqArray;
   }
@@ -43,6 +47,7 @@ class Layout extends React.Component {
     return (
       <>
         <div id="js-rowContainer" className="row-container">
+          {this.props.children}
           {this.buildGrid(this.props.rows)}
         </div>
       </>
