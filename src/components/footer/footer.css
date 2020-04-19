@@ -22,6 +22,29 @@
 
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .footer__wrapper {
+        height: calc(0.5*var(--sqWidth));
+        justify-content: space-between;
+        padding-left: 6vw;
+        align-content: center;
+        justify-items: center;
+        padding-right: 6vw;
+    }
+
+    .footer__link--wrapper {
+        display: flex;
+    }
+
+    .footer__img {
+        height: 3vw;
+    }
+
+    .footer__link {
+        margin-right: 2vw;
+        margin-bottom: 0;
+    }
+
 }
 
 /* DESKTOP */
