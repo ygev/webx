@@ -20,14 +20,11 @@
     text-transform: uppercase;
     text-decoration: none;
     color: var(--black);
-    background-position: 0;
-    background-size: 200%;
-    transition: all 0.4s;
-    background-image: linear-gradient(to right, var(--white) 50%, var(--accent) 50%);
+    transition: 150ms ease-in-out;
 }
-.header__txt:hover {
-    background-position: -100%;
-    transition: 250ms;
+.header__txt:hover  {
+    color: var(--accent);
+    transition: 150ms ease-in-out;
 }
 
 
