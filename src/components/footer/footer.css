@@ -14,10 +14,17 @@
     margin-bottom: 10px;
     letter-spacing: 0.8px;
     text-align: center;
+    transition: 150ms ease-in-out;
 }
 
 .footer__img--micagd {
     height: 12px;
+}
+
+.footer__link:hover {
+    color: var(--accent);
+    transition: 150ms ease-in-out;
+    border-bottom: 10px var(--accent) solid;
 }
 
 /* TABLET */
@@ -34,6 +41,10 @@
 
     .footer__link--wrapper {
         display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
 
     .footer__img {
@@ -54,13 +65,15 @@
         height: calc(0.5*var(--sqWidth));
         justify-content: space-between;
         padding-left: 6vw;
-        align-content: center;
-        justify-items: center;
         padding-right: 6vw;
     }
 
     .footer__link--wrapper {
         display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
 
     .footer__img {
@@ -70,6 +83,7 @@
     .footer__link {
         margin-right: 2vw;
         margin-bottom: 0;
+        line-height: calc(0.5*var(--sqWidth));
     }
 
 }
