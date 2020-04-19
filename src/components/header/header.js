@@ -11,10 +11,10 @@ export default props => (
     <Slide top duration={200}>
        <header className="header__wrapper">
            <Link to="">
-               <h3 className="header__txt" data-letters="Pixels">Pixelation</h3>
+               <h3 className="header__txt">Pixelation</h3>
            </Link>
            <Link to="">
-               <h3 className="header__txt" data-letters="Our Story">Our Story</h3>
+               <h3 className="header__txt">Our Story</h3>
            </Link>
        </header>
     </Slide>
