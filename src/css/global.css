@@ -10,7 +10,7 @@
   --sqCol: 4;
   
   /* Square Shadow Variable */
-  --sqBorder: inset 0px 0px 0px 1px var(--gray);
+  --sqBorder: inset 0px 0px 0px 0.5px var(--gray);
 }
 
 body {
