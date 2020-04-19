@@ -1,0 +1,29 @@
+.footer__wrapper {
+    background-color: var(--black);
+    height: calc(2*var(--sqWidth));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.footer__link {
+    font-family: 'SuisseIntl-Light';
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.footer__img--micagd {
+    height: 12px;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+}

@@ -4,22 +4,27 @@ import Slide from 'react-reveal/Slide';
 import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
-import "./header.css"
+import "./footer.css"
+import footerEarth from "../../images/footerEarth.svg"
+import outsideLink from "../../images/outsideLink.svg"
 
 export default props => (
   <>
     <Slide bottom duration={200}>
-       <Footer className="footer__wrapper">
+       <footer className="footer__wrapper">
+        <img src={footerEarth} alt="" className="footer__img"/>
         <div className="footer__link--wrapper">
            <Link to="">
-               <h3 className="header__txt" data-letters="Pixels">Pixelation</h3>
+               <p className="footer__link">Our Pixels</p>
            </Link>
            <Link to="">
-               <h3 className="header__txt" data-letters="Our Story">Our Story</h3>
+               <p className="footer__link">Our Story</p>
            </Link>
-           <a href=""></a>
+           <a href="https://www.mica.edu">
+               <p className="footer__link">MICA GD <img src={outsideLink} alt="" className="footer__img--micagd"/> </p>
+           </a>
         </div>
-       </Footer>
+       </footer>
     </Slide>
   </>
 );  
