@@ -1,0 +1,39 @@
+.search__title {
+    background-color: var(--white);
+    box-shadow: var(--sqBorder);
+    height: var(--sqWidth);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.glossary--scroller {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+}
+
+.glossary {
+    background-color: var(--white);
+    height: calc(0.5*var(--sqWidth));
+    box-shadow: var(--sqBorder);
+    display: flex;
+}
+
+.glossary__item {
+    height: calc(0.5*var(--sqWidth));
+    width: calc(0.5*var(--sqWidth));
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.glossary__item--active {
+    background-color: var(--black);    
+}
+
+.glossary__letter--ghost {
+    opacity: 0.3;
+}
