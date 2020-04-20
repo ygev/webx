@@ -12,15 +12,17 @@ import randomizerPixel from "../../images/randomizer--pixel.svg"
 export default props => (
     <>
         <Layout rows={[2, 2, 2]}>
-            <section className="projectPreFooter">
-                <Link to="/">
-                    <img src={arrowLeft} alt="Go Back to the Home Page" className="projectPreFooter__back"/>
-                </Link>
-                <div className="projectPreFooter__random--wrapper">
-                    <h3 className="projectPreFooter__random--txt">See Random Pixel</h3>
-                    <img src={randomizerPixel} alt="" className="projectPreFooter__random--icon"/>
-                </div>
-            </section>
+                <section className="projectPreFooter__back--wrapper">
+                    <Link to="/">
+                        <img src={arrowLeft} alt="Go Back to the Home Page" className="projectPreFooter__back"/>
+                    </Link>
+                </section>
+                <section className="projectPreFooter__random--wrapper">
+                    <h3 className="projectPreFooter__random--txt"><Pixelator content="Random Pixel" /></h3>
+                    <div className="projectPreFooter__random--imgwrapper">
+                        <img src={randomizerPixel} alt="" className="projectPreFooter__random--img"/>
+                    </div>
+                </section>
         </Layout>    
     </>
 );  
