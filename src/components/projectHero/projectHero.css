@@ -10,7 +10,7 @@
 .projectHero__txt {
     z-index: 2;
     grid-column: 1 / span 4;
-    grid-row: 5 / 10;
+    grid-row: 5 / 9;
     background-color: var(--white);
     padding-left: 6vw;
     padding-right: 6vw;
@@ -55,6 +55,7 @@
         grid-column: 1 / span 8;
         grid-row: 2 / 6;
         width: calc(8*var(--sqWidth));
+        height: calc(4*var(--sqWidth));
     }
 
     .projectHero__txt {
@@ -85,19 +86,27 @@
 @media only screen and (min-width: 1024px) {
 
     .projectHero__cover {
-        grid-column: 5 / span 12;
-        grid-row: 1 / 5;
-        width: calc(8*var(--sqWidth));
+        grid-column: 6 / span 12;
+        grid-row: 2 / 6;
+        width: calc(7*var(--sqWidth));
+        height: calc(4*var(--sqWidth))
     }
 
     .projectHero__txt {
-        grid-column: 1 / span 4;
-        grid-row: 1 / 5;
+        grid-column: 1 / 6;
+        grid-row: 2 / 6;
         padding: 4vw;
+        justify-content: center;
     }
 
     .projectHero__project {
-        font-size: 3em;
+        font-size: 2.5em;
         line-height: 110%;
+        padding-bottom: 1vw;
+
+    }
+
+    .projectHero__summary {
+        font-size: 1em;
     }
 }
