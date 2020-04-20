@@ -46,6 +46,7 @@
 
     .projectGallery__item {
         margin: 5vw;
+        width: calc(8*var(--sqWidth));
     }
 }
 
@@ -59,5 +60,6 @@
 
     .projectGallery__item {
         margin: 5vw;
+        width: calc(12*var(--sqWidth));
     }
 }

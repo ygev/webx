@@ -4,6 +4,7 @@ import Header from "../../components/header/header"
 import ProjectHero from "../../components/projectHero/projectHero"
 import ProjectTxt from "../../components/projectTxt/projectTxt"
 import ProjectGallery from "../../components/projectGallery/projectGallery"
+import ProjectProcess from "../../components/projectProcess/projectProcess"
 import Footer from "../../components/footer/footer"
 
 
@@ -15,6 +16,8 @@ class Index extends React.Component {
                 <Header />
                 <ProjectHero />
                 <ProjectTxt />
+                <ProjectGallery />
+                <ProjectProcess />
                 <ProjectGallery />
                 <Footer/>
             </>

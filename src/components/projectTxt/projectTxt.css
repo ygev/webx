@@ -3,15 +3,14 @@
     justify-content: center;
     justify-items: center;
     align-content: center;
-    align-items: center;
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
     z-index: 2;
     background-color: var(--white); 
     padding-left: 6vw;
     padding-right: 6vw;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-top: 12vw;
+    padding-bottom: 12vw;
     box-shadow: var(--sqBorder);
 }
 
@@ -22,8 +21,8 @@
     .projectTxt {
         grid-column: 2 / span 8;
         grid-row: 1 / span 4;
-        /* padding-top: 3vw; */
-        /* padding-bottom: 3vw; */
+        padding-top: 10vw;
+        padding-bottom: 10vw;
     }
 
 }
