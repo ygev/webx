@@ -1,0 +1,45 @@
+.projectHero__cover {
+    z-index: 2;
+    grid-column: 1 / span 4;
+    grid-row: 2 / 5;
+    width: calc(4*var(--sqWidth));
+    object-fit: cover;
+}
+
+.projectHero__txt {
+    z-index: 2;
+    grid-column: 1 / span 4;
+    grid-row: 5 / 10;
+    background-color: var(--white);
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+.projectHero__project {
+    padding-bottom: 3vw;
+}
+
+.projectHero__name {
+    padding-bottom: 5vw;
+}
+
+.projectHero__summary {
+    padding-bottom: 5vw;
+}
+
+.projectHero__link  {
+    color: var(--black);
+    border-bottom: 2px var(--accent) solid;
+}
+
+.projectHero__link--wrapper {
+    padding-top: 5vw;
+    display: flex;
+}
+
+.projectHero__link--icon {
+    width: 16px;
+    margin-right: 8px;
+}
