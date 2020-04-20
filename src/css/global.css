@@ -16,8 +16,9 @@
 body {
   /* Custom Cursor */
   background-color: var(--accent);
-  cursor: url("../images/cursor.gif"), url("../images/cursor.cur"), default;
+  /* cursor: url("../images/cursor.gif"), url("../images/cursor.cur"), default; */
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 

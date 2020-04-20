@@ -14,6 +14,28 @@
 
 
 
+/* Custom Scrollbar */
+
+.projectGallery::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .projectGallery::-webkit-scrollbar-track {
+    background: var(--black); 
+  }
+  
+  .projectGallery::-webkit-scrollbar-thumb {
+    background: var(--black);
+    border: 1px var(--accent) solid; 
+    border-radius: 100px;
+  }
+  
+  .projectGallery::-webkit-scrollbar-thumb:hover {
+    background: var(--black); 
+  }
+  
+
+
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -27,7 +49,7 @@
     }
 }
 
-/* TABLET */
+/* DESKTOP */
 @media only screen and (min-width: 1024px){
 
     .projectGallery {
