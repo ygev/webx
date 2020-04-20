@@ -9,7 +9,7 @@ import randomize from "../../images/randomize.svg"
 import profile from "../../images/_sample-data/profiles/yana.png"
 import previewA from "../../images/_sample-data/projects--previews/mood.png"
 import previewB from "../../images/_sample-data/projects--previews/blur.png"
-import arrowLeftTeal from "../../images/arrowLeft--teal.svg"
+import arrowRightTeal from "../../images/arrowRight--teal.svg"
 
 export default props => (
   <>
@@ -49,7 +49,7 @@ export default props => (
             <h3 className="cta__name"><Pixelator content="Amanda Yeh"/></h3>
             <h4 className="cta__project">My Leetl Project</h4>
         </div>
-        <img src={arrowLeftTeal} alt="" className="cta__arrow"/>
+        <img src={arrowRightTeal} alt="" className="cta__arrow"/>
     </section>
   </>
 );  
