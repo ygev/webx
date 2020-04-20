@@ -19,7 +19,6 @@ class Index extends React.Component {
                 <ProjectTxt />
                 <ProjectGallery />
                 <ProjectProcess />
-                <ProjectGallery />
                 <ProjectPreFooter />
                 <Footer/>
             </>

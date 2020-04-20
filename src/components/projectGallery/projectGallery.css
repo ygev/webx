@@ -9,31 +9,13 @@
     width: calc(4*var(--sqWidth));
     object-fit: cover;
     margin-top: 5vw;
-    box-shadow: var(--sqBorder);
 }
 
-
-
-/* Custom Scrollbar */
+/* Hide Scrollbar */
 
 .projectGallery::-webkit-scrollbar {
-    width: 2px;
+    display: none;
   }
-  
-  .projectGallery::-webkit-scrollbar-track {
-    background: var(--black); 
-  }
-  
-  .projectGallery::-webkit-scrollbar-thumb {
-    background: var(--black);
-    border: 1px var(--accent) solid; 
-    border-radius: 100px;
-  }
-  
-  .projectGallery::-webkit-scrollbar-thumb:hover {
-    background: var(--black); 
-  }
-  
 
 
 /* TABLET */
