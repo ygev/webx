@@ -27,7 +27,9 @@
     }
 
     .projectGallery__item {
-        margin: 5vw;
+        margin-right: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
         width: calc(6*var(--sqWidth));
     }
 }
@@ -41,7 +43,9 @@
     }
 
     .projectGallery__item {
-        margin: 5vw;
+        margin-right: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
         width: calc(10*var(--sqWidth));
     }
 }
