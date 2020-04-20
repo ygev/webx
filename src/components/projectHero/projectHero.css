@@ -36,6 +36,13 @@
 .projectHero__link  {
     color: var(--black);
     border-bottom: 2px var(--accent) solid;
+    transition: 150ms ease-in-out;
+}
+
+.projectHero__link:hover {
+    border-bottom: 0 var(--accent) solid;
+    color: var(--accent);
+    transition: 150ms ease-in-out;
 }
 
 .projectHero__link--wrapper {
