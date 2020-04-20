@@ -12,7 +12,7 @@ class Index extends React.Component {
                 <SEO title="Pixelation" />
                 <Header />
                 <ProjectHero />
-                {/* <Footer/> */}
+                <Footer/>
             </>
         )
     }
