@@ -89,8 +89,34 @@
 
 }
 
+/* DESKTOP-TABLET EDGE CASE */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .projectHero__cover {
+        grid-column: 6 / span 12;
+        grid-row: 2 / 6;
+        width: calc(7*var(--sqWidth));
+        height: calc(5*var(--sqWidth))
+    }
+
+    .projectHero__txt {
+        grid-column: 1 / 6;
+        grid-row: 2 / 6;
+        padding: 4vw;
+        justify-content: center;
+    }
+
+    .projectHero__project {
+        font-size: 2em;
+        line-height: 110%;
+        padding-bottom: 1vw;
+
+    }
+
+}
+
 /* DESKTOP */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
 
     .projectHero__cover {
         grid-column: 6 / span 12;
