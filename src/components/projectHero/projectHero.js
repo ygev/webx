@@ -8,10 +8,12 @@ import "./projectHero.css"
 import projCover from "../../images/_sample-data/projects/cover.png"
 import iconWebsite from "../../images/linkWebsite.svg"
 import iconInstagram from "../../images/linkInstagram.svg"
+import Fade from 'react-reveal/Fade';
 
 export default props => (
     <>
         <Layout rows={[9, 10, 6]}>
+        <Fade delay={500} duration={350} left>
             <img src={projCover} alt="" className="projectHero__cover"/>
             <section className="projectHero__txt">
                 <div className="projectHero__info">
@@ -32,6 +34,7 @@ export default props => (
                     </div>
                 </div>
             </section>
+        </Fade>
         </Layout>    
     </>
 );  
