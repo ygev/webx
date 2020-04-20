@@ -12,7 +12,7 @@ import "./hero.css"
 
 export default props => (
   <>
-    <Layout rows="6">
+    <Layout rows={[6, 6, 6]}>
         <Fade delay={500} duration={350} left>
             <main className="hero">
                 <p className="hero__brow">MICA GD BFA 2020 Degree Show</p>

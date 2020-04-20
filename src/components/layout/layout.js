@@ -26,19 +26,22 @@ class Layout extends React.Component {
     }
   }
 
-  buildGrid(numRows) {
+  buildGrid(rowArray) {
     var numCols;
-    if (typeof window !== `undefined` && this.tablet.matches) {
-      numCols = 8;
-    } else if (typeof window !== `undefined` && this.desktop.matches) {
-      numCols = 12
-    } else if (typeof window !== `undefined` && this.mobile.matches) {
+    var numRows;
+    if (typeof window !== `undefined` && this.mobile.matches) {
       numCols = 4;
+      numRows = rowArray[0];
+    } else if (typeof window !== `undefined` && this.tablet.matches) {
+      numCols = 8
+      numRows = rowArray[1];
+    } else if (typeof window !== `undefined` && this.desktop.matches) {
+      numCols = 12;
+      numRows = rowArray[2];
     } else {
       numCols = 0;
+      numRows = 0;
     }
-
-    numRows = Number(numRows);
 
     var sqArray = []
     for (var i = 1; i < numRows+1; i++) {

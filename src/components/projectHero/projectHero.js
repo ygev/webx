@@ -12,7 +12,7 @@ import iconInstagram from "../../images/linkInstagram.svg"
 
 export default props => (
     <>
-        <Layout rows="10">
+        <Layout rows={[10, 10, 5]}>
             <img src={projCover} alt="" className="projectHero__cover"/>
             <section className="projectHero__txt">
                 <div className="projectHero__info">
