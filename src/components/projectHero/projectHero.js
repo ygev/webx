@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../layout/layout"
 import Pixelator from "../pixelator/pixelator"
 import "../../css/global.css"

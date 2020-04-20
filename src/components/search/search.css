@@ -56,12 +56,11 @@
 .cta {
     background-color: var(--white);
     box-shadow: var(--sqBorder);
-    width: calc(4 * var(--sqWidth));
     height: var(--sqWidth);
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    /* padding-left: 6vw; */
-    /* padding-right: 6vw; */
+    padding-left: 6vw;
+    padding-right: 6vw;
 }
