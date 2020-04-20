@@ -69,3 +69,23 @@
     }
 
 }
+
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+    .projectPreFooter__back--wrapper {
+        grid-column: 1 / 2;
+        grid-row: 2 / span 2;
+    }
+
+    .projectPreFooter__random--wrapper {
+        grid-column: 8 / span 12;
+        grid-row: 2 / span 2;
+    }
+
+    .projectPreFooter__random--txt {
+        width: calc(4*var(--sqWidth));
+    }
+
+}
