@@ -49,3 +49,23 @@
     width: calc(3*var(--sqWidth));
     box-shadow: var(--sqBorder); 
 }
+
+
+/* TABLET */
+@media only screen and (min-width: 768px){
+
+    .projectPreFooter__back--wrapper {
+        grid-column: 1 / 2;
+        grid-row: 2 / span 2;
+    }
+
+    .projectPreFooter__random--wrapper {
+        grid-column: 5 / span 8;
+        grid-row: 2 / span 2;
+    }
+
+    .projectPreFooter__random--txt {
+        width: calc(3*var(--sqWidth));
+    }
+
+}
