@@ -1,4 +1,9 @@
 .projectTxt {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
     z-index: 2;
@@ -17,13 +22,36 @@
     .projectTxt {
         grid-column: 2 / span 8;
         grid-row: 1 / span 4;
-        z-index: 2;
-        background-color: var(--white); 
-        padding-left: 6vw;
-        padding-right: 6vw;
-        padding-top: 10vw;
-        padding-bottom: 10vw;
-        box-shadow: var(--sqBorder);
+        /* padding-top: 3vw; */
+        /* padding-bottom: 3vw; */
     }
 
+}
+
+
+/* DESKTOP-TABLET EDGE CASE */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .projectTxt {
+        grid-column: 5 / span 12;
+        grid-row: 1 / span 3;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+
+    .projectTxt {
+        grid-column: 5 / span 12;
+        grid-row: 1 / 3;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
 }
