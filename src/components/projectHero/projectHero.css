@@ -96,7 +96,7 @@
         grid-column: 5 / span 12;
         grid-row: 2 / 6;
         width: calc(8*var(--sqWidth));
-        height: calc(5*var(--sqWidth));
+        height: calc(4*var(--sqWidth));
     }
 
     .projectHero__txt {
@@ -122,7 +122,7 @@
         grid-column: 5 / span 12;
         grid-row: 2 / 6;
         width: calc(8*var(--sqWidth));
-        height: calc(5*var(--sqWidth));
+        height: calc(4*var(--sqWidth));
     }
 
     .projectHero__txt {
