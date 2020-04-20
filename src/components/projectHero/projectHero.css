@@ -93,17 +93,17 @@
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .projectHero__cover {
-        grid-column: 6 / span 12;
+        grid-column: 5 / span 12;
         grid-row: 2 / 6;
-        width: calc(7*var(--sqWidth));
-        height: calc(5*var(--sqWidth))
+        width: calc(8*var(--sqWidth));
+        height: calc(5*var(--sqWidth));
     }
 
     .projectHero__txt {
-        grid-column: 1 / 6;
+        grid-column: 1 / 5;
         grid-row: 2 / 6;
         padding: 4vw;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .projectHero__project {
@@ -119,17 +119,17 @@
 @media only screen and (min-width: 1440px) {
 
     .projectHero__cover {
-        grid-column: 6 / span 12;
+        grid-column: 5 / span 12;
         grid-row: 2 / 6;
-        width: calc(7*var(--sqWidth));
-        height: calc(4*var(--sqWidth))
+        width: calc(8*var(--sqWidth));
+        height: calc(5*var(--sqWidth));
     }
 
     .projectHero__txt {
-        grid-column: 1 / 6;
+        grid-column: 1 / 5;
         grid-row: 2 / 6;
         padding: 4vw;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .projectHero__project {

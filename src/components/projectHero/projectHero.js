@@ -19,9 +19,6 @@ export default props => (
                 <div className="projectHero__info">
                     <h3 className="projectHero__project"><Pixelator content="My Little Project"/></h3>
                     <h4 className="projectHero__name">Tony Kim</h4>
-                    <p className="projectHero__summary">
-                    Aaoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. This is what roughly 200 characters would look like on screen.
-                    </p>
                 </div>
                 <div className="projectHero__social">
                     <div className="projectHero__link--wrapper">

@@ -33,7 +33,7 @@
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .projectTxt {
-        grid-column: 5 / span 12;
+        grid-column: 6 / span 12;
         grid-row: 1 / span 3;
         padding-left: 4vw;
         padding-right: 4vw;
@@ -47,7 +47,7 @@
 @media only screen and (min-width: 1440px) {
 
     .projectTxt {
-        grid-column: 5 / span 12;
+        grid-column: 6 / span 12;
         grid-row: 1 / 3;
         padding-left: 4vw;
         padding-right: 4vw;
