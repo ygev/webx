@@ -11,6 +11,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     z-index: 2;
+    transition: 150ms ease-in-out;
 }
 .projectPreFooter__back {
     width: 36px;
@@ -25,6 +26,7 @@
     box-shadow: var(--sqBorder); 
     justify-content: space-between;
     align-items: center;
+    transition: 150ms ease-in-out;
 }
 
 .projectPreFooter__random--imgwrapper {
@@ -50,6 +52,20 @@
     box-shadow: var(--sqBorder); 
 }
 
+
+.projectPreFooter__back--wrapper:hover {
+    background-color: var(--accent);
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.projectPreFooter__random--wrapper:hover {
+    background-color: var(--black);
+    color: var(--accent);
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
 
 /* TABLET */
 @media only screen and (min-width: 768px){
