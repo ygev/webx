@@ -3,6 +3,7 @@
     justify-content: center;
     justify-items: center;
     align-content: center;
+    align-items: center;
     grid-column: 1 / span 4;
     grid-row: 1 / span 3;
     z-index: 2;
@@ -21,8 +22,8 @@
     .projectTxt {
         grid-column: 2 / span 8;
         grid-row: 1 / span 4;
-        padding-top: 10vw;
-        padding-bottom: 10vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
     }
 
 }
