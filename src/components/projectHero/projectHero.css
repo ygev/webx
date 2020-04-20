@@ -80,3 +80,24 @@
     }
 
 }
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+    .projectHero__cover {
+        grid-column: 5 / span 12;
+        grid-row: 2 / 5;
+        width: calc(8*var(--sqWidth));
+    }
+
+    .projectHero__txt {
+        grid-column: 1 / span 4;
+        grid-row: 2 / 5;
+        padding: 4vw;
+    }
+
+    .projectHero__project {
+        font-size: 3em;
+        line-height: 110%;
+    }
+}
