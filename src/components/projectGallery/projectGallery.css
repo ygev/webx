@@ -1,0 +1,13 @@
+.projectGallery {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: var(--sqBorder);
+}
+
+.projectGallery__item {
+    width: calc(4*var(--sqWidth));
+    object-fit: cover;
+    margin-top: 5vw;
+    box-shadow: var(--sqBorder);
+}
