@@ -17,8 +17,8 @@ export default props => (
             <img src={projCover} alt="" className="projectHero__cover"/>
             <section className="projectHero__txt">
                 <div className="projectHero__info">
-                    <h3 className="projectHero__project"><Pixelator content="My Little Project"/></h3>
-                    <h4 className="projectHero__name">Tony Kim</h4>
+                    <h3 className="projectHero__project"><Pixelator content="Sketch Cluse"/></h3>
+                    <h4 className="projectHero__name">Yana Gevorgyan</h4>
                 </div>
                 <div className="projectHero__social">
                     <div className="projectHero__link--wrapper">
