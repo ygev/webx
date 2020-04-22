@@ -13,6 +13,10 @@
   --sqBorder: inset 0px 0px 0px 0.5px var(--gray);
 }
 
+::selection {
+  background: var(--accent);
+}
+
 body {
   /* Custom Cursor */
   background-color: var(--accent);
