@@ -109,10 +109,6 @@
         height: calc(0.5 * var(--sqWidth));
     }
 
-    .search__title--txt {
-        font-size: 2vw;
-    }
-
     .photo__grid {
         max-height: calc(4 * var(--sqWidth));
     }
@@ -140,7 +136,7 @@
     }
     
     .search__title--txt {
-        font-size: 1.75vw;
+        font-size: 2vw;
     }
 
     .search__profile {

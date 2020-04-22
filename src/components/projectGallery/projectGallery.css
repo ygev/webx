@@ -31,8 +31,8 @@
         margin-right: 4vw;
         margin-top: 4vw;
         margin-bottom: 4vw;
-        height: calc(5*var(--sqWidth));
-        width: calc(12*var(--sqWidth));
+        width: calc(4*var(--sqWidth));
+        height: calc(4*var(--sqWidth));
     }
 }
 
@@ -48,7 +48,7 @@
         margin-right: 4vw;
         margin-top: 4vw;
         margin-bottom: 4vw;
-        height: calc(5*var(--sqWidth));
-        width: calc(12*var(--sqWidth));
+        width: calc(4*var(--sqWidth));
+        height: calc(4*var(--sqWidth));
     }
 }
