@@ -19,7 +19,7 @@ export default props => (
                 <header className="hero__lead--wrapper">
                     <h1 className="hero__lead"><Pixelator content="Welcome to Our Webxhibition"/><img src={smiley} alt="Smiley face" className="hero__smiley" align="middle"/></h1>
                 </header>
-                <h4 className="hero__paragraph">Welcome to our MICA Graphic Design degree show consisting of over 70 students of Class of 2020.  We are the pixels of MICA grid!</h4>
+                <h4 className="hero__paragraph">Welcome to our MICA Graphic Design degree show consisting of 70+ students from Class of 2020.  We are the pixels of MICA grid!</h4>
             </main>
         </Fade>
 

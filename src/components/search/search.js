@@ -16,7 +16,7 @@ export default props => (
   <>
     <section className="searchglossary--wrapper">
         <div className="search__title">
-            <h3 className="search__title--txt"><Pixelator content="Sort by Last Name"/></h3>
+            <h3 className="search__title--txt"><Pixelator content="Our Pixels"/></h3>
         </div>
         <div className="glossary--scroller">
             <section className="glossary">
