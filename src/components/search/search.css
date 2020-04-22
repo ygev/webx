@@ -2,12 +2,10 @@
 /* Hide Scrollbars */
 .glossary--scroller::-webkit-scrollbar {
     display: none;
-    opacity: 0;
   }
 
 .photo__grid::-webkit-scrollbar {
     display: none;
-    background-color: red;
   }
 
 /* Hide Desktop Profile */
