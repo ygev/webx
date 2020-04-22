@@ -31,14 +31,27 @@
 
 }
 
-/* DESKTOP */
-@media only screen and (min-width: 1024px) {
+
+/* DESKTOP-TABLET EDGE CASE */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .aboutPoem--wrapper {
         padding-top: 0;
         padding-bottom: 0;
         grid-column: 4 / span 6;
         grid-row: 2 / 13;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+
+    .aboutPoem--wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        grid-column: 4 / span 6;
+        grid-row: 4 / 12;
     }
 
 }
