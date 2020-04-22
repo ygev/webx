@@ -10,7 +10,7 @@ const Index = () => (
     <SEO title="Pixelation" />
     <Header />
     <Hero/>
-    {/* <Search/> */}
+    <Search/>
     <Footer/>
   </>
 )

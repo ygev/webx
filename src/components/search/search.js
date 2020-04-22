@@ -13,28 +13,43 @@ import arrowRightTeal from "../../images/arrowRight--teal.svg"
 
 export default props => (
   <>
-    <section className="search__title">
-        <h3 className="search__title--txt"><Pixelator content="Sort by Last Name"/></h3>
+    <section className="searchglossary--wrapper">
+        <div className="search__title">
+            <h3 className="search__title--txt"><Pixelator content="Sort by Last Name"/></h3>
+        </div>
+        <div className="glossary--scroller">
+            <section className="glossary">
+                <div className="glossary__item glossary__item--active glossary__randomize">
+                    <img src={randomize} alt="" className="glossay__randomize--img"/>
+                </div>
+                <p className="glossary__item glossary__letter">A</p>
+                <p className="glossary__item glossary__letter glossary__letter--ghost">B</p>
+                <p className="glossary__item glossary__letter">C</p>
+                <p className="glossary__item glossary__letter">D</p>
+                <p className="glossary__item glossary__letter">E</p>
+                <p className="glossary__item glossary__letter">F</p>
+                <p className="glossary__item glossary__letter">G</p>
+                <p className="glossary__item glossary__letter">H</p>
+                <p className="glossary__item glossary__letter">I</p>
+                <p className="glossary__item glossary__letter">J</p>
+                <p className="glossary__item glossary__letter">K</p>
+                <p className="glossary__item glossary__letter">L</p>
+                <p className="glossary__item glossary__letter">M</p>
+                <p className="glossary__item glossary__letter">N</p>
+                <p className="glossary__item glossary__letter">O</p>
+                <p className="glossary__item glossary__letter">P</p>
+                <p className="glossary__item glossary__letter">R</p>
+                <p className="glossary__item glossary__letter">S</p>
+                <p className="glossary__item glossary__letter">T</p>
+                <p className="glossary__item glossary__letter">U</p>
+                <p className="glossary__item glossary__letter">V</p>
+                <p className="glossary__item glossary__letter">W</p>
+                <p className="glossary__item glossary__letter">X</p>
+                <p className="glossary__item glossary__letter">Y</p>
+                <p className="glossary__item glossary__letter">Z</p>
+            </section>
+        </div>
     </section>
-
-    <div className="glossary--scroller">
-        <section className="glossary">
-            <div className="glossary__item glossary__item--active glossary__randomize">
-                <img src={randomize} alt="" className="glossay__randomize--img"/>
-            </div>
-            <p className="glossary__item glossary__letter">A</p>
-            <p className="glossary__item glossary__letter glossary__letter--ghost">B</p>
-            <p className="glossary__item glossary__letter">C</p>
-            <p className="glossary__item glossary__letter">D</p>
-            <p className="glossary__item glossary__letter">E</p>
-            <p className="glossary__item glossary__letter">F</p>
-            <p className="glossary__item glossary__letter">G</p>
-            <p className="glossary__item glossary__letter">H</p>
-            <p className="glossary__item glossary__letter">I</p>
-            <p className="glossary__item glossary__letter">J</p>
-        </section>
-    </div>
-
     <section className="photo__grid">
         <img src={previewA} alt="" className="photo__grid--img"/>
         <img src={previewB} alt="" className="photo__grid--img"/>
@@ -42,8 +57,13 @@ export default props => (
         <img src={previewA} alt="" className="photo__grid--img"/>
         <img src={previewA} alt="" className="photo__grid--img"/>
         <img src={previewB} alt="" className="photo__grid--img"/>
+        <img src={previewB} alt="" className="photo__grid--img"/>
+        <img src={previewA} alt="" className="photo__grid--img"/>
+        <img src={previewB} alt="" className="photo__grid--img"/>
+        <img src={previewA} alt="" className="photo__grid--img"/>
+        <img src={previewB} alt="" className="photo__grid--img"/>
+        <img src={previewA} alt="" className="photo__grid--img"/>
     </section>
-
     <section className="cta">
         <div className="cta__txt">
             <h3 className="cta__name"><Pixelator content="Amanda Yeh"/></h3>

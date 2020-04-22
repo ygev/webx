@@ -1,3 +1,9 @@
+/* Search + Glossary Stacker */
+.searchglossary--wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Search */
 .search__title {
     background-color: var(--white);
@@ -44,6 +50,8 @@
 .photo__grid {
     display: flex;
     flex-wrap: wrap;
+    max-height: calc(4.5 * var(--sqWidth));
+    overflow: scroll;
 }
 
 .photo__grid--img {
@@ -63,4 +71,33 @@
     align-items: center;
     padding-left: 6vw;
     padding-right: 6vw;
+}
+
+
+/* TABLET */
+@media only screen and (min-width: 768px){
+
+.searchglossary--wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.search__title {
+    width: calc(3 * var(--sqWidth));
+}
+
+.glossary, .glossary__item {
+    height: var(--sqWidth);
+}
+
+.photo__grid {
+    max-height: calc(5 * var(--sqWidth));
+}
+
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+    
 }
