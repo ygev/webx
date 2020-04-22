@@ -7,8 +7,8 @@
 
 .projectGalleryProcess__item {
     width: calc(4*var(--sqWidth));
+    height: auto;
     object-fit: cover;
-    margin-top: 5vw;
     box-shadow: var(--sqBorder);
     border: 1px var(--gray) solid;
 }
@@ -29,11 +29,8 @@
     }
 
     .projectGalleryProcess__item {
-        margin-right: 4vw;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
-        width: calc(3*var(--sqWidth));
-        height: calc(3*var(--sqWidth));
+        width: auto;
+        max-height: calc(3*var(--sqWidth));
     }
 }
 
@@ -46,10 +43,7 @@
     }
 
     .projectGalleryProcess__item {
-        margin-right: 4vw;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
-        width: calc(3*var(--sqWidth));
-        height: calc(3*var(--sqWidth));
+        width: auto;
+        max-height: calc(3*var(--sqWidth));
     }
 }

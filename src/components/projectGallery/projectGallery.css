@@ -6,10 +6,10 @@
 }
 
 .projectGallery__item {
-    height: calc(4*var(--sqWidth));
-    width: calc(4*var(--sqWidth));
+    height: auto;
+    max-width: calc(4*var(--sqWidth));
     object-fit: cover;
-    margin-top: 5vw;
+    box-shadow: var(--sqBorder);
 }
 
 /* Hide Scrollbar */
@@ -28,11 +28,8 @@
     }
 
     .projectGallery__item {
-        margin-right: 4vw;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
-        width: calc(4*var(--sqWidth));
-        height: calc(4*var(--sqWidth));
+        width: auto;
+        max-height: calc(4*var(--sqWidth));
     }
 }
 
@@ -45,10 +42,7 @@
     }
 
     .projectGallery__item {
-        margin-right: 4vw;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
-        width: calc(4*var(--sqWidth));
-        height: calc(4*var(--sqWidth));
+        width: auto;
+        max-height: calc(4*var(--sqWidth));
     }
 }

@@ -1,6 +1,5 @@
 .homePreFooter {
     grid-column: 1 / span 12;
     grid-row: 1 / span 2;
-    z-index: 2;
     height: var(--sqWidth);
 }
