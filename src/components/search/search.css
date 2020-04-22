@@ -63,6 +63,7 @@
 
 /* Photo Grid */
 .photo__grid {
+    background-color: var(--white); 
     display: flex;
     flex-wrap: wrap;
     max-height: calc(4 * var(--sqWidth));
@@ -73,7 +74,19 @@
     width: calc(2 * var(--sqWidth));
     height: calc(2 * var(--sqWidth));
     object-fit: cover;
+    opacity: 0.25;
+    box-shadow: var(--sqBorder);
+    transition: 150ms ease-in-out;
+    filter: grayscale(100%);
 }
+
+.photo__grid--img:hover {
+    opacity: 1;
+    transition: 150ms ease-in-out;
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
 
 /* Mobile CTA Pop-Up */
 .cta {
