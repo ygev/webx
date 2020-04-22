@@ -63,18 +63,18 @@ export default props => (
             </section>
         </div>
         <section className="photo__grid">
-            <img src={previewA} alt="" className="photo__grid--img"/>
-            <img src={previewB} alt="" className="photo__grid--img"/>
-            <img src={previewB} alt="" className="photo__grid--img"/>
-            <img src={previewA} alt="" className="photo__grid--img"/>
-            <img src={previewA} alt="" className="photo__grid--img"/>
-            <img src={previewB} alt="" className="photo__grid--img"/>
-            <img src={previewB} alt="" className="photo__grid--img"/>
-            <img src={previewA} alt="" className="photo__grid--img"/>
-            <img src={previewB} alt="" className="photo__grid--img"/>
-            <img src={previewA} alt="" className="photo__grid--img"/>
-            <img src={previewB} alt="" className="photo__grid--img"/>
-            <img src={previewA} alt="" className="photo__grid--img"/>
+            <Link to="/project"><img src={previewA} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewB} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewA} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewB} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewA} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewB} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewA} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewB} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewA} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewB} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewA} alt="" className="photo__grid--img"/></Link>
+            <Link to="/project"><img src={previewB} alt="" className="photo__grid--img"/></Link>
         </section>  
     </div>
     <section className="cta">
@@ -82,7 +82,7 @@ export default props => (
             <h3 className="cta__name"><Pixelator content="MIA KARLIN-CAPELLO"/></h3>
             <h4 className="cta__project">My Leetl Project</h4>
         </div>
-        <img src={arrowRightTeal} alt="" className="cta__arrow"/>
+        <Link to="/project"><img src={arrowRightTeal} alt="" className="cta__arrow"/></Link>
     </section>
   </>
 );  

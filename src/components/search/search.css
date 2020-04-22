@@ -51,6 +51,14 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    transition: 150ms ease-in-out;
+}
+
+.glossary__item:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+    box-shadow: var(--sqBorder);
+    transition: 150ms ease-in-out;
 }
 
 .glossary__item--active {
@@ -59,6 +67,18 @@
 
 .glossary__letter--ghost {
     opacity: 0.3;
+}
+
+.glossary__letter--ghost:hover{
+    cursor: default;
+    box-shadow: none;
+    background-color: var(--white); 
+}
+
+.glossary__item--active:hover{
+    cursor: default;
+    box-shadow: none;
+    background-color: var(--black); 
 }
 
 /* Photo Grid */
