@@ -1,3 +1,8 @@
+/* Hide Desktop Profile */
+.search__desktop--wrapper {
+    display: none;
+}
+
 /* Search + Glossary Stacker */
 .searchglossary--wrapper {
     display: flex;
@@ -50,7 +55,7 @@
 .photo__grid {
     display: flex;
     flex-wrap: wrap;
-    max-height: calc(4.5 * var(--sqWidth));
+    max-height: calc(4 * var(--sqWidth));
     overflow: scroll;
 }
 
@@ -73,31 +78,109 @@
     padding-right: 6vw;
 }
 
+.cta__name {
+    font-size: 7vw;
+}
 
 /* TABLET */
 @media only screen and (min-width: 768px){
 
-.searchglossary--wrapper {
-    display: flex;
-    flex-direction: row;
-}
+    .searchglossary--wrapper {
+        display: flex;
+        flex-direction: row;
+    }
 
-.search__title {
-    width: calc(3 * var(--sqWidth));
-}
+    .cta__name {
+        font-size: 4vw;
+    }
 
-.glossary, .glossary__item {
-    height: var(--sqWidth);
-}
+    .search__title {
+        width: calc(3 * var(--sqWidth));
+        height: calc(0.5 * var(--sqWidth));
+    }
 
-.photo__grid {
-    max-height: calc(5 * var(--sqWidth));
-}
+    .search__title--txt {
+        font-size: 2vw;
+    }
+
+    .photo__grid {
+        max-height: calc(4 * var(--sqWidth));
+    }
 
 }
 
 
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
+
+    .cta {
+        display: none;
+    }
+
+    .cta__name {
+        font-size: 2.5vw;
+    }
+
+    .search__desktop--wrapper {
+        display: block;
+    }    
+
+    .search__info--wrapper {
+        display: flex;
+    }
     
+    .search__title--txt {
+        font-size: 1.75vw;
+    }
+
+    .search__profile {
+        background-color: var(--white);
+        height: calc(4 * var(--sqWidth));
+        width: calc(4 * var(--sqWidth));
+        box-shadow: var(--sqBorder);
+    }
+
+    .search__profile--frame {
+        position: absolute;
+        height: calc(4 * var(--sqWidth));
+        width: calc(4 * var(--sqWidth));
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url("../../images/_sample-data/profiles/profile--frame.svg");
+    }
+
+    .search__profile--img {
+        object-fit: cover;
+        height: calc(4 * var(--sqWidth));
+        width: calc(4 * var(--sqWidth));
+    }
+    
+    .search__title {
+        font-size: 2.5vw;
+        width: calc(4 * var(--sqWidth));
+    }
+
+    .search__name {
+        height: calc(1.5 * var(--sqWidth));
+        background-color: var(--white);
+        box-shadow: var(--sqBorder);
+        padding-left: 3vw;
+        padding-right: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .photo__grid {
+        max-height: calc(5.5 * var(--sqWidth));
+    }
+
+    .photo__grid--img {
+        width: calc(2.66666 * var(--sqWidth));
+        height: calc(2.66666 * var(--sqWidth));
+        object-fit: cover;
+    }
 }
