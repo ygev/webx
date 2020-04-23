@@ -15,6 +15,9 @@ export default props => (
               <img src={props.projectImgA} alt="" className="projectGallery__item"/>
               <img src={props.projectImgB} alt="" className="projectGallery__item"/>
               <img src={props.projectImgC} alt="" className="projectGallery__item"/>
+              <img src={props.projectImgA} alt="" className="projectGallery__item"/>
+              <img src={props.projectImgB} alt="" className="projectGallery__item"/>
+              <img src={props.projectImgC} alt="" className="projectGallery__item"/>
           </section>
     </Fade>
     </>

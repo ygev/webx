@@ -28,7 +28,7 @@ export default props => (
                     </div>
                     <div className="projectHero__link--wrapper">
                         <img src={iconInstagram} alt="Instagram Link" className="projectHero__link--icon"/>
-                        <p className="projectHero__link--paragrapher"><a href={props.studeintInstagramLink} className="projectHero__link">{props.studentInstagram}</a></p>
+                        <p className="projectHero__link--paragrapher"><a href={props.studentInstagramLink} className="projectHero__link">{props.studentInstagram}</a></p>
                     </div>
                 </div>
             </section>
