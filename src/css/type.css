@@ -1,42 +1,49 @@
 /* Font Import */
 @font-face {
-    font-family: 'OnePixelRegular';
-    src: url('../fonts/OnePixel/OnePixelRegular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/OnePixel/OnePixelRegular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/OnePixel/OnePixelRegular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/OnePixel/OnePixelRegular.ttf')  format('truetype'); /* Safari, Android, iOS */
-  }
+  font-family: "OnePixelRegular";
+  src: url("../fonts/OnePixel/OnePixelRegular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/OnePixel/OnePixelRegular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/OnePixel/OnePixelRegular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/OnePixel/OnePixelRegular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
 
-  @font-face {
-    font-family: 'SuisseIntl-Bold';
-    src: url('../fonts/Suisse/SuisseIntl-Bold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Suisse/SuisseIntl-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/Suisse/SuisseIntl-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/Suisse/SuisseIntl-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
-  }
+@font-face {
+  font-family: "SuisseIntl-Bold";
+  src: url("../fonts/Suisse/SuisseIntl-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Suisse/SuisseIntl-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Suisse/SuisseIntl-Bold.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Suisse/SuisseIntl-Bold.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
 
-  @font-face {
-    font-family: 'SuisseIntl-Regular';
-    src: url('../fonts/Suisse/SuisseIntl-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Suisse/SuisseIntl-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/Suisse/SuisseIntl-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/Suisse/SuisseIntl-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-  }
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url("../fonts/Suisse/SuisseIntl-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Suisse/SuisseIntl-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Suisse/SuisseIntl-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Suisse/SuisseIntl-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
 
-
-  @font-face {
-    font-family: 'SuisseIntl-Medium';
-    src: url('../fonts/Suisse/SuisseIntl-Medium.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Suisse/SuisseIntl-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/Suisse/SuisseIntl-Medium.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/Suisse/SuisseIntl-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
-  }
+@font-face {
+  font-family: "SuisseIntl-Medium";
+  src: url("../fonts/Suisse/SuisseIntl-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Suisse/SuisseIntl-Medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Suisse/SuisseIntl-Medium.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Suisse/SuisseIntl-Medium.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
 
 /* MOBILE/
 
 /* ex. PIXELS / lead */
 h1 {
-  font-family: 'SuisseIntl-Medium', sans-serif;
+  font-family: "SuisseIntl-Medium", sans-serif;
   font-size: 9vw;
   line-height: 10vw;
   letter-spacing: 0px;
@@ -45,7 +52,7 @@ h1 {
 
 /* ex. MY LITTLE PROJECT / head */
 h2 {
-  font-family: 'SuisseIntl-Medium', sans-serif;
+  font-family: "SuisseIntl-Medium", sans-serif;
   font-size: 11vw;
   line-height: 10vw;
   text-transform: uppercase;
@@ -53,7 +60,7 @@ h2 {
 
 /* ex. SEE OUR STORY / actions */
 h3 {
-  font-family: 'SuisseIntl-Medium', sans-serif;
+  font-family: "SuisseIntl-Medium", sans-serif;
   font-size: 8vw;
   line-height: 8vw;
   text-transform: uppercase;
@@ -61,13 +68,13 @@ h3 {
 
 /* ex. Small My Little Project + Hero Paragraph */
 h4 {
-  font-family: 'SuisseIntl-Regular', sans-serif;
+  font-family: "SuisseIntl-Regular", sans-serif;
   font-size: 5vw;
   line-height: 150%;
 }
 
 p {
-  font-family: 'SuisseIntl-Regular', sans-serif;
+  font-family: "SuisseIntl-Regular", sans-serif;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.33px;
@@ -76,7 +83,6 @@ p {
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
   h1 {
     font-size: 7vw;
     line-height: 7.5vw;
@@ -90,13 +96,11 @@ p {
   h4 {
     font-size: 2.5vw;
   }
-
 }
 
 /* DESKTOP */
 
 @media only screen and (min-width: 1024px) {
-
   h1 {
     font-size: 4vw;
     line-height: 4vw;
