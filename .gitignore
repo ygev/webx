@@ -3,8 +3,6 @@ src/styles/styles.css.map
 src/styles/styles.css
 src/styles/styles.min.css
 
-public/
-
 # Logs
 logs
 *.log
