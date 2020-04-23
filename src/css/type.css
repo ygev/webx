@@ -2,8 +2,7 @@
 @font-face {
     font-family: 'OnePixel Regular';
     src: url('../fonts/OnePixel/OnePixelRegular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/OnePixel/OnePixelRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/OnePixel/OnePixelRegular.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../fonts/OnePixel/OnePixelRegular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/OnePixel/OnePixelRegular.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/OnePixel/OnePixelRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
@@ -11,8 +10,7 @@
   @font-face {
     font-family: 'SuisseIntl-Bold';
     src: url('../fonts/Suisse/SuisseIntl-Bold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Suisse/SuisseIntl-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Suisse/SuisseIntl-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../fonts/Suisse/SuisseIntl-Bold.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/Suisse/SuisseIntl-Bold.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/Suisse/SuisseIntl-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
@@ -20,10 +18,18 @@
   @font-face {
     font-family: 'SuisseIntl-Regular';
     src: url('../fonts/Suisse/SuisseIntl-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Suisse/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Suisse/SuisseIntl-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../fonts/Suisse/SuisseIntl-Regular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/Suisse/SuisseIntl-Regular.woff') format('woff'), /* Pretty Modern Browsers */
          url('../fonts/Suisse/SuisseIntl-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+
+  @font-face {
+    font-family: 'SuisseIntl-Medium';
+    src: url('../fonts/Suisse/SuisseIntl-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Suisse/SuisseIntl-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Suisse/SuisseIntl-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Suisse/SuisseIntl-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
 /* MOBILE/
