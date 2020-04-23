@@ -25,3 +25,5 @@
 | Project Pictures      | ``ProjectGallery``        | ``projectImgA`` (first)  | -               | ``A``, ``B``, ``C``...       |
 | Process Summary       | ``ProjectProcess``        | ``projectProcess``       | 600 characters  | -                |
 | Process Pictures      | ``ProjectGalleryProcess`` | ``processImgA`` (first)  | -               | ``A``, ``B``, ``C``...       |
+
+*For instagram and the website, need to write a function to split() https://instagram.com and https://www respectively.
