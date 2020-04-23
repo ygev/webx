@@ -13,7 +13,7 @@ export default props => (
         <Layout rows={[3, 4, 3]}>
         <Fade delay={500} duration={350} right>
           <section className="projectTxt">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat elit, consequat habitasse convallis. Tempus vitae ac, nulla sed massa, tempor. Velit maecenas tortor quis consequat elementum commodo et. Nulla egestas non sagittis, aliquam. Nulla egestas non sagittis, aliquam. Nulla egestas non sagittis, aliquam. Nulla egestas non sagittis, aliquam. Nulla egestas non sagittis, aliquam.</p>
+            <p>{props.projectTxt}</p>
           </section>
         </Fade>
         </Layout>    

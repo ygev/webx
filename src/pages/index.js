@@ -11,7 +11,7 @@ const Index = () => (
     <SEO title="Pixelation"/>
     <Header/>
     <Hero/>
-    <Search/>
+    <Search studentName="Yana Gevorgyan" projectName="Sketch Cluse"/>
     <HomePreFooter/>
     <Footer/>
   </>

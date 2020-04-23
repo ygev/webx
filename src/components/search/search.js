@@ -58,8 +58,8 @@ export default props => (
                 <img src={profilePlaceholder} alt="" className="search__profile--img"/>
             </section>
             <section className="search__name">
-                <h3 className="cta__name"><Pixelator content="MIA KARLIN-CAPELLO"/></h3>
-                <h4 className="cta__project">My Leetl Project</h4>
+                <h3 className="cta__name"><Pixelator content={props.studentName}/></h3>
+                <h4 className="cta__project">{props.projectName}</h4>
             </section>
         </div>
         <section className="photo__grid">
@@ -79,8 +79,8 @@ export default props => (
     </div>
     <section className="cta">
         <div className="cta__txt">
-            <h3 className="cta__name"><Pixelator content="MIA KARLIN-CAPELLO"/></h3>
-            <h4 className="cta__project">My Leetl Project</h4>
+            <h3 className="cta__name"><Pixelator content={props.studentName}/></h3>
+            <h4 className="cta__project">{props.projectName}</h4>
         </div>
         <Link to="/project"><img src={arrowRightTeal} alt="" className="cta__arrow"/></Link>
     </section>
