@@ -2,7 +2,7 @@ src/styles/styles.css
 src/styles/styles.css.map
 src/styles/styles.css
 src/styles/styles.min.css
-
+/public
 # Logs
 logs
 *.log
@@ -44,6 +44,7 @@ test/**/public
 node_modules/
 .cache/
 .netlify
+/public
 
 # IDE specific
 .idea/
