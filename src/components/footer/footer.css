@@ -8,7 +8,7 @@
 
 
 .footer__link {
-    font-family: 'SuisseIntl-Light';
+    font-family: 'SuisseIntl-Regular', sans-serif;
     color: var(--white);
     text-transform: uppercase;
     margin-bottom: 10px;
