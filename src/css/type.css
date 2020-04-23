@@ -1,6 +1,6 @@
 /* Font Import */
 @font-face {
-    font-family: 'OnePixel Regular';
+    font-family: 'OnePixelRegular';
     src: url('../fonts/OnePixel/OnePixelRegular.eot'); /* IE9 Compat Modes */
     src: url('../fonts/OnePixel/OnePixelRegular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/OnePixel/OnePixelRegular.woff') format('woff'), /* Pretty Modern Browsers */
