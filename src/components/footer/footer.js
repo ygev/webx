@@ -14,10 +14,10 @@ export default props => (
        <footer className="footer__wrapper">
         <img src={footerEarth} alt="" className="footer__img"/>
         <div className="footer__link--wrapper">
-           <Link to="">
+           <Link to="/">
                <p className="footer__link">Our Pixels</p>
            </Link>
-           <Link to="">
+           <Link to="/about">
                <p className="footer__link">Our Story</p>
            </Link>
            <a href="https://www.mica.edu">
