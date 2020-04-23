@@ -8,10 +8,12 @@ import "../../css/type.css"
 import "./projectPreFooter.css"
 import arrowLeft from "../../images/arrowLeft.svg"
 import randomizerPixel from "../../images/randomizer--pixel.svg"
+import Fade from 'react-reveal/Fade'
 
 export default props => (
     <>
         <Layout rows={[2, 2, 2]}>
+        <Fade delay={500} duration={500}>
                 <section className="projectPreFooter__back--wrapper">
                     <Link to="/">
                 <section className="projectPreFooter__back--wrapper">
@@ -19,12 +21,15 @@ export default props => (
                 </section>
                     </Link>
                 </section>
+        </Fade>
+        <Fade delay={800} duration={500}>
                 <section className="projectPreFooter__random--wrapper">
                     <h3 className="projectPreFooter__random--txt"><Pixelator content="Random Pixel" /></h3>
                     <div className="projectPreFooter__random--imgwrapper">
                         <img src={randomizerPixel} alt="" className="projectPreFooter__random--img"/>
                     </div>
                 </section>
+        </Fade>
         </Layout>    
     </>
 );  

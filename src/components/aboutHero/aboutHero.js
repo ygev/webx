@@ -7,13 +7,13 @@ import Layout from "../layout/layout"
 import heart from "../../images/heart.svg" 
 import arrowDown from "../../images/arrowDown.svg" 
 import Pixelator from "../pixelator/pixelator"
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
 import "./aboutHero.css"
 
 export default props => (
   <>
     <Layout rows={[6, 6, 6]}>
-        <Fade delay={500} duration={350} right>
+        <Fade delay={1200} duration={500}>
             <main className="aboutHero">
                 <header className="aboutHero__lead--wrapper">
                     <h1 className="aboutHero__lead"><Pixelator content="Our Story"/><img src={heart} alt="Heart" className="hero__smiley" align="middle"/></h1>
@@ -22,7 +22,7 @@ export default props => (
             </main>
         </Fade>
 
-        <Fade delay={500} duration={350} left>
+        <Fade delay={1500} duration={500}>
             <aside className="aboutLinkDown"> 
                 <div className="arrowDown--wrapper">
                     <img src={arrowDown} alt="" className="arrowDown"/>

@@ -13,7 +13,7 @@ import "./hero.css"
 export default props => (
   <>
     <Layout rows={[6, 6, 6]}>
-        <Fade delay={500} duration={350} left>
+        <Fade delay={1200} duration={350}>
             <main className="hero">
                 <p className="hero__brow">MICA GD BFA 2020 Degree Show</p>
                 <header className="hero__lead--wrapper">
@@ -23,7 +23,7 @@ export default props => (
             </main>
         </Fade>
 
-        <Fade delay={500} duration={350} right>
+        <Fade delay={1500} duration={350}>
             <aside className="linkDown"> 
                 <div className="arrowDown--wrapper">
                     <img src={arrowDown} alt="" className="arrowDown"/>

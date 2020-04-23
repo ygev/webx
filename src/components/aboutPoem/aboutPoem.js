@@ -13,10 +13,12 @@ import "./aboutPoem.css"
 export default props => (
   <>
     <Layout rows={[12, 12, 13]}>
-        <Fade delay={500} duration={350} left>
+        <Fade delay={500} duration={350}>
             <section className="aboutPoem--wrapper">
                 <h3 className="aboutPoem__title"><Pixelator content="Pixels"/></h3>
                 <ul className="aboutPoem__poem">
+
+        <Fade cascade delay={1000} duration={600} top>
                     <li className="aboutPoem__line"><p>A pixel within a vast universe.</p></li>
                     <br></br>
                     <li className="aboutPoem__line"><p>Not knowing what to do,</p></li>
@@ -52,6 +54,7 @@ export default props => (
                     <li className="aboutPoem__line"><p>to help create a beautiful world.</p></li>
                     <br></br>
                     <li className="aboutPoem__line"><p>Together.</p></li>
+                  </Fade>
                 </ul>
             </section>
         </Fade>

@@ -19,7 +19,7 @@
 
 body {
   /* Custom Cursor */
-  background-color: var(--accent);
+  background-color: var(--white);
   /* cursor: url("../images/cursor.gif"), url("../images/cursor.cur"), default; */
 }
 

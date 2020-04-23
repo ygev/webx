@@ -12,8 +12,10 @@ import Fade from 'react-reveal/Fade';
 export default props => (
     <>
         <Layout rows={[9, 10, 6]}>
-        <Fade delay={500} duration={350} left>
+        <Fade delay={1800} duration={350}>
             <img src={props.projectCoverImg} alt="" className="projectHero__cover"/>
+        </Fade>
+        <Fade delay={1200} duration={350}>
             <section className="projectHero__txt">
                 <div className="projectHero__info">
                     <h3 className="projectHero__project"><Pixelator content={props.projectName}/></h3>

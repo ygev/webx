@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 export default props => (
     <>
         <Layout rows={[3, 4, 3]}>
-        <Fade delay={500} duration={350} right>
+        <Fade delay={500} duration={350}>
           <section className="projectTxt">
             <p>{props.projectTxt}</p>
           </section>

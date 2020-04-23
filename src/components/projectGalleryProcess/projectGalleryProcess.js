@@ -10,7 +10,7 @@ import Fade from 'react-reveal/Fade';
 
 export default props => (
     <>
-    <Fade delay={0} duration={350} bottom>
+    <Fade delay={0} duration={350}>
           <section className="projectGalleryProcess">
               <img src={props.processImgA} alt="" className="projectGalleryProcess__item"/>
               <img src={props.processImgB} alt="" className="projectGalleryProcess__item"/>

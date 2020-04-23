@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
@@ -10,7 +10,7 @@ import outsideLink from "../../images/outsideLink.svg"
 
 export default props => (
   <>
-    <Slide bottom duration={200}>
+    <Fade duration={200}>
        <footer className="footer__wrapper">
         <img src={footerEarth} alt="" className="footer__img"/>
         <div className="footer__link--wrapper">
@@ -25,6 +25,6 @@ export default props => (
            </a>
         </div>
        </footer>
-    </Slide>
+    </Fade>
   </>
 );  

@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 export default props => (
     <>
         <Layout rows={[5, 5, 5]}>
-        <Fade delay={500} duration={350} left>
+        <Fade delay={500} duration={350}>
           <section className="projectProcess">
             <h3 className="projectProcess__title"><Pixelator content="How It's Made"/></h3>
             <p>{props.projectProcess}</p>

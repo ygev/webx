@@ -2,7 +2,7 @@ import React from "react"
 import "../../css/global.css"
 import "../../css/type.css"
 import "./layout.css"
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -47,7 +47,7 @@ class Layout extends React.Component {
     for (var i = 1; i < numRows+1; i++) {
       for (var j = 1; j < numCols+1; j++) {
         //console.log("Building grid item (numRows:"+numRows+",numCols:"+numCols+";i:"+i+",j:"+j+")")
-        sqArray.push(<Zoom duration={500} top cascade><div id="js-square" className="square" style={{gridArea: i + "/" + j + "/span 1/span 1"}}></div></Zoom>);
+        sqArray.push(<Fade duration={1000} cascade><div id="js-square" className="square" style={{gridArea: i + "/" + j + "/span 1/span 1"}}></div></Fade>);
       }
     }
     return sqArray;

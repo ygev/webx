@@ -5,6 +5,7 @@ import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
 import "./search.css"
+import Fade from 'react-reveal/Fade';
 import randomize from "../../images/randomize.svg"
 import profile from "../../images/_sample-data/profiles/tony.png"
 import profilePlaceholder from "../../images/_sample-data/profiles/profile--placeholder.svg"
@@ -14,6 +15,7 @@ import arrowRightTeal from "../../images/arrowRight--teal.svg"
 
 export default props => (
   <>
+    <Fade cascade duration={500}>
     <section className="searchglossary--wrapper">
         <div className="search__title">
             <h3 className="search__title--txt"><Pixelator content="Our Pixels"/></h3>
@@ -51,6 +53,7 @@ export default props => (
             </section>
         </div>
     </section>
+    
     <div className="search__info--wrapper">
         <div className="search__desktop--wrapper">
             <section className="search__profile">
@@ -84,5 +87,6 @@ export default props => (
         </div>
         <Link to="/project"><img src={arrowRightTeal} alt="" className="cta__arrow"/></Link>
     </section>
+    </Fade>
   </>
 );  
