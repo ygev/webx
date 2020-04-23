@@ -2,7 +2,7 @@ src/styles/styles.css
 src/styles/styles.css.map
 src/styles/styles.css
 src/styles/styles.min.css
-/public
+public/
 # Logs
 logs
 *.log
@@ -41,11 +41,10 @@ bin/published.js
 test/**/public
 .gatsby-context.js
 .DS_Store
+public/
 node_modules/
 .cache/
 .netlify
-/public
-
 # IDE specific
 .idea/
 .vscode/
