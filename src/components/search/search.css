@@ -42,6 +42,7 @@
     height: calc(0.5*var(--sqWidth));
     box-shadow: var(--sqBorder);
     display: flex;
+    padding-right: calc( 1.75 * var(--sqWidth));
 }
 
 .glossary__item {
@@ -53,6 +54,17 @@
     align-items: center;
     transition: 150ms ease-in-out;
 }
+
+.glossary:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    pointer-events: none;
+    height: calc( 0.5 * var(--sqWidth) - 2px);
+    background-image: linear-gradient(to right, #fff0, var(--white) 90%);
+    width: 20%;
+    }
 
 .glossary__item:hover {
     cursor: pointer;
