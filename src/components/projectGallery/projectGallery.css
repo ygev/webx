@@ -27,17 +27,13 @@
         overflow: auto;
         background-color: var(--black);
         box-shadow: var(--sqBorder);
-        animation: moveSlideshow 12s linear infinite;
         transform: translate3d(0, 0, 0);
-    }
-
-    .projectGallery:hover {
-        animation-play-state: paused;
     }
 
     .projectGallery__item {
         width: auto;
         max-height: calc(4*var(--sqWidth));
+        animation: moveSlideshow 12s linear infinite;
     }
 }
 
@@ -52,12 +48,18 @@
     .projectGallery__item {
         width: auto;
         max-height: calc(4*var(--sqWidth));
+        animation: moveSlideshow 5s linear infinite;
     }
+
+    .projectGallery__item:hover {
+        animation-play-state: paused;
+    }
+
 }
 
 
 @keyframes moveSlideshow {
     100% { 
-      transform: translateX(-50%);  
+      transform: translateX(-130%);  
     }
   }
