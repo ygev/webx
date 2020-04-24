@@ -15,13 +15,6 @@ import arrowRightTeal from "../../images/arrowRight--teal.svg";
 import Projects from "../../../data/students.json";
 
 function Search(props) {
-  function addWork() {
-    document.getElementById("studentName").innerHTML = "name";
-  }
-  function addSmiley() {
-    document.getElementById("studentName").innerHTML = "Our Pixels!";
-  }
-
   return (
     <div>
       <Fade cascade duration={500}>
