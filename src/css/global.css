@@ -20,6 +20,7 @@
 body {
   /* Custom Cursor */
   background-color: var(--white);
+  overflow-x: hidden;
   /* cursor: url("../images/cursor.gif"), url("../images/cursor.cur"), default; */
 }
 

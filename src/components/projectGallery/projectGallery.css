@@ -25,6 +25,14 @@
     .projectGallery {
         flex-direction: row;
         overflow: auto;
+        background-color: var(--black);
+        box-shadow: var(--sqBorder);
+        animation: moveSlideshow 12s linear infinite;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .projectGallery:hover {
+        animation-play-state: paused;
     }
 
     .projectGallery__item {
@@ -46,3 +54,10 @@
         max-height: calc(4*var(--sqWidth));
     }
 }
+
+
+@keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-50%);  
+    }
+  }
