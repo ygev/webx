@@ -18,7 +18,7 @@ function Search(props) {
         <section className="searchglossary--wrapper">
           <div className="search__title">
             <h3 className="search__title--txt">
-              <Pixelator content="Search By Last" />
+              <Pixelator content="Search By Last Name" />
             </h3>
           </div>
           <div className="glossary--scroller">
