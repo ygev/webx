@@ -213,7 +213,7 @@
     }
 
     .search__name {
-        height: calc(1.5 * var(--sqWidth));
+        height: calc(1 * var(--sqWidth));
         background-color: var(--white);
         box-shadow: var(--sqBorder);
         padding-left: 3vw;
@@ -226,7 +226,7 @@
     }
 
     .photo__grid {
-        max-height: calc(5.5 * var(--sqWidth));
+        max-height: calc(5 * var(--sqWidth));
     }
 
     .photo__grid--img {
