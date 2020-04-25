@@ -11,7 +11,7 @@ const Index = () => (
     <SEO title="Pixelation" />
     <Header />
     <Hero />
-    <Search studentName="Our Pixels" />
+    <Search studentName="Our Pixels" projectName="Pick a pixel to view."/>
     <HomePreFooter />
     <Footer />
   </>
