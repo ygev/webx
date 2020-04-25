@@ -4,21 +4,65 @@
     "emailAddress": "ayeh01@mica.edu",
     "whatIsYourFirstName": "Amanda",
     "whatIsYourLastName": "Yeh",
-    "whatIsYourProjectName": "My little project",
-    "ifYouHaveAWebsitePleaseListItHere": "www.amandayeh.com",
+    "whatIsYourProjectName": "Investigating Design Tools",
+    "ifYouHaveAWebsitePleaseListItHere": "https://www.amandayeh.com",
     "ifYouHaveInstagramPleaseListYourUsernameHere": "@amandayehh",
-    "describeYourProjectInDetail": "Its a cool project!",
-    "describeTheProcessOfYourProject": "My process here"
+    "describeYourProjectInDetail": "Its an Amanda project!",
+    "describeTheProcessOfYourProject": "It's an Amanda process!"
   },
   {
     "timestamp": "1899-12-30T16:11:00.000Z",
-    "emailAddress": "ayeh01@mica.edu",
+    "emailAddress": "ygevorgyan@mica.edu",
     "whatIsYourFirstName": "Yana",
-    "whatIsYourLastName": "Yeh",
-    "whatIsYourProjectName": "My little project",
-    "ifYouHaveAWebsitePleaseListItHere": "www.amandayeh.com",
-    "ifYouHaveInstagramPleaseListYourUsernameHere": "@amandayehh",
-    "describeYourProjectInDetail": "Its a cool project!",
-    "describeTheProcessOfYourProject": "My process here"
+    "whatIsYourLastName": "Gevorgyan",
+    "whatIsYourProjectName": "Sketch Cluse",
+    "ifYouHaveAWebsitePleaseListItHere": "https://yg.is",
+    "ifYouHaveInstagramPleaseListYourUsernameHere": "@yaml0rd",
+    "describeYourProjectInDetail": "Its a Yana project!",
+    "describeTheProcessOfYourProject": "It's a Yana process!"
+  },
+  {
+    "timestamp": "1899-12-30T16:11:00.000Z",
+    "emailAddress": "lukashenko@mica.edu",
+    "whatIsYourFirstName": "Nikolai",
+    "whatIsYourLastName": "Lukashenko",
+    "whatIsYourProjectName": "Potato Tractor",
+    "ifYouHaveAWebsitePleaseListItHere": "https://lukashenko.su",
+    "ifYouHaveInstagramPleaseListYourUsernameHere": "@potatolover69",
+    "describeYourProjectInDetail": "Its a Lukashenko project!",
+    "describeTheProcessOfYourProject": "It's a Lukashenko process!"
+  },
+  {
+    "timestamp": "1899-12-30T16:11:00.000Z",
+    "emailAddress": "hclark03@mica.edu",
+    "whatIsYourFirstName": "Haley",
+    "whatIsYourLastName": "Clark",
+    "whatIsYourProjectName": "Meme Factory",
+    "ifYouHaveAWebsitePleaseListItHere": "https://haleyclark.com",
+    "ifYouHaveInstagramPleaseListYourUsernameHere": "@haley.psd",
+    "describeYourProjectInDetail": "Its a Haley project!",
+    "describeTheProcessOfYourProject": "It's a Haley process!"
+  },
+  {
+    "timestamp": "1899-12-30T16:11:00.000Z",
+    "emailAddress": "kbradley@mica.edu",
+    "whatIsYourFirstName": "Kian",
+    "whatIsYourLastName": "Bradley",
+    "whatIsYourProjectName": "WebX",
+    "ifYouHaveAWebsitePleaseListItHere": "https://kianbradley.com",
+    "ifYouHaveInstagramPleaseListYourUsernameHere": "@broccoli_eater",
+    "describeYourProjectInDetail": "Its a Kian project!",
+    "describeTheProcessOfYourProject": "It's a Kian process!"
+  },
+  {
+    "timestamp": "1899-12-30T16:11:00.000Z",
+    "emailAddress": "bhorne@mica.edu",
+    "whatIsYourFirstName": "Brockett",
+    "whatIsYourLastName": "Horne",
+    "whatIsYourProjectName": "MICA Dot EDU",
+    "ifYouHaveAWebsitePleaseListItHere": "https://mica.edu",
+    "ifYouHaveInstagramPleaseListYourUsernameHere": "@mica_gd",
+    "describeYourProjectInDetail": "Its a Brockett project!",
+    "describeTheProcessOfYourProject": "It's a Brockett process!"
   }
 ]

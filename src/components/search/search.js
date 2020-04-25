@@ -7,10 +7,7 @@ import "../../css/type.css";
 import "./search.css";
 import Fade from "react-reveal/Fade";
 import randomize from "../../images/randomize.svg";
-import profile from "../../images/_sample-data/profiles/tony.png";
 import profilePlaceholder from "../../images/_sample-data/profiles/profile--placeholder.svg";
-import previewA from "../../images/_sample-data/projects--previews/mood.png";
-import previewB from "../../images/_sample-data/projects--previews/blur.png";
 import arrowRightTeal from "../../images/arrowRight--teal.svg";
 import Projects from "../../../data/students.json";
 
