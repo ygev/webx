@@ -4,6 +4,14 @@ import "../../css/type.css"
 import "./layout.css"
 import Fade from 'react-reveal/Fade';
 
+/*
+ * Note- this should be rewritten to call this.setState instead of calling this.forceUpdate.
+ * forceUpdate is unnecessary and calling setState would 
+ * 1. implicitly rerender as needed
+ * 2. reap some React performance optimizations
+ * See search.js as an example of using setState.
+*/
+
 class Layout extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +23,6 @@ class Layout extends React.Component {
     };
 
     if (typeof window !== `undefined`) {
-      
       this.mobile = window.matchMedia("(max-width: 767px");
       this.tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)");
       this.desktop = window.matchMedia("(min-width: 1024px)");

@@ -9,7 +9,7 @@ function pixelate(input) {
     var splitStr = input.split(' ');
     for (var i = 0; i < splitStr.length; i++) {
         output.push(<span class="pixelate">{splitStr[i][0]}</span>);
-        output.push(<span>{splitStr[i].substring(1) + ' '}</span>);
+        output.push(<span class="not-pixelate">{splitStr[i].substring(1) + ' '}</span>);
     }
     return output; 
 }
