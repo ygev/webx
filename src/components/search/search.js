@@ -102,7 +102,7 @@ function Search(props) {
                   <img
                     src={require("../../images/_sample-data/projects/" +
                       project.emailAddress +
-                      "/cover/cover.png")}
+                      "/ProjectCoverImage/cover.png")}
                     alt=""
                     className="photo__grid--img"
                   />

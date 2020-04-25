@@ -21,36 +21,36 @@ const Project = ({ pageContext }) => (
       studentInstagramLink="https://instagram.com/yaml0rd"
       projectCoverImg={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/cover/cover.png")}
+        "/ProjectCoverImage/cover.png")}
     />
     <ProjectTxt projectTxt={pageContext.projectSummary} />
     <ProjectGallery
       projectImgA={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/outcome/final-1.png")}
+        "/ProjectFinalImages/final-1.png")}
       projectImgB={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/outcome/final-2.png")}
+        "/ProjectFinalImages/final-2.png")}
       projectImgC={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/outcome/final-3.png")}
+        "/ProjectFinalImages/final-3.png")}
     />
     <ProjectProcess projectProcess={pageContext.projectProcess} />
     <ProjectGalleryProcess
       processImgA={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/process/process-" +
+        "/ProjectProcessImages/process-" +
         "1" +
         ".png")}
       processImgB={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/process/process-2.png")}
+        "/ProjectProcessImages/process-2.png")}
       processImgC={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/process/process-3.png")}
+        "/ProjectProcessImages/process-3.png")}
       processImgD={require("../images/_sample-data/projects/" +
         pageContext.email +
-        "/process/process-4.png")}
+        "/ProjectProcessImages/process-4.png")}
     />
     <ProjectPreFooter />
     <Footer />
