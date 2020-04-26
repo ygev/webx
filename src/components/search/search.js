@@ -35,18 +35,19 @@ class Search extends React.Component {
 
       for (let item of currentLetterItems) {
         if (currentLetter == argLetter) {
+          document.getElementsByClassName("glossary__letter")[i].classList.add("glossary__item--active");
           item.firstChild.style.height = "";
           item.firstChild.style.width = "";
         } else {
           item.firstChild.style.height = "0";
           item.firstChild.style.width = "0";
+          document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__item--active");
         }
       }
     }
   }
 
   ungrayLetter() {
-    // for each letter check if elements exist with letter- then apply that style to that letter 
     for ( var i = 0; i < 26; i++) {
 
       let currentLetter = (i+10).toString(36);
