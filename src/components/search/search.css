@@ -48,6 +48,7 @@
     height: calc(0.5*var(--sqWidth));
     width: calc(0.5*var(--sqWidth));
     display: flex;
+    text-transform: uppercase;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -73,7 +74,8 @@
 }
 
 .glossary__item--active {
-    background-color: var(--black);    
+    background-color: var(--black); 
+    color: var(--white);   
 }
 
 .glossary__letter--ghost {
