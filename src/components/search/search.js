@@ -29,19 +29,23 @@ class Search extends React.Component {
   }
 
   handleLetter(argLetter) {
-    for (var i = 0; i < 26; i++) {
-      let currentLetter = (i+10).toString(36);
-      let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+    let argLetterItems = document.getElementsByClassName('letter-' + argLetter);
 
-      for (let item of currentLetterItems) {
-        if (currentLetter == argLetter) {
-          document.getElementsByClassName("glossary__letter")[i].classList.add("glossary__item--active");
-          item.firstChild.style.height = "";
-          item.firstChild.style.width = "";
-        } else {
-          item.firstChild.style.height = "0";
-          item.firstChild.style.width = "0";
-          document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__item--active");
+    if (argLetterItems.length > 0) {
+      for (var i = 0; i < 26; i++) {
+        let currentLetter = (i+10).toString(36);
+        let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+        
+        for (let item of currentLetterItems) {
+          if (currentLetter == argLetter) {
+            document.getElementsByClassName("glossary__letter")[i].classList.add("glossary__item--active");
+            item.firstChild.style.height = "";
+            item.firstChild.style.width = "";
+          } else {
+            item.firstChild.style.height = "0";
+            item.firstChild.style.width = "0";
+            document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__item--active");
+          }
         }
       }
     }
