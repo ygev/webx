@@ -20,6 +20,8 @@ class Search extends React.Component {
       projectName: props.projectName,
       profilePicture: props.profilePicture
     };
+  // for each letter check if elements exist with letter- then apply that style to that letter 
+    this.ungrayLetter();
   }
 
   displayOnHover(project) {
@@ -45,6 +47,12 @@ class Search extends React.Component {
     }
   }
 
+  ungrayLetter() {
+    for ( var i = 0; i < 26; i++) {
+      document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__letter--ghost");
+    }
+  }
+
   randomizeProjects() {
     // for now, just show all letters... todo, actually randomize the projects
     for (var i = 0; i < 26; i++) {
@@ -62,7 +70,7 @@ class Search extends React.Component {
     var letters = [];
     for (var i = 0; i < 26; i++) { // iterate through the alphabet
       let thisLetter = (i+10).toString(36); // thisLetter = a, b, c...
-      letters.push(<p className="glossary__item glossary__letter" onClick={() => this.handleLetter(thisLetter)}>{thisLetter}</p>);
+      letters.push(<p className="glossary__item glossary__letter glossary__letter--ghost" onClick={() => this.handleLetter(thisLetter)}>{thisLetter}</p>);
     }
     return letters;
   }
