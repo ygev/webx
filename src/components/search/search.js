@@ -23,9 +23,48 @@ class Search extends React.Component {
   }
 
   displayOnHover(project) {
-    this.setState({studentName: project.whatIsYourFirstName + ' ' + project.whatIsYourLastName})
-    this.setState({projectName: project.whatIsYourProjectName})
-    this.setState({profilePicture: require("../../images/_sample-data/projects/" + project.emailAddress + "/ZoomProfilePic/headshot.png")})
+    this.setState({studentName: project.whatIsYourFirstName + ' ' + project.whatIsYourLastName});
+    this.setState({projectName: project.whatIsYourProjectName});
+    this.setState({profilePicture: require("../../images/_sample-data/projects/" + project.emailAddress + "/ZoomProfilePic/headshot.png")});
+  }
+
+  handleLetter(argLetter) {
+    for (var i = 0; i < 26; i++) {
+      let currentLetter = (i+10).toString(36);
+      let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+
+      for (let item of currentLetterItems) {
+        if (currentLetter == argLetter) {
+          item.firstChild.style.height = "";
+          item.firstChild.style.width = "";
+        } else {
+          item.firstChild.style.height = "0";
+          item.firstChild.style.width = "0";
+        }
+      }
+    }
+  }
+
+  randomizeProjects() {
+    // for now, just show all letters... todo, actually randomize the projects
+    for (var i = 0; i < 26; i++) {
+      let currentLetter = (i+10).toString(36);
+      let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+
+      for (let item of currentLetterItems) {
+        item.firstChild.style.height = "";
+        item.firstChild.style.width = "";
+      }
+    }
+  }
+
+  generateLetters() {
+    var letters = [];
+    for (var i = 0; i < 26; i++) { // iterate through the alphabet
+      let thisLetter = (i+10).toString(36); // thisLetter = a, b, c...
+      letters.push(<p className="glossary__item glossary__letter" onClick={() => this.handleLetter(thisLetter)}>{thisLetter}</p>);
+    }
+    return letters;
   }
 
   render() {
@@ -40,43 +79,10 @@ class Search extends React.Component {
             </div>
             <div className="glossary--scroller">
               <section className="glossary">
-                <div
-                  aria-label="Randomize Projects"
-                  className="glossary__item glossary__item--active glossary__randomize"
-                >
-                  <img
-                    src={randomize}
-                    alt=""
-                    className="glossay__randomize--img"
-                  />
+                <div onClick={this.randomizeProjects} aria-label="Randomize Projects" className="glossary__item glossary__item--active glossary__randomize">
+                  <img src={randomize} alt="" className="glossary__randomize--img"/>
                 </div>
-                <p className="glossary__item glossary__letter">A</p>
-                <p className="glossary__item glossary__letter glossary__letter--ghost">
-                  B
-                </p>
-                <p className="glossary__item glossary__letter">C</p>
-                <p className="glossary__item glossary__letter">D</p>
-                <p className="glossary__item glossary__letter">E</p>
-                <p className="glossary__item glossary__letter">F</p>
-                <p className="glossary__item glossary__letter">G</p>
-                <p className="glossary__item glossary__letter">H</p>
-                <p className="glossary__item glossary__letter">I</p>
-                <p className="glossary__item glossary__letter">J</p>
-                <p className="glossary__item glossary__letter">K</p>
-                <p className="glossary__item glossary__letter">L</p>
-                <p className="glossary__item glossary__letter">M</p>
-                <p className="glossary__item glossary__letter">N</p>
-                <p className="glossary__item glossary__letter">O</p>
-                <p className="glossary__item glossary__letter">P</p>
-                <p className="glossary__item glossary__letter">R</p>
-                <p className="glossary__item glossary__letter">S</p>
-                <p className="glossary__item glossary__letter">T</p>
-                <p className="glossary__item glossary__letter">U</p>
-                <p className="glossary__item glossary__letter">V</p>
-                <p className="glossary__item glossary__letter">W</p>
-                <p className="glossary__item glossary__letter">X</p>
-                <p className="glossary__item glossary__letter">Y</p>
-                <p className="glossary__item glossary__letter">Z</p>
+                {this.generateLetters()}
               </section>
             </div>
           </section>
@@ -110,6 +116,7 @@ class Search extends React.Component {
                       project.whatIsYourFirstName +
                       project.whatIsYourLastName
                     }
+                    className={"letter-" + project.whatIsYourLastName[0].toLowerCase()}
                     onMouseEnter={() => this.displayOnHover(project)} // use () => this.function() syntax to prevent losing 'this' context
                   >
                     <img
