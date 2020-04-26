@@ -20,8 +20,6 @@ class Search extends React.Component {
       projectName: props.projectName,
       profilePicture: props.profilePicture
     };
-  // for each letter check if elements exist with letter- then apply that style to that letter 
-    this.ungrayLetter();
   }
 
   displayOnHover(project) {
@@ -48,8 +46,14 @@ class Search extends React.Component {
   }
 
   ungrayLetter() {
+    // for each letter check if elements exist with letter- then apply that style to that letter 
     for ( var i = 0; i < 26; i++) {
+
+      let currentLetter = (i+10).toString(36);
+      let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+      if ( currentLetterItems.length == 1) {
       document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__letter--ghost");
+      }
     }
   }
 
@@ -151,6 +155,7 @@ class Search extends React.Component {
             </Link>
           </section>
         </Fade>
+        {this.ungrayLetter()}
       </div>
     );
   }
