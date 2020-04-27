@@ -15,6 +15,7 @@ import Projects from "../../../data/students.json";
 class Search extends React.Component {
   constructor(props) {
     super(props);
+    this.initialLetterState = {};
 
     this.state = {
       studentName: props.studentName,
@@ -23,13 +24,13 @@ class Search extends React.Component {
     };
   }
 
-  displayOnHover(project) {
+  handleProjectHover(project) {
     this.setState({studentName: project.whatIsYourFirstName + ' ' + project.whatIsYourLastName});
     this.setState({projectName: project.whatIsYourProjectName});
     this.setState({profilePicture: require("../../images/_sample-data/projects/" + project.emailAddress + "/ZoomProfilePic/headshot.png")});
   }
 
-  handleLetter(argLetter) {
+  handleLetterHover(argLetter) {
     let argLetterItems = document.getElementsByClassName('letter-' + argLetter);
 
     if (argLetterItems.length > 0) {
@@ -87,32 +88,50 @@ class Search extends React.Component {
     var letters = [];
     for (var i = 0; i < 26; i++) { // iterate through the alphabet
       let thisLetter = (i+10).toString(36); // thisLetter = a, b, c...
-      letters.push(<p className="glossary__item glossary__letter glossary__letter--ghost" onClick={() => this.handleLetter(thisLetter)}>{thisLetter}</p>);
+      if (this.initialLetterState[thisLetter] == true) {
+        letters.push(<p className="glossary__item glossary__letter" onClick={() => this.handleLetterHover(thisLetter)}>{thisLetter}</p>);
+      } else {
+        letters.push(<p className="glossary__item glossary__letter glossary__letter--ghost">{thisLetter}</p>);
+      }
     }
     return letters;
   }
 
+  generateProjects() {
+    let generatedProjects = Projects.map((project, index) => {
+      // un-gray this student's letter
+      this.initialLetterState[project.whatIsYourLastName[0].toLowerCase()] = true;
+      
+      // append this student to our generatedStudents array
+      return (
+        <Link
+          to={
+            "/" +
+            project.whatIsYourFirstName +
+            project.whatIsYourLastName
+          }
+          className={"letter-" + project.whatIsYourLastName[0].toLowerCase()}
+          onMouseEnter={() => this.handleProjectHover(project)} // use () => this.function() syntax to prevent losing 'this' context
+        >
+          <img
+            src={require("../../images/_sample-data/projects/" +
+              project.emailAddress +
+              "/ProjectCoverImage/cover.png")}
+            alt=""
+            className="photo__grid--img"
+          />
+        </Link>
+      );
+    })
+    return generatedProjects;
+  }
+
   render() {
     return (
-      <div>
+      <div class="fucker__flipper">
         <Fade cascade duration={500}>
-          <section className="searchglossary--wrapper">
-            <div className="search__title">
-              <h3 className="search__title--txt">
-                <Pixelator content="Search By Last Name" />
-              </h3>
-            </div>
-            <div className="glossary--scroller">
-              <section className="glossary">
-                <div onClick={this.randomizeProjects} aria-label="Randomize Projects" className="glossary__item glossary__item--active glossary__randomize">
-                  <img src={randomize} alt="" className="glossary__randomize--img"/>
-                </div>
-                {this.generateLetters()}
-              </section>
-            </div>
-          </section>
 
-          <div className="search__info--wrapper">
+        <div className="search__info--wrapper">
             <div className="search__desktop--wrapper">
               <section className="search__profile">
                 <div className="search__profile--frame"></div>
@@ -132,31 +151,27 @@ class Search extends React.Component {
                 </h4>
               </section>
             </div>
-          {this.ungrayLetter()}
             <section className="photo__grid">
-              {Projects.map((project, index) => {
-                return (
-                  <Link
-                    to={
-                      "/" +
-                      project.whatIsYourFirstName +
-                      project.whatIsYourLastName
-                    }
-                    className={"letter-" + project.whatIsYourLastName[0].toLowerCase()}
-                    onMouseEnter={() => this.displayOnHover(project)} // use () => this.function() syntax to prevent losing 'this' context
-                  >
-                    <img
-                      src={require("../../images/_sample-data/projects/" +
-                        project.emailAddress +
-                        "/ProjectCoverImage/cover.png")}
-                      alt=""
-                      className="photo__grid--img"
-                    />
-                  </Link>
-                );
-              })}
+              {this.generateProjects()}
             </section>
           </div>
+         
+          <section className="searchglossary--wrapper">
+            <div className="search__title">
+              <h3 className="search__title--txt">
+                <Pixelator content="Search By Last Name" />
+              </h3>
+            </div>
+            <div className="glossary--scroller">
+              <section className="glossary">
+                <div onClick={this.randomizeProjects} aria-label="Randomize Projects" className="glossary__item glossary__item--active glossary__randomize">
+                  <img src={randomize} alt="" className="glossary__randomize--img"/>
+                </div>
+                {this.generateLetters()}
+              </section>
+            </div>
+          </section>
+
           <section className="cta">
             <div className="cta__txt">
               <h3 className="cta__name">

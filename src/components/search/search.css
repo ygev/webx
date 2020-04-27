@@ -1,3 +1,9 @@
+/* Fucker Flipper */
+.fucker__flipper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 /* Hide Scrollbars */
 .glossary--scroller::-webkit-scrollbar {
     display: none;
