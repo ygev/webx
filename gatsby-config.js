@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: "/webx",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pixelation · MICA GD 2020`,
+    description: `Pixelation is an online exhibition for the Maryland Insititute College of Art's Graphic Design Class of 2020.`,
+    author: `Yana Gevorgyan & Amanda Yeh`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
