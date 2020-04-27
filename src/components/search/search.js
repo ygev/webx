@@ -7,6 +7,7 @@ import "../../css/type.css";
 import "./search.css";
 import Fade from "react-reveal/Fade";
 import randomize from "../../images/randomize.svg";
+import randomizeBlack from "../../images/randomize--black.svg";
 import profilePlaceholder from "../../images/_sample-data/profiles/profile--placeholder.svg";
 import arrowRightTeal from "../../images/arrowRight--teal.svg";
 import Projects from "../../../data/students.json";
@@ -38,6 +39,8 @@ class Search extends React.Component {
         
         for (let item of currentLetterItems) {
           if (currentLetter == argLetter) {
+            document.getElementsByClassName("glossary__randomize")[0].classList.remove("glossary__item--active");
+            document.getElementsByClassName("glossary__randomize--img")[0].src = require("../../images/randomize--black.svg")
             document.getElementsByClassName("glossary__letter")[i].classList.add("glossary__item--active");
             item.firstChild.style.height = "";
             item.firstChild.style.width = "";
@@ -68,6 +71,10 @@ class Search extends React.Component {
     for (var i = 0; i < 26; i++) {
       let currentLetter = (i+10).toString(36);
       let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+
+      document.getElementsByClassName("glossary__randomize")[0].classList.add("glossary__item--active");
+      document.getElementsByClassName("glossary__randomize--img")[0].src = require("../../images/randomize.svg")
+      document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__item--active");
 
       for (let item of currentLetterItems) {
         item.firstChild.style.height = "";
@@ -125,6 +132,7 @@ class Search extends React.Component {
                 </h4>
               </section>
             </div>
+          {this.ungrayLetter()}
             <section className="photo__grid">
               {Projects.map((project, index) => {
                 return (
@@ -161,7 +169,6 @@ class Search extends React.Component {
             </Link>
           </section>
         </Fade>
-        {this.ungrayLetter()}
       </div>
     );
   }
