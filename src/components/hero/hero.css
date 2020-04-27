@@ -2,6 +2,8 @@
   grid-column: 1  / span 4;
   grid-row: 1 / 6;
   box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
@@ -34,6 +36,8 @@
   display: flex;
   justify-content: space-between;
   box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
   transition: 150ms ease-in-out;
 }
 
@@ -46,6 +50,8 @@
   width: var(--sqWidth);
   height: var(--sqWidth);
   box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
   display: flex;
   align-content: center;
   justify-content: center;

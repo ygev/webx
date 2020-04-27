@@ -8,6 +8,8 @@
     align-content: center;
     background-color: var(--white);
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
     grid-column: 1 / span 4;
     grid-row: 2 / 12;
     display: flex;

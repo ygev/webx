@@ -5,6 +5,8 @@
     width: calc(4*var(--sqWidth));
     object-fit: cover;
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
 }
 
 .projectHero__txt {
@@ -19,6 +21,8 @@
     display: flex;
     flex-direction: column;
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
 }
 
 .projectHero__project {

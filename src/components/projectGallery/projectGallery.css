@@ -3,6 +3,8 @@
     flex-direction: column;
     background-color: var(--black);
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
 }
 
 .projectGallery__item {
@@ -10,6 +12,8 @@
     max-width: calc(4*var(--sqWidth));
     object-fit: cover;
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
 }
 
 /* Hide Scrollbar */
@@ -27,6 +31,8 @@
         overflow: auto;
         background-color: var(--black);
         box-shadow: var(--sqBorder);
+        -webkit-box-shadow: var(--sqBorder);
+        -moz-box-shadow: var(--sqBorder);
         transform: translate3d(0, 0, 0);
     }
 

@@ -7,9 +7,9 @@
     padding-left: 6vw;
     padding-right: 6vw;
     height: calc(var(--sqWidth)/2);
-    -webkit-box-shadow: inset 0px 0px 0px 1px var(--gray);
-    -moz-box-shadow: inset 0px 0px 0px 1px var(--gray);
-    box-shadow: inset 0px 0px 0px 1px var(--gray);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
+    box-shadow: var(--sqBorder); 
     z-index: 2;
 }
 

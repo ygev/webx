@@ -9,6 +9,8 @@
     grid-row: 2 / span 5;
     background-color: var(--white);
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
     padding-left: 6vw;
     padding-right: 6vw;
     padding-top: 12vw;

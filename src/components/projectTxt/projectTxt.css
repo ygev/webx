@@ -13,6 +13,8 @@
     padding-top: 12vw;
     padding-bottom: 12vw;
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
 }
 
 

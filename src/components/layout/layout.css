@@ -2,6 +2,8 @@
   width: var(--sqWidth);
   height: var(--sqWidth);
   box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
   background-color: var(--white);
   z-index: 0;
   transition: 1s ease-in-out;

@@ -3,6 +3,8 @@
     height: var(--sqWidth);
     width: var(--sqWidth);
     box-shadow: var(--sqBorder);
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -21,6 +23,8 @@
     grid-row: 2 / span 2;
     display: flex;
     box-shadow: var(--sqBorder); 
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
     justify-content: space-between;
     align-items: center;
     transition: 150ms ease-in-out;
@@ -31,6 +35,8 @@
     height: var(--sqWidth);
     width: var(--sqWidth);
     box-shadow: var(--sqBorder); 
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -43,6 +49,8 @@
     line-height: var(--sqWidth);
     width: calc(3*var(--sqWidth));
     box-shadow: var(--sqBorder); 
+    -webkit-box-shadow: var(--sqBorder);
+    -moz-box-shadow: var(--sqBorder);
 }
 
 
