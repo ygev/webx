@@ -17,11 +17,51 @@ class Search extends React.Component {
     super(props);
     this.initialLetterState = {};
 
+    this.isDown = false;
+
     this.state = {
       studentName: props.studentName,
       projectName: props.projectName,
       profilePicture: props.profilePicture
     };
+  }
+
+  sliderMouseDown(e){
+    if (typeof document !== `undefined`) {
+      this.isDown = true;
+      var slider = document.getElementsByClassName('glossary--scroller')[0];
+      slider.classList.add('active');
+      this.startX = e.pageX - slider.offsetLeft;
+      this.scrollLeft = slider.scrollLeft;
+    }
+  }
+
+  sliderMouseLeave(){
+    if (typeof document !== `undefined`) {
+      this.isDown = false;
+      var slider = document.getElementsByClassName('glossary--scroller')[0];
+      slider.classList.remove('active');
+    }
+  }
+
+  sliderMouseUp(){
+    if (typeof document !== `undefined`) {
+      this.isDown = false;
+      var slider = document.getElementsByClassName('glossary--scroller')[0];
+      slider.classList.remove('active');
+    }
+  }
+
+  sliderMouseMove(e){
+    if (typeof document !== `undefined`) {
+      if(!this.isDown) return;
+      e.preventDefault();
+      var slider = document.getElementsByClassName('glossary--scroller')[0];
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - this.startX) * 1;
+      slider.scrollLeft = this.scrollLeft - walk;
+      console.log(walk);
+    }
   }
 
   handleProjectHover(project) {
@@ -172,7 +212,11 @@ class Search extends React.Component {
               <Pixelator content="Search By Last Name" />
             </h3>
           </div>
-          <div className="glossary--scroller">
+          <div className="glossary--scroller" 
+          onMouseDown={(e) => this.sliderMouseDown(e)}
+          onMouseLeave={(e) => this.sliderMouseLeave(e)}
+          onMouseUp={(e) => this.sliderMouseUp(e)}
+          onMouseMove={(e) => this.sliderMouseMove(e)}>
             <section className="glossary">
               <div onClick={this.randomizeProjects} aria-label="Randomize Projects" className="glossary__item glossary__item--active glossary__randomize">
                 <img src={randomize} alt="" className="glossary__randomize--img"/>
