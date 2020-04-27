@@ -52,12 +52,13 @@ class Search extends React.Component {
   }
 
   ungrayLetter() {
-    for ( var i = 0; i < 26; i++) {
-
-      let currentLetter = (i+10).toString(36);
-      let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
-      if ( currentLetterItems.length == 1) {
-      document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__letter--ghost");
+    if (typeof document !== `undefined`) {
+      for (var i = 0; i < 26; i++) {
+        let currentLetter = (i+10).toString(36);
+        let currentLetterItems = document.getElementsByClassName('letter-' + currentLetter);
+        if (currentLetterItems.length == 1) {
+          document.getElementsByClassName("glossary__letter")[i].classList.remove("glossary__letter--ghost");
+        }
       }
     }
   }
