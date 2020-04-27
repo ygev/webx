@@ -48,18 +48,6 @@
     .projectGallery__item {
         width: auto;
         max-height: calc(4*var(--sqWidth));
-        animation: moveSlideshow 5s linear infinite;
-    }
-
-    .projectGallery__item:hover {
-        animation-play-state: paused;
     }
 
 }
-
-
-@keyframes moveSlideshow {
-    100% { 
-      transform: translateX(-130%);  
-    }
-  }
