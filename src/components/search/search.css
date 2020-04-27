@@ -133,6 +133,7 @@
     box-shadow: var(--sqBorder);
     height: var(--sqWidth);
     display: flex;
+    order: 3;
     justify-content: space-between;
     align-content: center;
     align-items: center;

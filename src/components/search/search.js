@@ -130,7 +130,17 @@ class Search extends React.Component {
     return (
       <div class="fucker__flipper">
         <Fade cascade duration={500}>
-
+        <section className="cta">
+            <div className="cta__txt">
+              <h3 className="cta__name">
+              <Pixelator content={this.state.studentName} />
+              </h3>
+              <h4 className="cta__project">{this.state.projectName}</h4>
+            </div>
+            <Link to="/project">
+              <img src={arrowRightTeal} alt="" className="cta__arrow" />
+            </Link>
+        </section>
         <div className="search__info--wrapper">
             <div className="search__desktop--wrapper">
               <section className="search__profile">
@@ -154,35 +164,25 @@ class Search extends React.Component {
             <section className="photo__grid">
               {this.generateProjects()}
             </section>
-          </div>
+        </div>
          
-          <section className="searchglossary--wrapper">
-            <div className="search__title">
-              <h3 className="search__title--txt">
-                <Pixelator content="Search By Last Name" />
-              </h3>
-            </div>
-            <div className="glossary--scroller">
-              <section className="glossary">
-                <div onClick={this.randomizeProjects} aria-label="Randomize Projects" className="glossary__item glossary__item--active glossary__randomize">
-                  <img src={randomize} alt="" className="glossary__randomize--img"/>
-                </div>
-                {this.generateLetters()}
-              </section>
-            </div>
-          </section>
+        <section className="searchglossary--wrapper">
+          <div className="search__title">
+            <h3 className="search__title--txt">
+              <Pixelator content="Search By Last Name" />
+            </h3>
+          </div>
+          <div className="glossary--scroller">
+            <section className="glossary">
+              <div onClick={this.randomizeProjects} aria-label="Randomize Projects" className="glossary__item glossary__item--active glossary__randomize">
+                <img src={randomize} alt="" className="glossary__randomize--img"/>
+              </div>
+              {this.generateLetters()}
+            </section>
+          </div>
+        </section>
 
-          <section className="cta">
-            <div className="cta__txt">
-              <h3 className="cta__name">
-                <Pixelator content={this.props.studentName} />
-              </h3>
-              <h4 className="cta__project">{this.props.projectName}</h4>
-            </div>
-            <Link to="/project">
-              <img src={arrowRightTeal} alt="" className="cta__arrow" />
-            </Link>
-          </section>
+          
         </Fade>
       </div>
     );
