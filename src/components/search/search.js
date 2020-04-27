@@ -67,7 +67,7 @@ class Search extends React.Component {
   handleProjectHover(project) {
     this.setState({studentName: project.whatIsYourFirstName + ' ' + project.whatIsYourLastName});
     this.setState({projectName: project.whatIsYourProjectName});
-    this.setState({profilePicture: require("../../images/_sample-data/projects/" + project.emailAddress + "/ZoomProfilePic/headshot.png")});
+    this.setState({profilePicture: require("../../images/_sample-data/projects/" + project.emailAddress + "/WebCamPicture/headshot.png")});
   }
 
   handleLetterHover(argLetter) {
