@@ -27,6 +27,27 @@ function removeAt(username) {
   }
 }
 
+function cleanLink(website) {
+  if(website.startsWith("https://www") || website.startsWith("http://www")|| website.startsWith("www")) {
+    return website.split("www.")[1]; 
+  }
+  else if (website.startsWith("https://") || website.startsWith("http://")) {
+    return website.split("//")[1];
+  }
+  else {
+    return website;
+  }
+}
+
+function uncleanLink(website) {
+  if(website.startsWith("www")) {
+    return "http://" + website;
+  }
+  else {
+    return website;
+  }
+}
+
 export default (props) => (
   <>
     <Layout rows={[9, 10, 6]}>
@@ -53,8 +74,8 @@ export default (props) => (
                 className="projectHero__link--icon"
               />
               <p className="projectHero__link--paragrapher">
-                <a href={props.studentWebsite} className="projectHero__link">
-                  {props.studentWebsite}
+                <a href={uncleanLink(props.studentWebsite)} className="projectHero__link">
+                  {cleanLink(props.studentWebsite)}
                 </a>
               </p>
             </div>
