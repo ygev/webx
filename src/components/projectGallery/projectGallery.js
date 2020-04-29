@@ -8,8 +8,8 @@ import "../../css/type.css"
 import "./projectGallery.css"
 import Fade from 'react-reveal/Fade';
 
-function getModuleFromPath(email, number) {
-    return require("../../images/_sample-data/projects/" + email + "/ProjectFinalImages/final-" + number + ".png");
+function getModuleFromPath(email, number, extension) {
+    return require("../../images/_sample-data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + extension);
 }
 
 function getAllModules(email) {
@@ -18,7 +18,7 @@ function getAllModules(email) {
 
     while (true) {
         try {
-            modules.push(<img src={getModuleFromPath(email, number)} alt="" className="projectGallery__item"/>)
+            modules.push(loadModule(email, number));
         } catch (e) {
             if (e.code == 'MODULE_NOT_FOUND') {
                 // we're done. no more images to load.
@@ -32,6 +32,24 @@ function getAllModules(email) {
     }
 
     return modules;
+}
+
+
+function loadModule(email, number) {
+    try {
+        return <img src={getModuleFromPath(email, number, "png")} alt="" className="projectGallery__item"/>;
+    } catch (e) {
+        if (e.code == 'MODULE_NOT_FOUND') {
+            try {
+                return <img src={getModuleFromPath(email, number, "jpg")} alt="" className="projectGallery__item"/>;
+            } catch (e) {
+                throw e;
+            }
+        } else {
+            // unexpected error! aaaaaaa
+            throw e;
+        }
+    }
 }
 
 export default props => (
