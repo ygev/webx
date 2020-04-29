@@ -225,7 +225,6 @@ class Search extends React.Component {
               <img src={arrowRightTeal} alt="" className="cta__arrow" />
             </Link>
           </section>
-          <Link className="search__link" to={this.state.linkProject}>
             <div className="search__info--wrapper">
               <div className="search__desktop--wrapper">
                 <section className="search__profile">
@@ -250,7 +249,6 @@ class Search extends React.Component {
                 {this.generateProjects()}
               </section>
             </div>
-          </Link>
 
           <section className="searchglossary--wrapper">
             <div className="search__title">
