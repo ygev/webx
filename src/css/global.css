@@ -1,16 +1,19 @@
 :root {
   /* Color Variables */
-  --accent: #11EDD3; /* Use for Accents */
+  --accent: #11edd3; /* Use for Accents */
   --black: #161616; /* Use for Text */
-  --gray: #7B7B7B; /* Use for Grid */
+  --gray: #7b7b7b; /* Use for Grid */
   --white: #ffffff;
 
   /* Square-Wise Sizing Variables */
   --sqWidth: calc(100vw / 4);
   --sqCol: 4;
-  
+
   /* Square Shadow Variable */
   --sqBorder: inset 0 0 0 0.025rem var(--gray);
+
+  /* Padding for header, footers... */
+  --padding: calc(var(--sqWidth) / 3);
 }
 
 ::selection {
@@ -24,21 +27,16 @@ body {
   /* cursor: url("../images/cursor.gif"), url("../images/cursor.cur"), default; */
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
   :root {
     --sqWidth: calc(100vw / 8);
-    --sqCol: 8; 
+    --sqCol: 8;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
-
   :root {
     --sqWidth: calc(100vw / 12);
     --sqCol: 12;
   }
-  
 }

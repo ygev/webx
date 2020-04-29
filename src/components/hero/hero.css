@@ -1,5 +1,5 @@
 .hero {
-  grid-column: 1  / span 4;
+  grid-column: 1 / span 4;
   grid-row: 1 / 6;
   box-shadow: var(--sqBorder);
   -webkit-box-shadow: var(--sqBorder);
@@ -58,15 +58,13 @@
   align-items: center;
 }
 
-
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
   .hero {
     grid-column: 1 / 8;
     grid-row: 2 / 6;
   }
-  
+
   .hero__lead--wrapper {
     margin-bottom: 2vw;
     margin-top: 2vw;
@@ -80,12 +78,10 @@
     grid-column: 8 / span 8;
     grid-row: 6 / 7;
   }
-
 }
-  
+
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
-
   .hero {
     grid-column: 2 / 9;
     grid-row: 2 / 6;

@@ -12,7 +12,7 @@ import "./hero.css";
 
 export default (props) => (
   <>
-    <Layout rows={[6, 6, 6]}>
+    <Layout rows={[7, 7, 6]}>
       <Fade delay={1200} duration={350}>
         <main className="hero">
           <p className="hero__brow">MICA GD BFA 2020 Degree Show</p>
@@ -28,7 +28,9 @@ export default (props) => (
             </h1>
           </header>
           <h4 className="hero__paragraph">
-          Pixelation is a portal between 75 students' new workspaces and their degree projects. We invite you to explore the student-led web exhibition for MICA's Graphic Design BFA Class of 2020.
+            Pixelation is a portal between 75 students' new workspaces and their
+            degree projects. We invite you to explore the student-led web
+            exhibition for MICA's Graphic Design BFA Class of 2020.
           </h4>
         </main>
       </Fade>
