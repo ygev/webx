@@ -11,7 +11,7 @@ class Index extends React.Component {
     render() {
       return (
             <>
-                <SEO title="Our Story" />
+                <SEO title="About" />
                 <Header />
                 <AboutHero/>
                 <AboutPoem/>

@@ -44,7 +44,7 @@
 /* ex. PIXELS / lead */
 h1 {
   font-family: "SuisseIntl-Medium", sans-serif;
-  font-size: 9vw;
+  font-size: 12vw;
   line-height: 10vw;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -84,8 +84,8 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   h1 {
-    font-size: 7vw;
-    line-height: 7.5vw;
+    font-size: 8vw;
+    line-height: 8vw;
   }
 
   h3 {

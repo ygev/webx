@@ -28,8 +28,7 @@ export default (props) => (
             </h1>
           </header>
           <h4 className="hero__paragraph">
-            Welcome to our MICA Graphic Design degree show consisting of 70+
-            students from Class of 2020. We are the pixels of MICA grid!
+          Pixelation is a portal between 75 students' new workspaces and their degree projects. We invite you to explore the student-led web exhibition for MICA's Graphic Design BFA Class of 2020.
           </h4>
         </main>
       </Fade>

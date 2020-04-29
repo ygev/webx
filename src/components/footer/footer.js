@@ -15,10 +15,10 @@ export default props => (
         <img src={footerEarth} alt="" className="footer__img"/>
         <div className="footer__link--wrapper">
            <Link to="/">
-               <p className="footer__link">Our Pixels</p>
+               <p className="footer__link">Pixelation</p>
            </Link>
            <Link to="/about">
-               <p className="footer__link">Our Story</p>
+               <p className="footer__link">About</p>
            </Link>
            <a href="https://www.mica.edu">
                <p className="footer__link">MICA GD <img src={outsideLink} alt="" className="footer__img--micagd"/> </p>

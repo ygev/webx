@@ -14,7 +14,7 @@ export default props => (
                <h3 className="header__txt">Pixelation</h3>
            </Link>
            <Link to="/about">
-               <h3 className="header__txt">Our Story</h3>
+               <h3 className="header__txt">About</h3>
            </Link>
        </header>
     </Fade>
