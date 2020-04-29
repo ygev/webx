@@ -9,6 +9,7 @@ import ProjectGalleryProcess from "../components/projectGalleryProcess/projectGa
 import ProjectPreFooter from "../components/projectPreFooter/projectPreFooter";
 import Footer from "../components/footer/footer";
 
+
 const Project = ({ pageContext }) => (
   <div>
     <Header />
@@ -18,7 +19,6 @@ const Project = ({ pageContext }) => (
       studentName={pageContext.firstName + " " + pageContext.lastName}
       studentWebsite={pageContext.website}
       studentInstagram={pageContext.instagram}
-      studentInstagramLink="https://instagram.com/yaml0rd"
       projectCoverImg={require("../images/_sample-data/projects/" +
         pageContext.email +
         "/ProjectCoverImage/cover.png")}

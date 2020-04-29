@@ -9,6 +9,24 @@ import iconWebsite from "../../images/linkWebsite.svg";
 import iconInstagram from "../../images/linkInstagram.svg";
 import Fade from "react-reveal/Fade";
 
+function addAt(username) {
+  if(username[0] !== "@") {
+    return "@" + username;
+  }
+  else {
+    return username;
+  }
+}
+
+function removeAt(username) {
+  if (username[0] == "@") {
+    return username.substr(1);
+  }
+  else {
+    return username;
+  }
+}
+
 export default (props) => (
   <>
     <Layout rows={[9, 10, 6]}>
@@ -48,10 +66,10 @@ export default (props) => (
               />
               <p className="projectHero__link--paragrapher">
                 <a
-                  href={props.studentInstagramLink}
+                  href={"https://www.instagram.com/" + removeAt(props.studentInstagram)}
                   className="projectHero__link"
                 >
-                  {props.studentInstagram}
+                  {addAt(props.studentInstagram)}
                 </a>
               </p>
             </div>
