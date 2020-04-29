@@ -24,17 +24,7 @@ const Project = ({ pageContext }) => (
         "/ProjectCoverImage/cover.png")}
     />
     <ProjectTxt projectTxt={pageContext.projectSummary} />
-    <ProjectGallery
-      projectImgA={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectFinalImages/final-1.png")}
-      projectImgB={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectFinalImages/final-2.png")}
-      projectImgC={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectFinalImages/final-3.png")}
-    />
+    <ProjectGallery email={pageContext.email} />
     <ProjectProcess projectProcess={pageContext.projectProcess} />
     <ProjectGalleryProcess
       processImgA={require("../images/_sample-data/projects/" +
