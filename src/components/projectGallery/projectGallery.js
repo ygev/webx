@@ -43,7 +43,7 @@ function loadModule(email, number, extensions) {
 
     try {
         if (ext == 'mp4'){
-            return <video width="320" height="240" controls> <source src={getModuleFromPath(email, number, ext)} type="video/mp4"/></video>;
+            return <video preload="yes" autoPlay="autoplay" loop muted playsInline className="projectGallery__item" controls> <source src={getModuleFromPath(email, number, ext)} type="video/mp4"/></video>;
         } else {
             return <img src={getModuleFromPath(email, number, ext)} alt="" className="projectGallery__item"/>;
         }
