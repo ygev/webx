@@ -8,6 +8,7 @@ import "../../css/type.css"
 import "./projectPreFooter.css"
 import arrowLeft from "../../images/arrowLeft.svg"
 import randomizerPixel from "../../images/randomizer--pixel.svg"
+import randomizerPixelTeal from "../../images/randomizer--teal--pixel.svg"
 import Fade from 'react-reveal/Fade'
 
 export default props => (
