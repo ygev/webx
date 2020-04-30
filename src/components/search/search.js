@@ -212,7 +212,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div class="fucker__flipper">
+      <div className="fucker__flipper">
         <Fade cascade duration={500}>
           <section className="cta">
             <div className="cta__txt">
