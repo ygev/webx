@@ -39,7 +39,6 @@
     .projectGallery__item {
         width: auto;
         max-height: calc(4*var(--sqWidth));
-        animation: moveSlideshow 12s linear infinite;
     }
 }
 
