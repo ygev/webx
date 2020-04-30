@@ -14,7 +14,6 @@ class Index extends React.Component {
                 <SEO title="About" />
                 <Header />
                 <AboutHero/>
-                <AboutPoem/>
                 <ProjectPreFooter/>
                 <Footer/>
             </>
