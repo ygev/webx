@@ -42,6 +42,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    transition: 150ms ease-in-out;
 }
 
 .projectPreFooter__random--txt {
@@ -65,6 +66,11 @@
     background-color: var(--black);
     color: var(--accent);
     cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+.projectPreFooter__random--wrapper:hover  .projectPreFooter__random--imgwrapper{
+    background-color: var(--black);
     transition: 150ms ease-in-out;
 }
 

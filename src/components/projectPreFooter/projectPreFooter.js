@@ -7,30 +7,57 @@ import "../../css/reset.css"
 import "../../css/type.css"
 import "./projectPreFooter.css"
 import arrowLeft from "../../images/arrowLeft.svg"
-import randomizerPixel from "../../images/randomizer--pixel.svg"
+import randomizerPixelBlack from "../../images/randomizer--pixel.svg"
 import randomizerPixelTeal from "../../images/randomizer--teal--pixel.svg"
 import Fade from 'react-reveal/Fade'
 
-export default props => (
-    <>
-        <Layout rows={[2, 2, 2]}>
-        <Fade delay={500} duration={500}>
-                <section className="projectPreFooter__back--wrapper">
-                    <Link to="/">
-                <section className="projectPreFooter__back--wrapper">
-                        <img src={arrowLeft} alt="Go Back to the Home Page" className="projectPreFooter__back"/>
-                </section>
-                    </Link>
-                </section>
-        </Fade>
-        <Fade delay={800} duration={500}>
-                <section className="projectPreFooter__random--wrapper">
-                    <h3 className="projectPreFooter__random--txt"><Pixelator content="Random Pixel" /></h3>
-                    <div className="projectPreFooter__random--imgwrapper">
-                        <img src={randomizerPixel} alt="" className="projectPreFooter__random--img"/>
-                    </div>
-                </section>
-        </Fade>
-        </Layout>    
-    </>
-);  
+class PreFooter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            swapImgSrc: randomizerPixelBlack
+        }
+      }
+
+    makeSwapperTeal(e) {
+        this.setState({
+            swapImgSrc: randomizerPixelTeal
+        });
+    }
+
+    makeSwapperBlack(e) {
+        this.setState({
+            swapImgSrc: randomizerPixelBlack
+        });
+    }
+
+    render() {
+        return (
+            <>
+                <Layout rows={[2, 2, 2]}>
+                <Fade delay={500} duration={500}>
+                        <section className="projectPreFooter__back--wrapper">
+                            <Link to="/">
+                        <section className="projectPreFooter__back--wrapper">
+                                <img src={arrowLeft} alt="Go Back to the Home Page" className="projectPreFooter__back"/>
+                        </section>
+                            </Link>
+                        </section>
+                </Fade>
+                <Fade delay={800} duration={500}>
+                        <section onMouseEnter={(e) => this.makeSwapperTeal(e)} 
+                                 onMouseLeave={(e) => this.makeSwapperBlack(e)} 
+                                 className="projectPreFooter__random--wrapper">
+                            <h3 className="projectPreFooter__random--txt"><Pixelator content="Random Pixel" /></h3>
+                            <div className="projectPreFooter__random--imgwrapper">
+                                <img src={this.state.swapImgSrc} alt="" className="projectPreFooter__random--img"/>
+                            </div>
+                        </section>
+                </Fade>
+                </Layout>    
+            </>
+        )           
+    } 
+}
+
+export default PreFooter;
