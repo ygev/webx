@@ -9,7 +9,6 @@ import ProjectGalleryProcess from "../components/projectGalleryProcess/projectGa
 import ProjectPreFooter from "../components/projectPreFooter/projectPreFooter";
 import Footer from "../components/footer/footer";
 
-
 const Project = ({ pageContext }) => (
   <div>
     <Header />

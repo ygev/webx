@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 /*
  * Note- this should be rewritten to call this.setState instead of calling this.forceUpdate.
- * forceUpdate is unnecessary and calling setState would 
+ * forceUpdate is unnecessary and calling setState would
  * 1. implicitly rerender as needed
  * 2. reap some React performance optimizations
  * See search.js as an example of using setState.
@@ -15,7 +15,7 @@ import Fade from 'react-reveal/Fade';
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.mediaQueryState = {
       mobile: true,
       tablet: false,
@@ -26,7 +26,7 @@ class Layout extends React.Component {
       this.mobile = window.matchMedia("(max-width: 767px");
       this.tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)");
       this.desktop = window.matchMedia("(min-width: 1024px)");
-      
+
       this.mobile.addListener((e) => { this.mediaQueryState.mobile = e.matches; this.forceUpdate(); });
       this.tablet.addListener((e) => { this.mediaQueryState.tablet = e.matches; this.forceUpdate(); });
       this.desktop.addListener((e) => { this.mediaQueryState.desktop = e.matches; this.forceUpdate(); });
