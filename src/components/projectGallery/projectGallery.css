@@ -51,8 +51,8 @@
     }
 
     .projectGallery__item {
-        max-width: calc(12*var(--sqWidth));
-        max-height: calc(6*var(--sqWidth));
+        max-width: calc(10*var(--sqWidth));
+        max-height: calc(5*var(--sqWidth));
     }
 
 }

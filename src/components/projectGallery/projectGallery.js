@@ -10,7 +10,6 @@ import Fade from 'react-reveal/Fade';
 
 class ProjectGallery extends React.Component {
     componentDidMount() {
-        console.log("componentDidMount");
         this.initMarquee();
     }
 
