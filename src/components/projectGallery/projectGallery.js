@@ -65,7 +65,7 @@ class ProjectGallery extends React.Component {
         if (typeof window !== `undefined`) {
             function updateMarquee() {
                 var gallery = document.getElementsByClassName("projectGallery")[0];
-                if (!window.scrollMarquee) {
+                if (window.scrollMarquee) {
                     gallery.scrollLeft += 1;
                 }
                 setTimeout(updateMarquee, 10);
