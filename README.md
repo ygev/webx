@@ -12,13 +12,15 @@
 Historically, MICA's Artwalk Exhibition has been a physical space for viewers to come in and experience in-person degree projects by our graduating class. Due to COVID-19, this pandemic rejuvenated a team of graduating students in the BFA Graphic Design program to spearhead, lead, and invent this alternative virtual exhibition for their class. 
 
 ## 🙌 Team
-**Visual Design:** [Tony Kim](https://www.kimtony.com) *(init)*, [Amanda Yeh](https://www.amandayeh.com) *(current)*
+* [Yana Gevorgyan](https://www.yg.is)
 
-**Project Management:** [Anne Xin](https://www.annexin.design)
+* [Tony Kim](https://www.kimtony.com)
 
-**Primary Development:** [Zoey Russomano](http://zoeyrussomano.com/) *(init)*, [Yana Gevorgyan](https://www.yg.is) *(current)*
+* [Zoey Russomano](http://zoeyrussomano.com/) 
 
-**Data Collection + Support Development:** [Amanda Yeh](https://amandayeh.com)
+* [Anne Xin](https://www.annexin.design)
+
+* [Amanda Yeh](https://www.amandayeh.com)
 
 ## 💕 Special Thanks
 Thank you to faculty [Kristian Bjørnard](https://github.com/bjornmeansbear/), [Isaac Gertman](https://theindependentgroup.us/) and [Brockett Horne](https://www.brocketthorne.com/) for disseminating data collection surveys to students and moral support. 
