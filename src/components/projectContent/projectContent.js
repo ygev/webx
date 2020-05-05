@@ -24,22 +24,30 @@ const properties = {
 
 export default (props) => (
     <>
-        <Slide {...properties}>
-            <div className="each-slide">
-                <div style={{'backgroundImage': `url(${slideImages[0]})`}}></div>
-            </div>
-            <div className="each-slide">
-                <div style={{'backgroundImage': `url(${slideImages[1]})`}}></div>
-            </div>
-            <div className="each-slide">
-                <div style={{'backgroundImage': `url(${slideImages[2]})`}}></div>
-            </div>
-        </Slide>
-        
-        <Layout rows={[1, 1, 1]}>
-            <h4 className="project__label project__label--outcome project__label--active">Outcome</h4>
-            <h4 className="project__label project__label--process project__label--inactive">Process</h4>
-        </Layout>
-            <p className="project__text project__text--outcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat elit, consequat habitasse convallis. Tempus vitae ac, nulla sed massa, tempor. Velit maecenas tortor quis consequat elementum commodo et. Nulla egestas non sagittis, aliquam. Mauris, tincidunt nulla ut arcu egestas suspendisse ipsum, ornare mattis. Placerat pharetra, viverra habitant fringilla nec odio maecenas lectus faucibus. Facilisis sem mauris, ullamcorper senectus. Sed quisque pulvinar id tortor, euismod. Sapien arcu nisi tristique pharetra in. Pretium posuere sem faucibus adipiscing enim nulla velit se ipsum, ornare  enim, mae.</p>
+        <div className="projectContent--wrapper">
+            <Slide {...properties}>
+                <div className="each-slide">
+                    <div style={{'backgroundImage': `url(${slideImages[0]})`}}></div>
+                </div>
+                <div className="each-slide">
+                    <div style={{'backgroundImage': `url(${slideImages[1]})`}}></div>
+                </div>
+                <div className="each-slide">
+                    <div style={{'backgroundImage': `url(${slideImages[2]})`}}></div>
+                </div>
+            </Slide>
+            <section className="project__text--wrapper">
+                <Layout rows={[1, 1, 1]}>
+                    <h4 className="project__label project__label--outcome project__label--active">Outcome</h4>
+                    <h4 className="project__label project__label--process project__label--inactive">Process</h4>
+                </Layout>
+                <div className="project__text--scroller">
+                    <p className="project__text project__text--outcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat elit, consequat habitasse convallis. Tempus vitae ac, nulla sed massa, tempor. Velit maecenas tortor quis consequat elementum commodo et. Nulla egestas non sagittis, aliquam. Mauris, tincidunt nulla ut arcu egestas suspendisse ipsum, ornare mattis. Placerat pharetra, viverra habitant fringilla nec odio maecenas lectus faucibus. Facilisis sem mauris, ullamcorper senectus. Sed quisque pulvinar id tortor, euismod. Sapien arcu nisi tristique pharetra in. Pretium posuere sem faucibus adipiscing enim nulla velit se ipsum, ornare  enim, mae.
+                    Leo aliquet nullam duis pretium enim, maecenas scelerisque eget. Ac faucibus vivamus dolor varius vestibulum donec nec id cursus. A non tristique lorem.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat elit, consequat habitasse convallis. Tempus vitae ac, nulla sed massa, tempor. Velit maecenas tortor quis consequat elementum commodo et. Nulla egestas non sagittis, aliquam. Mauris, tincidunt nulla ut arcu egestas suspendisse ipsum, ornare mattis. Placerat pharetra, viverra habitant fringilla nec odio maecenas lectus faucibus. Facilisis sem mauris, ullamcorper senectus. Sed quisque pulvinar id tortor, euismod. Sapien arcu nisi tristique pharetra in. Pretium posuere sem faucibus adipiscing enim nulla velit se ipsum, ornare  enim, mae.
+                    Leo aliquet nullam duis pretium enim, maecenas scelerisque eget. Ac faucibus vivamus dolor varius vestibulum donec nec id cursus. A non tristique lorem.</p>
+                </div>
+            </section>
+        </div>
     </>
 )

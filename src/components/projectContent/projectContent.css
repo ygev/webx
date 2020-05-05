@@ -2,15 +2,19 @@
 /* React Slideshow Overwrite Arrowss */
 .react-slideshow-container .nav:first-of-type {
     margin-right: -50% !important;
+    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='75' height='50' viewBox='0 0 75 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0)'%3e%3cpath d='M67.4998 28.1631H75V21.1221H67.4998V28.1631Z' fill='black'/%3e%3cpath d='M59.9998 28.1631H67.5V21.1221H59.9998V28.1631Z' fill='black'/%3e%3cpath d='M52.4998 28.1631H60V21.1221H52.4998V28.1631Z' fill='black'/%3e%3cpath d='M44.9998 28.1631H52.5V21.1221H44.9998V28.1631Z' fill='black'/%3e%3cpath d='M37.4998 28.1631H45V21.1221H37.4998V28.1631Z' fill='black'/%3e%3cpath d='M29.9998 28.1631H37.5V21.1221H29.9998V28.1631Z' fill='black'/%3e%3cpath d='M22.4998 28.1631H30V21.1221H22.4998V28.1631Z' fill='black'/%3e%3cpath d='M14.9998 21.1221H22.5V14.0811H14.9998V21.1221Z' fill='black'/%3e%3cpath d='M7.49978 28.1631H15V21.1221H7.49978L7.49978 28.1631Z' fill='black'/%3e%3cpath d='M-0.000221252 28.1631H7.5L7.5 21.1221H-0.000221252L-0.000221252 28.1631Z' fill='black'/%3e%3cpath d='M14.9998 42.2441H22.5V35.2032H14.9998V42.2441Z' fill='black'/%3e%3cpath d='M22.4998 49.2852H30V42.2442H22.4998V49.2852Z' fill='black'/%3e%3cpath d='M14.9998 14.0811L22.5 14.0811V7.04008L14.9998 7.04008V14.0811Z' fill='black'/%3e%3cpath d='M22.4998 7.04004L30 7.04004V-0.000934601L22.4998 -0.000934601V7.04004Z' fill='black'/%3e%3cpath d='M7.49978 35.2031H15V28.1621H7.49978L7.49978 35.2031Z' fill='black'/%3e%3cpath d='M7.49978 21.1221H15V14.0811H7.49978L7.49978 21.1221Z' fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0'%3e%3crect x='75' y='49.2861' width='75' height='49.2858' transform='rotate(-180 75 49.2861)' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e "),
+      pointer;
 }
 
 .react-slideshow-container .nav:last-of-type {
     margin-left: -50% !important;
+    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='75' height='50' viewBox='0 0 75 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0)'%3e%3cpath d='M7.50022 21.123H0V28.164H7.50022V21.123Z' fill='black'/%3e%3cpath d='M15.0007 21.123H7.50049V28.164H15.0007V21.123Z' fill='black'/%3e%3cpath d='M22.5007 21.123H15.0005V28.164H22.5007V21.123Z' fill='black'/%3e%3cpath d='M29.9997 21.123H22.4995V28.164H29.9997V21.123Z' fill='black'/%3e%3cpath d='M37.4997 21.123H29.9995V28.164H37.4997V21.123Z' fill='black'/%3e%3cpath d='M45.0002 21.123H37.5V28.164H45.0002V21.123Z' fill='black'/%3e%3cpath d='M52.5002 21.123H45V28.164H52.5002V21.123Z' fill='black'/%3e%3cpath d='M60.0007 28.1641H52.5005V35.205H60.0007V28.1641Z' fill='black'/%3e%3cpath d='M67.4997 21.123H59.9995V28.164H67.4997V21.123Z' fill='black'/%3e%3cpath d='M75.0002 21.123H67.5V28.164H75.0002V21.123Z' fill='black'/%3e%3cpath d='M60.0007 7.04199H52.5005V14.083H60.0007V7.04199Z' fill='black'/%3e%3cpath d='M52.5002 0.000976562H45V7.04195H52.5002V0.000976562Z' fill='black'/%3e%3cpath d='M60.0007 35.2051H52.5005V42.2461H60.0007V35.2051Z' fill='black'/%3e%3cpath d='M52.5002 42.2461H45V49.2871H52.5002V42.2461Z' fill='black'/%3e%3cpath d='M67.4997 14.083H59.9995V21.124H67.4997V14.083Z' fill='black'/%3e%3cpath d='M67.4997 28.1641H59.9995V35.205H67.4997V28.1641Z' fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0'%3e%3crect width='75' height='49.2858' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e "),
+      pointer;
 }
 
 .react-slideshow-container .nav {
     background: rgba(0,0,0,0) !important;
-    height: 100vw !important;
+    height: calc(4 * var(--sqWidth)) !important;
     border-radius: 0 !important;
     width: 50% !important;
 }
@@ -19,8 +23,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    height: 100vw;
+    justify-items: center;
+    align-content: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(4 * var(--sqWidth));
+    background-color: var(--black);
   }
   
   .each-fade {
@@ -33,7 +42,7 @@
   }
   
   .each-fade .image-container img {
-    max-height: 100%;
+    max-width: 100%;
   }
 
   /* Outcome & Process Buttons*/
@@ -66,6 +75,68 @@
     box-shadow: inset 0 0.025rem 0 0.025rem var(--gray);
  }
 
- .project__txt {
-     padding: 5vw;
+ .project__text {
+    padding: 5vw;
+    box-shadow: inset 0 -0.025rem 0 0.025rem var(--gray);
  }
+
+
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .project__label--outcome {
+        grid-column: 3 / 5;
+     }
+    
+     .project__label--process {
+         grid-column: 5 / 7;
+     }
+
+    .project__text {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+    .project__label--outcome {
+        grid-column: 1 / 3;
+    }
+
+    .project__label--process {
+        grid-column: 3 / 5;
+    }
+
+    .projectContent--wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .project__text--scroller {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    .project__text {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .project__text--wrapper {
+        width: calc(4 * var(--sqWidth));
+        height: calc(5 * var(--sqWidth));
+    }
+    .react-slideshow-container {
+        width: calc(8 * var(--sqWidth));
+        height: calc(5 * var(--sqWidth));
+    }
+
+}
