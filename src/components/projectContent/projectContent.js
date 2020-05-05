@@ -9,9 +9,9 @@ import Fade from 'react-reveal/Fade';
 import { Slide } from 'react-slideshow-image';
 
 const slideImages = [
-    "https://via.placeholder.com/500/11EDD3/000.png",
-    "https://via.placeholder.com/500/11EDD3/000.png",
-    "https://via.placeholder.com/500/11EDD3/000.png"
+    "https://via.placeholder.com/1500/11EDD3/000.png",
+    "https://via.placeholder.com/1500x1200/11EDD3/000.png",
+    "https://via.placeholder.com/1200x1500/11EDD3/000.png"
 ];
 
 const properties = {

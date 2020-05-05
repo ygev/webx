@@ -1,5 +1,26 @@
+/* TODO: Find a way to select the parent of the slideshow container and enter thisL
+  */
 
-/* React Slideshow Overwrite Arrowss */
+.projectContent--wrapper > div:first-child {
+    /* z-index: 10; */
+    background-color: #000;
+}
+
+.react-slideshow-container + div.indicators {
+    margin-top: 10px !important;
+}
+
+.react-slideshow-container + div.indicators > div {
+    background-color: var(--white) !important;
+    opacity: 0.5 !important;
+}
+
+.react-slideshow-container + div.indicators > div.active {
+    background-color: var(--white) !important;
+    opacity: 1 !important;
+}
+
+/* React Slideshow Overwrite Arrows */
 .react-slideshow-container .nav:first-of-type {
     margin-right: -50% !important;
     cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='75' height='50' viewBox='0 0 75 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0)'%3e%3cpath d='M67.4998 28.1631H75V21.1221H67.4998V28.1631Z' fill='black'/%3e%3cpath d='M59.9998 28.1631H67.5V21.1221H59.9998V28.1631Z' fill='black'/%3e%3cpath d='M52.4998 28.1631H60V21.1221H52.4998V28.1631Z' fill='black'/%3e%3cpath d='M44.9998 28.1631H52.5V21.1221H44.9998V28.1631Z' fill='black'/%3e%3cpath d='M37.4998 28.1631H45V21.1221H37.4998V28.1631Z' fill='black'/%3e%3cpath d='M29.9998 28.1631H37.5V21.1221H29.9998V28.1631Z' fill='black'/%3e%3cpath d='M22.4998 28.1631H30V21.1221H22.4998V28.1631Z' fill='black'/%3e%3cpath d='M14.9998 21.1221H22.5V14.0811H14.9998V21.1221Z' fill='black'/%3e%3cpath d='M7.49978 28.1631H15V21.1221H7.49978L7.49978 28.1631Z' fill='black'/%3e%3cpath d='M-0.000221252 28.1631H7.5L7.5 21.1221H-0.000221252L-0.000221252 28.1631Z' fill='black'/%3e%3cpath d='M14.9998 42.2441H22.5V35.2032H14.9998V42.2441Z' fill='black'/%3e%3cpath d='M22.4998 49.2852H30V42.2442H22.4998V49.2852Z' fill='black'/%3e%3cpath d='M14.9998 14.0811L22.5 14.0811V7.04008L14.9998 7.04008V14.0811Z' fill='black'/%3e%3cpath d='M22.4998 7.04004L30 7.04004V-0.000934601L22.4998 -0.000934601V7.04004Z' fill='black'/%3e%3cpath d='M7.49978 35.2031H15V28.1621H7.49978L7.49978 35.2031Z' fill='black'/%3e%3cpath d='M7.49978 21.1221H15V14.0811H7.49978L7.49978 21.1221Z' fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0'%3e%3crect x='75' y='49.2861' width='75' height='49.2858' transform='rotate(-180 75 49.2861)' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e "),
@@ -25,11 +46,11 @@
     justify-content: center;
     justify-items: center;
     align-content: center;
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
     height: calc(4 * var(--sqWidth));
-    background-color: var(--black);
   }
   
   .each-fade {
@@ -134,9 +155,13 @@
         width: calc(4 * var(--sqWidth));
         height: calc(5 * var(--sqWidth));
     }
-    .react-slideshow-container {
+    .projectContent--wrapper > div:first-child {
         width: calc(8 * var(--sqWidth));
         height: calc(5 * var(--sqWidth));
+        z-index: 10;
     }
 
+    .react-slideshow-container + div.indicators {
+        padding-top: 40px !important;
+    }
 }
