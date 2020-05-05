@@ -9,9 +9,6 @@ import "./projectGallery.css"
 import Fade from 'react-reveal/Fade';
 
 class ProjectGallery extends React.Component {
-    componentDidMount() {
-        this.initMarquee();
-    }
 
     getModuleFromPath(email, number, ext) {
         return require("../../images/_sample-data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
@@ -61,37 +58,9 @@ class ProjectGallery extends React.Component {
         }
     }
 
-    initMarquee() {
-        if (typeof window !== `undefined`) {
-            function updateMarquee() {
-                var gallery = document.getElementsByClassName("projectGallery")[0];
-                if (window.scrollMarquee) {
-                    gallery.scrollLeft += 1;
-                }
-                setTimeout(updateMarquee, 10);
-            }
-
-            updateMarquee();
-        }
-    }
-    
-    stopScroll() {
-        if (typeof window !== `undefined`) {
-            window.scrollMarquee = false;
-        }
-    }
-
-    continueScroll() {
-        if (typeof window !== `undefined`) {
-            window.scrollMarquee = true;
-        }
-    }
-
     render() {
         return <>
-              <section onMouseEnter={() => this.continueScroll()}
-                       onMouseLeave={() => this.stopScroll()}
-                       className="projectGallery">
+              <section className="projectGallery">
                     {this.getAllModules(this.props.email)}
               </section>
         </>

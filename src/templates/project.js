@@ -23,26 +23,11 @@ const Project = ({ pageContext }) => (
         pageContext.email +
         "/ProjectCoverImage/cover.png")}
     />
-    <ProjectContent/>
-    {/* <ProjectTxt projectTxt={pageContext.projectSummary} /> */}
-    {/* <ProjectGallery email={pageContext.email} /> */}
-    {/* <ProjectProcess projectProcess={pageContext.projectProcess} /> */}
-    {/* <ProjectGalleryProcess
-      processImgA={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectProcessImages/process-" +
-        "1" +
-        ".png")}
-      processImgB={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectProcessImages/process-2.png")}
-      processImgC={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectProcessImages/process-3.png")}
-      processImgD={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectProcessImages/process-4.png")}
-    /> */}
+    <ProjectContent projectTxt={pageContext.projectSummary}
+                    projectProcess={pageContext.projectProcess} 
+                    email={pageContext.email}/>
+
+
     <ProjectPreFooter />
     <Footer />
   </div>
