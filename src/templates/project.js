@@ -2,6 +2,7 @@ import React from "react";
 //import SEO from "../../components/seo";
 import Header from "../components/header/header";
 import ProjectHero from "../components/projectHero/projectHero";
+import ProjectContent from "../components/projectContent/projectContent";
 import ProjectTxt from "../components/projectTxt/projectTxt";
 import ProjectGallery from "../components/projectGallery/projectGallery";
 import ProjectProcess from "../components/projectProcess/projectProcess";
@@ -22,10 +23,11 @@ const Project = ({ pageContext }) => (
         pageContext.email +
         "/ProjectCoverImage/cover.png")}
     />
-    <ProjectTxt projectTxt={pageContext.projectSummary} />
-    <ProjectGallery email={pageContext.email} />
-    <ProjectProcess projectProcess={pageContext.projectProcess} />
-    <ProjectGalleryProcess
+    <ProjectContent/>
+    {/* <ProjectTxt projectTxt={pageContext.projectSummary} /> */}
+    {/* <ProjectGallery email={pageContext.email} /> */}
+    {/* <ProjectProcess projectProcess={pageContext.projectProcess} /> */}
+    {/* <ProjectGalleryProcess
       processImgA={require("../images/_sample-data/projects/" +
         pageContext.email +
         "/ProjectProcessImages/process-" +
@@ -40,7 +42,7 @@ const Project = ({ pageContext }) => (
       processImgD={require("../images/_sample-data/projects/" +
         pageContext.email +
         "/ProjectProcessImages/process-4.png")}
-    />
+    /> */}
     <ProjectPreFooter />
     <Footer />
   </div>
