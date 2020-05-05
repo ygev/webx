@@ -76,6 +76,22 @@
      align-items: center;
      justify-items: center;
      text-align: center;
+    transition: 150ms ease-in-out;    
+}
+
+ .project__label:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0.5rem var(--accent);
+    transition: 150ms ease-in-out;
+    color: var(--accent);
+
+ }
+
+ .project__label--active:hover {
+     cursor: default;
+     box-shadow: inset 0 0.025rem 0 0.025rem var(--gray);
+     transition: 150ms ease-in-out;
+     color: var(--black);
  }
 
  .project__label--outcome {
