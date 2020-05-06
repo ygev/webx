@@ -8,6 +8,9 @@ import "./projectContent.css"
 import Fade from 'react-reveal/Fade';
 import { Slide } from 'react-slideshow-image';
 
+function swapProjectText() {
+    console.log("hewwo");
+}
 
 
 
