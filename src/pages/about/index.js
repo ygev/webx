@@ -20,6 +20,7 @@ class Index extends React.Component {
                 <SEO title="About" />
                 <Header />
                 <AboutHero/>
+                <AboutPoem/>
                 <AboutGallery img={img1}/>
                 <AboutGallery img={img2}/>
                 <AboutGallery img={img3}/>
