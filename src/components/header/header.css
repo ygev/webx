@@ -24,13 +24,13 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black);
-  transition: 150ms ease-in-out;
+  transition: 200ms ease-in-out;
   border-top: 0 solid var(--accent);
   height:  calc(0.5 * var(--sqWidth));
 }
 .header__txt:hover {
   color: var(--accent);
-  transition: 150ms ease-in-out;
+  transition: 200ms ease-in-out;
   border-top: 10px solid var(--accent);
 }
 
