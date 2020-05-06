@@ -20,21 +20,24 @@
 .header__txt {
   font-family: "Suisse-Bold", sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(0.5 * var(--sqWidth));
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black);
   transition: 150ms ease-in-out;
+  border-top: 0 solid var(--accent);
+  height:  calc(0.5 * var(--sqWidth));
 }
 .header__txt:hover {
   color: var(--accent);
   transition: 150ms ease-in-out;
+  border-top: 10px solid var(--accent);
 }
 
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
   .header__txt {
     font-size: 18px;
-    line-height: 24px;
+    line-height: calc(0.5 * var(--sqWidth));
   }
 }
