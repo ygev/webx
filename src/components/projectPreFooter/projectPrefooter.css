@@ -49,9 +49,6 @@
     text-align: center;
     line-height: var(--sqWidth);
     width: calc(3*var(--sqWidth));
-    box-shadow: var(--sqBorder); 
-    -webkit-box-shadow: var(--sqBorder);
-    -moz-box-shadow: var(--sqBorder);
 }
 
 
