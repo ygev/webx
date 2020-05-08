@@ -27,12 +27,7 @@ export default (props) => (
             </h1>
           </header>
           <h4 className="aboutHero__paragraph">
-            Historically, MICA's Artwalk Exhibition has been a physical space
-            for viewers to come in and experience in-person degree projects by
-            our graduating class. Due to COVID-19, this pandemic rejuvenated a
-            team of graduating students in the BFA Graphic Design program to
-            spearhead, lead, and invent this alternative virtual exhibition for
-            their class.{" "}
+          Historically, MICA's Artwalk Exhibition has been a physical space for viewers to come in and experience in-person degree projects by our graduating class. Due to COVID-19, this pandemic rejuvenated a team of graduating students in the BFA Graphic Design program to spearhead, lead, and invent this alternative virtual exhibition for their class.{" "}
           </h4>
         </main>
       </Fade>
