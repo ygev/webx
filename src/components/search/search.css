@@ -125,9 +125,6 @@
   flex-wrap: wrap;
   max-height: calc(4 * var(--sqWidth));
   overflow: scroll;
-  -webkit-box-shadow: var(--sqBorder);
-  -moz-box-shadow: var(--sqBorder);
-  box-shadow: var(--sqBorder);
 }
 
 .photo__grid--img {
@@ -264,9 +261,8 @@
   }
 
   .photo__grid--img {
-    width: calc((8/3) * var(--sqWidth));
-    height: calc((8/3) * var(--sqWidth));
+    width: calc((8/3) * var(--sqWidth) - 7px);
+    height: calc((8/3) * var(--sqWidth) - 7px);
     object-fit: cover;
-    box-shadow: var(--sqBorder);
   }
 }
