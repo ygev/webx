@@ -28,9 +28,7 @@ export default (props) => (
             </h1>
           </header>
           <h4 className="hero__paragraph">
-            Pixelation is a portal between 75 students' new workspaces and their
-            degree projects. We invite you to explore the student-led web
-            exhibition for MICA's Graphic Design BFA Class of 2020.
+            Pixelation, the title of our MICA Artwalk Exhibition (Baltimore's largest display of visual art since 2009), is a portal between the 75 graduating student's new workspaces and their degree projects. We invite you to explore our webxhibition, a self-initiated and student-led website by MICA's Class of 2020 in the BFA Graphic Design program.
           </h4>
         </main>
       </Fade>
