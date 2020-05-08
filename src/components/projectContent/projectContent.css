@@ -79,19 +79,12 @@
     transition: 150ms ease-in-out;    
 }
 
- .project__label:hover {
+ .project__label--inactive:hover {
     cursor: pointer;
     box-shadow: inset 0 0 0 0.5rem var(--accent);
     transition: 150ms ease-in-out;
     color: var(--accent);
 
- }
-
- .project__label--active:hover {
-     cursor: default;
-     box-shadow: inset 0 0.025rem 0 0.025rem var(--gray);
-     transition: 150ms ease-in-out;
-     color: var(--black);
  }
 
  .project__label--summary {
@@ -107,10 +100,6 @@
 .project__label--inactive {
     box-shadow: var(--sqBorder);
 }
-
- .project__label--active {
-    box-shadow: inset 0 0.025rem 0 0.025rem var(--gray);
- }
 
  .project__text {
     padding: 5vw;

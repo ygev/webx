@@ -13,7 +13,7 @@ export default props => (
        <header className="header__wrapper">
            <Link to="/">
                <h3 className="header__txt">
-                <span className="header__txt--pixelate">P</span>ixelation
+                Pi<span className="header__txt--pixelate">X</span>elation
               </h3>
            </Link>
            <Link to="/about">
