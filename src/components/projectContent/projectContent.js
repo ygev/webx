@@ -6,6 +6,9 @@ import "../../css/reset.css"
 import "../../css/type.css"
 import "./projectContent.css"
 import Fade from 'react-reveal/Fade';
+import testBideo from "../../images/_sample-data/projects/ygevorgyan@mica.edu/ProjectFinalImages/final-1.mp4";
+import testImg from "../../images/_sample-data/projects/ygevorgyan@mica.edu/ProjectFinalImages/final-3.png";
+import testImgProcess from "../../images/_sample-data/projects/ygevorgyan@mica.edu/ProjectProcessImages/process-3.png";
 import { Slide } from 'react-slideshow-image';
 
 const slideImages = [
@@ -27,15 +30,21 @@ class ProjectContent extends React.Component {
     constructor(props) {
         super(props);
 
+        this.summaryImages = this.getAllModules("ygevorgyan@mica.edu", "summary");
+        this.processImages = this.getAllModules("ygevorgyan@mica.edu", "process");
+
         this.state = {
-          projectTxt: props.projectTxt
+          projectTxt: props.projectTxt,
+          projectImages: this.summaryImages
         };
       }
 
+    // Toggle Between Summary and Process
     setSummary(e) {
         console.log("Setting Summary");
         this.setState({
-          projectTxt: this.props.projectTxt
+          projectTxt: this.props.projectTxt,
+          projectImages: this.summaryImages
         });
         document.getElementsByClassName("project__label--summary")[0].classList.remove("project__label--inactive"); // remove inactive style
         document.getElementsByClassName("project__label--process")[0].classList.add("project__label--inactive"); // add inactive style to other
@@ -44,25 +53,76 @@ class ProjectContent extends React.Component {
     setProcess(e) {
         console.log("Setting Process");
         this.setState({
-            projectTxt: this.props.projectProcess
+            projectTxt: this.props.projectProcess,
+            projectImages: this.processImages
         });
         document.getElementsByClassName("project__label--process")[0].classList.remove("project__label--inactive"); // remove inactive style
         document.getElementsByClassName("project__label--summary")[0].classList.add("project__label--inactive"); // add inactive style to other
+    }
+
+    // Image Sorting Functions
+    getModuleFromPath(email, number, ext, summaryOrProcess) {
+        if (summaryOrProcess == "summary") {
+            return require("../../images/_sample-data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
+        } else if (summaryOrProcess == "process") {
+            return require("../../images/_sample-data/projects/" + email + "/ProjectProcessImages/process-" + number + "." + ext);
+        } else {
+            throw "summaryOrProcess invalid value"
+        }
+    }
+
+    getAllModules(email, summaryOrProcess) {
+        var modules = [];
+        var number = 1;
+
+        while (true) {
+            let extensions = ["png", "jpeg", "jpg", "gif", "mp4"]
+            var mod = this.loadModule(email, number, extensions, summaryOrProcess);
+
+            if (mod == null) {
+                break;
+            } else {
+                modules.push(mod);
+            }
+
+            number++;
+        }
+
+        return modules;
+    }
+
+    loadModule(email, number, extensions, summaryOrProcess) {
+        let ext = "";
+        if (extensions.length == 0) {
+            return null;
+        } else {
+            ext = extensions.shift();
+        }
+
+        try {
+            if (ext == 'mp4'){
+                return <div className="each-slide">
+                        <video preload="yes" autoPlay="autoplay" loop muted playsInline className="each-slide__img" controls> <source src={this.getModuleFromPath(email, number, ext, summaryOrProcess)} type="video/mp4"/></video>
+                    </div>;
+            } else {
+                return <div className="each-slide">
+                        <img src={this.getModuleFromPath(email, number, ext, summaryOrProcess)} alt="" className="each-slide__img"/>
+                    </div>;
+            }
+        } catch (e) {
+            if (e.code == 'MODULE_NOT_FOUND') {
+                return this.loadModule(email, number, extensions, summaryOrProcess);
+            } else {
+                throw e;
+            }
+        }
     }
 
     render() {
         return <>
             <div className="projectContent--wrapper">
                 <Slide {...properties}>
-                    <div className="each-slide">
-                        <div style={{'backgroundImage': `url(${slideImages[0]})`}}></div>
-                    </div>
-                    <div className="each-slide">
-                        <div style={{'backgroundImage': `url(${slideImages[1]})`}}></div>
-                    </div>
-                    <div className="each-slide">
-                        <div style={{'backgroundImage': `url(${slideImages[2]})`}}></div>
-                    </div>
+                    {this.state.projectImages}
                 </Slide>
                 <section className="project__text--wrapper">
                     <Layout rows={[1, 1, 1]}>
@@ -79,5 +139,3 @@ class ProjectContent extends React.Component {
 }
 
 export default ProjectContent;
-
-

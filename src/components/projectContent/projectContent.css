@@ -40,15 +40,12 @@
     width: 50% !important;
 }
 
-.each-slide > div {
+.each-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-top: 30px;
     height: calc(4 * var(--sqWidth));
   }
@@ -56,14 +53,10 @@
   .each-fade {
     display: flex;
   }
-  
-  .each-fade .image-container {
+
+  .each-slide__img {
     max-width: 100%;
-    overflow: hidden;
-  }
-  
-  .each-fade .image-container img {
-    max-width: 100%;
+    max-height: calc( 4 * var(--sqWidth));
   }
 
   /* summary & Process Buttons*/
