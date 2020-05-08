@@ -23,9 +23,7 @@ Historically, MICA's Artwalk Exhibition has been a physical space for viewers to
 * [Amanda Yeh](https://www.amandayeh.com)
 
 ## 💕 Special Thanks
-Thank you to faculty [Kristian Bjørnard](https://github.com/bjornmeansbear/), [Isaac Gertman](https://theindependentgroup.us/) and [Brockett Horne](https://www.brocketthorne.com/) for disseminating data collection surveys to students and moral support. 
-
-Thank you to [Karl Ericksen](https://karlericksen.com/) for hosting.
+Thank you to faculty [Kristian Bjørnard](https://www.ookb.co/), [Isaac Gertman](https://theindependentgroup.us/) and [Brockett Horne](https://www.brocketthorne.com/) for disseminating data collection surveys to students and moral support. 
 
 Thank you to MICA Graphic Design 2020 Students for four years of hard work and adaptability in the face of hardship.
 
