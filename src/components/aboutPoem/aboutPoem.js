@@ -17,7 +17,8 @@ export default props => (
             <section className="aboutPoem--wrapper">
                 <h3 className="aboutPoem__title"><Pixelator content="Pixels"/></h3>
                 <ul className="aboutPoem__poem">
-
+                <li className="aboutPoem__line"><p>by Tony Kim</p></li>
+                    <br></br>
         <Fade cascade delay={1000} duration={600} top>
                     <li className="aboutPoem__line"><p>A pixel within a vast universe.</p></li>
                     <br></br>
