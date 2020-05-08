@@ -264,8 +264,9 @@
   }
 
   .photo__grid--img {
-    width: calc(2.5 * var(--sqWidth));
-    height: calc(2.5 * var(--sqWidth));
+    width: calc((8/3) * var(--sqWidth));
+    height: calc((8/3) * var(--sqWidth));
     object-fit: cover;
+    box-shadow: var(--sqBorder);
   }
 }
