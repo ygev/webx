@@ -41,7 +41,8 @@
   transition: 150ms ease-in-out;
 }
 
-.arrowDown:hover {
+.arrowDown--wrapper:hover {
+  cursor: pointer;
   transition: 150ms ease-in-out;
 }
 

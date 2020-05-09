@@ -10,6 +10,10 @@ import Pixelator from "../pixelator/pixelator";
 import Fade from "react-reveal/Fade";
 import "./hero.css";
 
+function scrollToSearch() {
+  document.getElementById("searchScrollPoint").scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 export default (props) => (
   <>
     <Layout rows={[7, 7, 6]}>
@@ -35,7 +39,7 @@ export default (props) => (
 
       <Fade delay={1500} duration={350}>
         <aside className="linkDown">
-          <div className="arrowDown--wrapper">
+          <div onClick={() => scrollToSearch()} className="arrowDown--wrapper">
             <img src={arrowDown} alt="" className="arrowDown" />
           </div>
         </aside>

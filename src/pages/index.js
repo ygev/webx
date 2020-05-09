@@ -7,15 +7,23 @@ import HomePreFooter from "../components/homePreFooter/homePreFooter";
 import profilePlaceholder from "../images/_sample-data/profiles/profile--placeholder.svg";
 import Footer from "../components/footer/footer";
 
-const Index = () => (
-  <>
-    <SEO title="Pixelation" />
-    <Header />
-    <Hero />
-    <Search studentName="Our Pixels" projectName="Pick a pixel to view." profilePicture={profilePlaceholder}/>
-    <HomePreFooter />
-    <Footer />
-  </>
-);
+
+class Index extends React.Component {
+
+  render() {
+    return (
+      <>
+        <SEO title="Pixelation" />
+        <Header />
+        <Hero />
+        <div id="searchScrollPoint">
+        </div>
+        <Search studentName="Our Pixels" projectName="Pick a pixel to view." profilePicture={profilePlaceholder}/>
+        <HomePreFooter />
+        <Footer />
+      </>
+    );
+  }
+}
 
 export default Index;
