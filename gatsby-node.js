@@ -1,20 +1,18 @@
-//import cover from "src/images/_sample-data/projects/cover.png";
-
 exports.createPages = ({ actions: { createPage } }) => {
   const project = require("./data/students.json");
   project.forEach((project) => {
     createPage({
-      path: `${project.whatIsYourFirstName}` + `${project.whatIsYourLastName}`,
+      path: `${project.whatIsYourPreferredFirstName}` + `${project.whatIsYourPreferredLastName}`,
       component: require.resolve("./src/templates/project.js"),
       context: {
         email: project.emailAddress,
-        firstName: project.whatIsYourFirstName,
-        lastName: project.whatIsYourLastName,
-        projectName: project.whatIsYourProjectName,
-        website: project.ifYouHaveAWebsitePleaseListItHere,
-        instagram: project.ifYouHaveInstagramPleaseListYourUsernameHere,
-        projectSummary: project.describeYourProjectInDetail,
-        projectProcess: project.describeTheProcessOfYourProject,
+        firstName: project.whatIsYourPreferredFirstName,
+        lastName: project.whatIsYourPreferredLastName,
+        projectName: project.whatIsTheNameOfYourProject,
+        website: project.ifYouHaveAWebsitePleaseAddItHere,
+        instagram: project.ifYouHaveAnInstagramHandlePleaseAddItHere,
+        projectSummary: project.writeASummaryOfYourProject,
+        projectProcess: project.writeASummaryOfTheProcessOfYourProject,
       },
     });
   });

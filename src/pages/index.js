@@ -4,7 +4,7 @@ import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import Search from "../components/search/search";
 import HomePreFooter from "../components/homePreFooter/homePreFooter";
-import profilePlaceholder from "../images/_sample-data/profiles/profile--placeholder.svg";
+import profilePlaceholder from "../images/_data/profiles/profile--placeholder.svg";
 import Footer from "../components/footer/footer";
 
 

@@ -10,7 +10,10 @@ import iconInstagram from "../../images/linkInstagram.svg";
 import Fade from "react-reveal/Fade";
 
 function addAt(username) {
-  if(username[0] !== "@") {
+  if(typeof username == `undefined`){
+    return null;
+  }
+  else if(username[0] !== "@") {
     return "@" + username;
   }
   else {
@@ -19,7 +22,11 @@ function addAt(username) {
 }
 
 function removeAt(username) {
-  if (username[0] == "@") {
+  if(typeof username == `undefined`){
+    // document.getElementsByClassName("projectHero__link--iconinsta")[0].style.display = "none";
+    return null;
+  }
+  else if (username[0] == "@") {
     return username.substr(1);
   }
   else {
@@ -28,7 +35,10 @@ function removeAt(username) {
 }
 
 function cleanLink(website) {
-  if(website.startsWith("https://www") || website.startsWith("http://www")|| website.startsWith("www")) {
+  if(typeof website == `undefined`){
+    return null;
+  }
+  else if(website.startsWith("https://www") || website.startsWith("http://www")|| website.startsWith("www")) {
     return website.split("www.")[1]; 
   }
   else if (website.startsWith("https://") || website.startsWith("http://")) {
@@ -40,7 +50,10 @@ function cleanLink(website) {
 }
 
 function uncleanLink(website) {
-  if(website.startsWith("www")) {
+  if(typeof website == `undefined`){
+    return null;
+  }
+  else if(website.startsWith("www")) {
     return "http://" + website;
   }
   else {
@@ -48,12 +61,45 @@ function uncleanLink(website) {
   }
 }
 
+function getModuleFromPath(email, filename, ext) {
+  return require("../../images/_data/projects/" + email + "/ProjectCoverImage/" + filename + "." + ext);
+}
+
+function getPicture(email, filename) {
+  let extensions = ["png", "jpeg", "jpg", "gif", "mp4"]
+  return loadModule(email, filename, extensions);
+}
+
+function loadModule(email, filename, extensions) {
+  let ext = "";
+  if (extensions.length == 0) {
+    return null;
+  } else {
+    ext = extensions.shift();
+  }
+
+  try {
+    return getModuleFromPath(email, filename, ext);
+  } catch (e) {
+    if (e.code == 'MODULE_NOT_FOUND') {
+      return loadModule(email, filename, extensions);
+    } else {
+      throw e;
+    }
+  }
+}
+
+function loadCoverImage(emailAddress) {
+  console.log("loadCoverImage: " + emailAddress)
+  return getPicture(emailAddress, "cover");
+}
+
 export default (props) => (
   <>
     <Layout rows={[9, 10, 6]}>
       <Fade delay={1800} duration={350}>
         <img
-          src={props.projectCoverImg}
+          src={loadCoverImage(props.emailAddress)}
           alt=""
           className="projectHero__cover"
         />
@@ -71,7 +117,7 @@ export default (props) => (
               <img
                 src={iconWebsite}
                 alt="Website Link"
-                className="projectHero__link--icon"
+                className="projectHero__link--icon projectHero__link--iconweb"
               />
               <p className="projectHero__link--paragrapher">
                 <a href={uncleanLink(props.studentWebsite)} className="projectHero__link">
@@ -83,7 +129,7 @@ export default (props) => (
               <img
                 src={iconInstagram}
                 alt="Instagram Link"
-                className="projectHero__link--icon"
+                className="projectHero__link--icon projectHero__link--iconinsta"
               />
               <p className="projectHero__link--paragrapher">
                 <a

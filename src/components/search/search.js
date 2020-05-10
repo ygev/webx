@@ -8,77 +8,103 @@ import "./search.css";
 import Fade from "react-reveal/Fade";
 import randomize from "../../images/randomize.svg";
 import randomizeBlack from "../../images/randomize--black.svg";
-import profilePlaceholder from "../../images/_sample-data/profiles/profile--placeholder.svg";
+import profilePlaceholder from "../../images/_data/profiles/profile--placeholder.svg";
 import arrowRightTeal from "../../images/arrowRight--teal.svg";
 import Projects from "../../../data/students.json";
 
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-    this.initialLetterState = {};
+    constructor(props) {
+        super(props);
+        this.initialLetterState = {};
 
-    this.isDown = false;
+        this.isDown = false;
 
-    this.state = {
-      linkProject: props.linkProject,
-      studentName: props.studentName,
-      projectName: props.projectName,
-      profilePicture: props.profilePicture,
-    };
-  }
-
-  sliderMouseDown(e) {
-    if (typeof document !== `undefined`) {
-      this.isDown = true;
-      var slider = document.getElementsByClassName("glossary--scroller")[0];
-      slider.classList.add("active");
-      this.startX = e.pageX - slider.offsetLeft;
-      this.scrollLeft = slider.scrollLeft;
+        this.state = {
+            linkProject: props.linkProject,
+            studentName: props.studentName,
+            projectName: props.projectName,
+            profilePicture: props.profilePicture,
+        };
     }
-  }
 
-  sliderMouseLeave() {
-    if (typeof document !== `undefined`) {
-      this.isDown = false;
-      var slider = document.getElementsByClassName("glossary--scroller")[0];
-      slider.classList.remove("active");
+    getModuleFromPath(email, filename, ext) {
+        return require("../../images/_data/projects/" + email + filename + "." + ext);
     }
-  }
 
-  sliderMouseUp() {
-    if (typeof document !== `undefined`) {
-      this.isDown = false;
-      var slider = document.getElementsByClassName("glossary--scroller")[0];
-      slider.classList.remove("active");
+    getPicture(email, filename) {
+        let extensions = ["png", "jpeg", "jpg", "gif", "mp4"]
+        return this.loadModule(email, filename, extensions);
     }
-  }
 
-  sliderMouseMove(e) {
-    if (typeof document !== `undefined`) {
-      if (!this.isDown) return;
-      e.preventDefault();
-      var slider = document.getElementsByClassName("glossary--scroller")[0];
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - this.startX) * 1;
-      slider.scrollLeft = this.scrollLeft - walk;
-      console.log(walk);
+    loadModule(email, filename, extensions) {
+        let ext = "";
+        if (extensions.length == 0) {
+            return require("../../images/error.jpg");
+        } else {
+            ext = extensions.shift();
+        }
+
+        try {
+            return this.getModuleFromPath(email, filename, ext);
+        } catch (e) {
+            if (e.code == 'MODULE_NOT_FOUND') {
+                return this.loadModule(email, filename, extensions);
+            } else {
+                throw e;
+            }
+        }
     }
-  }
+  
+    sliderMouseDown(e) {
+        if (typeof document !== `undefined`) {
+            this.isDown = true;
+            var slider = document.getElementsByClassName("glossary--scroller")[0];
+            slider.classList.add("active");
+            this.startX = e.pageX - slider.offsetLeft;
+            this.scrollLeft = slider.scrollLeft;
+        }
+    }
+
+    sliderMouseLeave() {
+        if (typeof document !== `undefined`) {
+            this.isDown = false;
+            var slider = document.getElementsByClassName("glossary--scroller")[0];
+            slider.classList.remove("active");
+        }
+    }
+
+    sliderMouseUp() {
+        if (typeof document !== `undefined`) {
+            this.isDown = false;
+            var slider = document.getElementsByClassName("glossary--scroller")[0];
+            slider.classList.remove("active");
+        }
+    }
+
+    sliderMouseMove(e) {
+        if (typeof document !== `undefined`) {
+            if (!this.isDown) return;
+            e.preventDefault();
+            var slider = document.getElementsByClassName("glossary--scroller")[0];
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - this.startX) * 1;
+            slider.scrollLeft = this.scrollLeft - walk;
+            //console.log(walk);
+        }
+    }
 
   handleProjectHover(project) {
     this.setState({
       linkProject:
-        "/" + project.whatIsYourFirstName + project.whatIsYourLastName,
+        "/" + project.whatIsYourPreferredFirstName + project.whatIsYourPreferredLastName,
     });
     this.setState({
       studentName:
-        project.whatIsYourFirstName + " " + project.whatIsYourLastName,
+        project.whatIsYourPreferredFirstName + " " + project.whatIsYourPreferredLastName,
     });
-    this.setState({ projectName: project.whatIsYourProjectName });
+    this.setState({ projectName: project.whatIsTheNameOfYourProject });
     this.setState({
-      profilePicture: require("../../images/_sample-data/projects/" +
-        project.emailAddress +
-        "/WebCamPicture/headshot.png"),
+      profilePicture: this.getPicture(project.emailAddress, "/WebCamPicture/headshot")
     });
   }
 
@@ -183,24 +209,27 @@ class Search extends React.Component {
     return letters;
   }
 
+  loadCoverImage(project) {
+    return this.getPicture(project.emailAddress, "/ProjectCoverImage/cover");
+  }
+
   generateProjects() {
     let generatedProjects = Projects.map((project, index) => {
       // un-gray this student's letter
+      //console.log("project: " + JSON.stringify(project))
       this.initialLetterState[
-        project.whatIsYourLastName[0].toLowerCase()
+        project.whatIsYourPreferredLastName[0].toLowerCase()
       ] = true;
 
       // append this student to our generatedStudents array
       return (
         <Link
-          to={"/" + project.whatIsYourFirstName + project.whatIsYourLastName}
-          className={"letter-" + project.whatIsYourLastName[0].toLowerCase()}
+          to={"/" + project.whatIsYourPreferredFirstName + project.whatIsYourPreferredLastName}
+          className={"letter-" + project.whatIsYourPreferredLastName[0].toLowerCase()}
           onMouseEnter={() => this.handleProjectHover(project)} // use () => this.function() syntax to prevent losing 'this' context
         >
           <img
-            src={require("../../images/_sample-data/projects/" +
-              project.emailAddress +
-              "/ProjectCoverImage/cover.png")}
+            src={this.loadCoverImage(project)}
             alt=""
             className="photo__grid--img"
           />

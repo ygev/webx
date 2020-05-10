@@ -15,9 +15,7 @@ const Project = ({ pageContext }) => (
       studentName={pageContext.firstName + " " + pageContext.lastName}
       studentWebsite={pageContext.website}
       studentInstagram={pageContext.instagram}
-      projectCoverImg={require("../images/_sample-data/projects/" +
-        pageContext.email +
-        "/ProjectCoverImage/cover.png")}
+      emailAddress={pageContext.email}
     />
     <ProjectContent projectTxt={pageContext.projectSummary}
                     projectProcess={pageContext.projectProcess} 

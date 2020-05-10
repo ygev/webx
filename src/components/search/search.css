@@ -227,7 +227,7 @@
     background-size: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url("../../images/_sample-data/profiles/profile--frame.svg");
+    background-image: url("../../images/_data/profiles/profile--frame.svg");
   }
 
   .search__profile--img {

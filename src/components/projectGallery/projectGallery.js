@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 class ProjectGallery extends React.Component {
 
     getModuleFromPath(email, number, ext) {
-        return require("../../images/_sample-data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
+        return require("../../images/_data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
     }
 
     getAllModules(email) {

@@ -6,19 +6,11 @@ import "../../css/reset.css"
 import "../../css/type.css"
 import "./projectContent.css"
 import Fade from 'react-reveal/Fade';
-import testBideo from "../../images/_sample-data/projects/ygevorgyan@mica.edu/ProjectFinalImages/final-1.mp4";
-import testImg from "../../images/_sample-data/projects/ygevorgyan@mica.edu/ProjectFinalImages/final-3.png";
-import testImgProcess from "../../images/_sample-data/projects/ygevorgyan@mica.edu/ProjectProcessImages/process-3.png";
 import { Slide } from 'react-slideshow-image';
 
-const slideImages = [
-    "https://via.placeholder.com/1500/11EDD3/000.png",
-    "https://via.placeholder.com/1500x1200/11EDD3/000.png",
-    "https://via.placeholder.com/1200x1500/11EDD3/000.png"
-];
 
 const properties = {
-    duration: 5000,
+    duration: 50000,
     transitionDuration: 500,
     infinite: true,
     indicators: true,
@@ -30,8 +22,8 @@ class ProjectContent extends React.Component {
     constructor(props) {
         super(props);
 
-        this.summaryImages = this.getAllModules("ygevorgyan@mica.edu", "summary");
-        this.processImages = this.getAllModules("ygevorgyan@mica.edu", "process");
+        this.summaryImages = this.getAllModules(props.email, "summary");
+        this.processImages = this.getAllModules(props.email, "process");
 
         this.state = {
           projectTxt: props.projectTxt,
@@ -63,9 +55,10 @@ class ProjectContent extends React.Component {
     // Image Sorting Functions
     getModuleFromPath(email, number, ext, summaryOrProcess) {
         if (summaryOrProcess == "summary") {
-            return require("../../images/_sample-data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
+            console.log("../../images/_data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
+            return require("../../images/_data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
         } else if (summaryOrProcess == "process") {
-            return require("../../images/_sample-data/projects/" + email + "/ProjectProcessImages/process-" + number + "." + ext);
+            return require("../../images/_data/projects/" + email + "/ProjectProcessImages/process-" + number + "." + ext);
         } else {
             throw "summaryOrProcess invalid value"
         }

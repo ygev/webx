@@ -9,14 +9,14 @@ import ProjectGalleryProcess from "../../components/projectGalleryProcess/projec
 import ProjectPreFooter from "../../components/projectPreFooter/projectPreFooter";
 import Footer from "../../components/footer/footer";
 // Prop Image Imports
-// import projectCoverImg from "../../images/_sample-data/projects/cover.png";
-// import projectImgA from "../../images/_sample-data/projects/final-1.png";
-// import projectImgB from "../../images/_sample-data/projects/final-2.png";
-// import projectImgC from "../../images/_sample-data/projects/final-3.png";
-// import processImgA from "../../images/_sample-data/projects/process-1.png";
-// import processImgB from "../../images/_sample-data/projects/process-2.png";
-// import processImgC from "../../images/_sample-data/projects/process-3.png";
-// import processImgD from "../../images/_sample-data/projects/process-4.png";
+// import projectCoverImg from "../../images/_data/projects/cover.png";
+// import projectImgA from "../../images/_data/projects/final-1.png";
+// import projectImgB from "../../images/_data/projects/final-2.png";
+// import projectImgC from "../../images/_data/projects/final-3.png";
+// import processImgA from "../../images/_data/projects/process-1.png";
+// import processImgB from "../../images/_data/projects/process-2.png";
+// import processImgC from "../../images/_data/projects/process-3.png";
+// import processImgD from "../../images/_data/projects/process-4.png";
 
 class Index extends React.Component {
   render() {
