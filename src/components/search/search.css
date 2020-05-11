@@ -2,6 +2,8 @@
 .fucker__flipper {
   display: flex;
   flex-direction: column-reverse;
+  position: sticky;
+  top: 0;
 }
 
 /* Hide Scrollbars */
