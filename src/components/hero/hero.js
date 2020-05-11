@@ -22,7 +22,7 @@ export default (props) => (
           <p className="hero__brow">MICA GD BFA 2020 Degree Show</p>
           <header className="hero__lead--wrapper">
             <h1 className="hero__lead">
-              <Pixelator content="Pixelation" />
+              Pi<span className="header__txt--pixelate">X</span>elation
               <img
                 src={smiley}
                 alt="Smiley face"
