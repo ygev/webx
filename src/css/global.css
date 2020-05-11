@@ -2,7 +2,7 @@
   /* Color Variables */
   --accent: #11edd3; /* Use for Accents */
   --black: #161616; /* Use for Text */
-  --gray: #7b7b7b; /* Use for Grid */
+  --gray: #bbbbbb; /* Use for Grid */
   --white: #ffffff;
 
   /* Square-Wise Sizing Variables */
@@ -10,7 +10,7 @@
   --sqCol: 4;
 
   /* Square Shadow Variable */
-  --sqBorder: inset 0 0 0 0.025rem var(--gray);
+  --sqBorder: inset 0 0 0 1px var(--gray);
 
   /* Padding for header, footers... */
   --padding: calc(var(--sqWidth) / 3);
