@@ -9,6 +9,50 @@ import iconWebsite from "../../images/linkWebsite.svg";
 import iconInstagram from "../../images/linkInstagram.svg";
 import Fade from "react-reveal/Fade";
 
+function renderInstagram(username) {
+  if(typeof username == `undefined`){
+    return null;
+  }
+  else {
+    return <div className="projectHero__link--wrapper">
+      <img
+        src={iconInstagram}
+        alt="Instagram Link"
+        className="projectHero__link--icon projectHero__link--iconinsta"
+      />
+      <p className="projectHero__link--paragrapher">
+        <a
+          href={"https://www.instagram.com/" + removeAt(username)}
+          className="projectHero__link"
+        >
+          {addAt(username)}
+        </a>
+      </p>
+    </div>
+  }
+}
+
+function renderWebsite(website) {
+  if(typeof website == `undefined`){
+    return null;
+  }
+  else {
+    return <div className="projectHero__link--wrapper">
+    <img
+      src={iconWebsite}
+      alt="Website Link"
+      className="projectHero__link--icon projectHero__link--iconweb"
+    />
+    <p className="projectHero__link--paragrapher">
+      <a href={uncleanLink(website)} className="projectHero__link">
+        {cleanLink(website)}
+      </a>
+    </p>
+  </div>
+  }
+}
+
+
 function addAt(username) {
   if(typeof username == `undefined`){
     return null;
@@ -113,33 +157,8 @@ export default (props) => (
             <h4 className="projectHero__name">{props.studentName}</h4>
           </div>
           <div className="projectHero__social">
-            <div className="projectHero__link--wrapper">
-              <img
-                src={iconWebsite}
-                alt="Website Link"
-                className="projectHero__link--icon projectHero__link--iconweb"
-              />
-              <p className="projectHero__link--paragrapher">
-                <a href={uncleanLink(props.studentWebsite)} className="projectHero__link">
-                  {cleanLink(props.studentWebsite)}
-                </a>
-              </p>
-            </div>
-            <div className="projectHero__link--wrapper">
-              <img
-                src={iconInstagram}
-                alt="Instagram Link"
-                className="projectHero__link--icon projectHero__link--iconinsta"
-              />
-              <p className="projectHero__link--paragrapher">
-                <a
-                  href={"https://www.instagram.com/" + removeAt(props.studentInstagram)}
-                  className="projectHero__link"
-                >
-                  {addAt(props.studentInstagram)}
-                </a>
-              </p>
-            </div>
+            {renderWebsite(props.studentWebsite)} 
+            {renderInstagram(props.studentInstagram)}
           </div>
         </section>
       </Fade>
