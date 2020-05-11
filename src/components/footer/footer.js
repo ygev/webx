@@ -22,7 +22,7 @@ export default (props) => (
           </Link>
           <a href="https://www.mica.edu">
             <p className="footer__link">
-              MICA GD{" "}
+              MICA{" "}
               <img src={outsideLink} alt="" className="footer__img--micagd" />{" "}
             </p>
           </a>
