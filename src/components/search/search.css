@@ -2,8 +2,8 @@
 .fucker__flipper {
   display: flex;
   flex-direction: column-reverse;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
 }
 
 /* Hide Scrollbars */
@@ -165,7 +165,13 @@
 
 .cta__name {
   font-size: 6vw;
+  word-wrap: break-word;
 }
+
+.cta__project {
+  word-wrap: break-word;
+}
+
 .search__link {
   color: var(--black);
 }
@@ -250,12 +256,14 @@
     -webkit-box-shadow: var(--sqBorder);
     -moz-box-shadow: var(--sqBorder);
     padding-left: 3vw;
-    padding-right: 3vw;
+    padding-right: 3vw; 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-items: center;
     justify-content: center;
+    max-width: calc(4 * var(--sqWidth));
   }
 
   .photo__grid {
