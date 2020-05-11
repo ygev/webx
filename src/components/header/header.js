@@ -18,7 +18,7 @@ export default props => (
            </Link>
            <Link to="/about">
                <h3 aria-label="About Page" className="header__txt">
-                <span className="header__txt--pixelate">A</span>bout
+                <span className="header__txt--pixelate">O</span>ur <span className="header__txt--pixelate">S</span>tory
               </h3>
            </Link>
        </header>
