@@ -21,6 +21,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "react-linkify": "^1.0.0-alpha",
     "react-reveal": "^1.2.2",
     "react-slideshow-image": "^1.4.2",
     "tabletop": "^1.6.3"
