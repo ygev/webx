@@ -27,7 +27,7 @@
 }
 
 .header__txt {
-  font-family: "Suisse-Bold", sans-serif;
+  font-family: "SuisseIntl-Medium", sans-serif;
   line-height: calc(0.5 * var(--sqWidth));
   text-transform: uppercase;
   text-decoration: none;
