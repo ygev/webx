@@ -79,18 +79,24 @@ function removeAt(username) {
 }
 
 function cleanLink(website) {
+  var cleanedLink;
   if(typeof website == `undefined`){
     return null;
   }
   else if(website.startsWith("https://www") || website.startsWith("http://www")|| website.startsWith("www")) {
-    return website.split("www.")[1]; 
+    cleanedLink = website.split("www.")[1]; 
   }
   else if (website.startsWith("https://") || website.startsWith("http://")) {
-    return website.split("//")[1];
+    cleanedLink = website.split("//")[1];
   }
   else {
-    return website;
+    cleanedLink = website;
   }
+
+  if(cleanedLink.endsWith("/")){
+    cleanedLink = cleanedLink.substring(0, cleanedLink.length - 1);
+  }
+  return cleanedLink;
 }
 
 function uncleanLink(website) {
