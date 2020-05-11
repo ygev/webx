@@ -1,3 +1,8 @@
+.sucker__slipper {
+  position: sticky;
+  top: 0;
+}
+
 .hero {
   grid-column: 1 / span 4;
   grid-row: 1 / 6;
