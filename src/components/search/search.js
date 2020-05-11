@@ -39,7 +39,7 @@ class Search extends React.Component {
     loadModule(email, filename, extensions) {
         let ext = "";
         if (extensions.length == 0) {
-            return require("../../images/error.jpg");
+            return require("../../images/404.svg");
         } else {
             ext = extensions.shift();
         }
