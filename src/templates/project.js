@@ -1,5 +1,5 @@
 import React from "react";
-//import SEO from "../../components/seo";
+import SEO from "../components/seo";
 import Header from "../components/header/header";
 import ProjectHero from "../components/projectHero/projectHero";
 import ProjectContent from "../components/projectContent/projectContent";
@@ -9,7 +9,7 @@ import Footer from "../components/footer/footer";
 const Project = ({ pageContext }) => (
   <div>
     <Header />
-
+    <SEO title={pageContext.firstName + " " + pageContext.lastName}  />
     <ProjectHero
       projectName={pageContext.projectName}
       studentName={pageContext.firstName + " " + pageContext.lastName}
