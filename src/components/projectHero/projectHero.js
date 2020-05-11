@@ -10,7 +10,7 @@ import iconInstagram from "../../images/linkInstagram.svg";
 import Fade from "react-reveal/Fade";
 
 function renderInstagram(username) {
-  if(typeof username == `undefined`){
+  if(typeof username == `undefined` || username == ""){
     return null;
   }
   else {
@@ -33,7 +33,7 @@ function renderInstagram(username) {
 }
 
 function renderWebsite(website) {
-  if(typeof website == `undefined`){
+  if(typeof website == `undefined` || website == ""){
     return null;
   }
   else {
