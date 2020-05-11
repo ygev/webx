@@ -17,6 +17,9 @@ export default (props) => (
           <Link to="/">
             <p className="footer__link">Pixelation</p>
           </Link>
+          <Link to="/">
+            <p className="footer__link">Our Pixels</p>
+          </Link>
           <Link to="/about">
             <p className="footer__link">Our Story</p>
           </Link>
