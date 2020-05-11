@@ -12,6 +12,15 @@
   box-shadow: var(--sqBorder);
   z-index: 2;
 }
+/* 
+.header__txt--major {
+  font-size: 16px;
+}
+
+
+.header__txt--minor {
+  font-size: 14px;
+} */
 
 .header__txt--pixelate {
   font-family: "OnePixelRegular", sans-serif;
@@ -19,11 +28,11 @@
 
 .header__txt {
   font-family: "Suisse-Bold", sans-serif;
-  font-size: 14px;
   line-height: calc(0.5 * var(--sqWidth));
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black);
+  font-size: 16px;
   transition: 200ms ease-in-out;
   border-top: 0 solid var(--accent);
   height:  calc(0.5 * var(--sqWidth));
@@ -35,6 +44,25 @@
 
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
+  .link__minor {
+    display: flex;    
+  }
+
+  .link__minor a:last-of-type{
+    padding-left: 3vw;
+  }
+  
+/* 
+  .header__txt--major {
+    font-size: 24px;
+  }
+  
+  
+  .header__txt--minor {
+    font-size: 18px;
+  }
+   */
+
   .header__txt {
     font-size: 18px;
     line-height: calc(0.5 * var(--sqWidth));
