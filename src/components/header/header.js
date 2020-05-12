@@ -7,6 +7,28 @@ import "../../css/type.css"
 import navBar from "../../images/nav.svg";
 import "./header.css"
 
+function toggleNav() {
+  var navIcon = document.getElementsByClassName("link__minor--img")[0];
+  var navSquare = document.getElementsByClassName("link__minor--mobile")[0];
+  var headerText = document.getElementsByClassName("header__txt")[0];
+  var headerWrapper = document.getElementsByClassName("header__wrapper")[0];
+  if(navSquare.classList.contains("link__minor--mobile--inactive")){
+    navSquare.classList.remove("link__minor--mobile--inactive")
+    navIcon.classList.remove("link__minor--img--inactive");
+    navSquare.classList.add("link__minor--mobile--active")
+    navIcon.classList.add("link__minor--img--active");
+    headerText.style.color = 'white';
+    headerWrapper.style.backgroundColor = '#161616';
+  } else {
+    navSquare.classList.add("link__minor--mobile--inactive")
+    navIcon.classList.add("link__minor--img--inactive");
+    navSquare.classList.remove("link__minor--mobile--active")
+    navIcon.classList.remove("link__minor--img--active");
+    headerText.style.color = 'initial';
+    headerWrapper.style.backgroundColor = 'initial';
+  }
+}
+
 export default props => (
   <>
     <Fade duration={1000}>
@@ -16,8 +38,8 @@ export default props => (
                 Pi<span className="header__txt--pixelate">X</span>elation
               </h3>
            </Link>
-           <nav role="navigation" aria-label="Mobile Navigation" className="link__minor--mobile">
-               <img src={navBar} alt="" className="link__minor--img"/>
+           <nav onClick={() => toggleNav()} role="navigation" aria-label="Mobile Navigation" className="link__minor--mobile link__minor--mobile--inactive">
+               <img src={navBar} alt="" className="link__minor--img link__minor--img--inactive"/>
            </nav>
            <section className="link__minor">
               <Link to="/">

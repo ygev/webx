@@ -20,16 +20,37 @@
   height: calc(0.5 * var(--sqWidth));
   width: calc(0.5 * var(--sqWidth));
   box-shadow: var(--sqBorder);
-  background: var(--white);
   display: flex;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
+  transition: 150ms ease-in-out;
 }
 
 .link__minor--img {
   width: calc(0.25 * var(--sqWidth));
+  transition: 150ms ease-in-out;
+}
+
+.link__minor--mobile--inactive {
+  background: var(--white);
+  transition: 150ms ease-in-out;
+}
+
+.link__minor--mobile--active {
+  background: var(--accent);
+  transition: 150ms ease-in-out;
+}
+
+.link__minor--img--inactive {
+  transform: rotate(0);
+  transition: 150ms ease-in-out;
+}
+
+.link__minor--img--active {
+  transform: rotate(45deg);
+  transition: 150ms ease-in-out;
 }
 
 .header__txt--pixelate {
