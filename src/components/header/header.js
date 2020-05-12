@@ -16,9 +16,9 @@ export default props => (
                 Pi<span className="header__txt--pixelate">X</span>elation
               </h3>
            </Link>
-           <section aria-label="Mobile Navigation" className="link__minor--mobile">
+           <nav aria-label="Mobile Navigation" className="link__minor--mobile">
                <img src={navBar} alt="" className="link__minor--img"/>
-           </section>
+           </nav>
            <section className="link__minor">
               <Link to="/">
                   <h3 aria-label="All Projects" className="header__txt header__txt--minor">
