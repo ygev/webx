@@ -21,7 +21,7 @@ function renderInstagram(username) {
         className="projectHero__link--icon projectHero__link--iconinsta"
       />
       <p className="projectHero__link--paragrapher">
-        <a target="_blank"
+        <a target="_blank" rel="noopener noreferrer"
           href={"https://www.instagram.com/" + removeAt(username)}
           className="projectHero__link"
         >
@@ -44,7 +44,7 @@ function renderWebsite(website) {
       className="projectHero__link--icon projectHero__link--iconweb"
     />
     <p className="projectHero__link--paragrapher">
-      <a target="_blank" href={uncleanLink(website)} className="projectHero__link">
+      <a target="_blank" rel="noopener noreferrer" href={uncleanLink(website)} className="projectHero__link">
         {cleanLink(website)}
       </a>
     </p>
