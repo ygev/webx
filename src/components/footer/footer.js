@@ -12,11 +12,10 @@ export default (props) => (
   <>
     <Fade duration={200}>
       <footer className="footer__wrapper">
-        <img src={footerEarth} alt="" className="footer__img" />
+      <Link to="/">
+        <img src={footerEarth} aria-label="Go back to the Home Page" alt="An icon of earth." className="footer__img" />
+      </Link>
         <div className="footer__link--wrapper">
-          <Link to="/">
-            <p className="footer__link">Pixelation</p>
-          </Link>
           <Link to="/">
             <p className="footer__link">Our Pixels</p>
           </Link>
