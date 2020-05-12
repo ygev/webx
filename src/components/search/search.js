@@ -7,8 +7,6 @@ import "../../css/type.css";
 import "./search.css";
 import Fade from "react-reveal/Fade";
 import randomize from "../../images/randomize.svg";
-import randomizeBlack from "../../images/randomize--black.svg";
-import profilePlaceholder from "../../images/_data/profiles/profile--placeholder.svg";
 import arrowRightTeal from "../../images/arrowRight--teal.svg";
 import Projects from "../../../data/students.json";
 

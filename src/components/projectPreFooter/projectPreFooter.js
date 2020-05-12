@@ -9,6 +9,7 @@ import "./projectPreFooter.css"
 import arrowLeft from "../../images/arrowLeft.svg"
 import randomizerPixelBlack from "../../images/randomizer--pixel.svg"
 import randomizerPixelTeal from "../../images/randomizer--teal--pixel.svg"
+import Projects from "../../../data/students.json";
 import Fade from 'react-reveal/Fade'
 
 class PreFooter extends React.Component {
@@ -29,6 +30,12 @@ class PreFooter extends React.Component {
         this.setState({
             swapImgSrc: randomizerPixelBlack
         });
+
+    }
+
+    openRandomProject(){
+        const randomStudent = Projects[Math.floor(Math.random() * Projects.length)]
+        window.location.href = "/" + randomStudent.whatIsYourPreferredFirstName + randomStudent.whatIsYourPreferredLastName;
     }
 
     render() {
@@ -47,6 +54,7 @@ class PreFooter extends React.Component {
                 <Fade delay={800} duration={500}>
                         <section onMouseEnter={(e) => this.makeSwapperTeal(e)} 
                                  onMouseLeave={(e) => this.makeSwapperBlack(e)} 
+                                 onClick={() => this.openRandomProject()}
                                  className="projectPreFooter__random--wrapper">
                             <h3 className="projectPreFooter__random--txt"><Pixelator content="Random Pixel" /></h3>
                             <div className="projectPreFooter__random--imgwrapper">
