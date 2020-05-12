@@ -21,11 +21,15 @@
   width: calc(0.5 * var(--sqWidth));
   box-shadow: var(--sqBorder);
   background: var(--white);
-  -webkit-background-size: 45%;
-  background-size: 45%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url("../../images/nav.svg");
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.link__minor--img {
+  width: calc(0.25 * var(--sqWidth));
 }
 
 .header__txt--pixelate {

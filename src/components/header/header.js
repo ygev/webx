@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade';
-// import Pixelator from "../pixelator/pixelator"
 import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
@@ -17,9 +16,8 @@ export default props => (
                 Pi<span className="header__txt--pixelate">X</span>elation
               </h3>
            </Link>
-           <section className="link__minor--mobile">
-             <div aria-label="Navigation" className="link__minor--icon">
-             </div>
+           <section aria-label="Mobile Navigation" className="link__minor--mobile">
+               <img src={navBar} alt="" className="link__minor--img"/>
            </section>
            <section className="link__minor">
               <Link to="/">
