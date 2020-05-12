@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../layout/layout"
+import Linkify from 'react-linkify';
 import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
@@ -123,7 +124,7 @@ class ProjectContent extends React.Component {
                         <h4 onClick={(e) => this.setProcess(e)} className="project__label project__label--process project__label--inactive">Process</h4>
                     </Layout>
                     <div className="project__text--scroller">
-                        <p className="project__text project__text--summary">{this.state.projectTxt}</p>
+                    <Linkify properties={{target: '_blank'}}><p className="project__text project__text--summary">{this.state.projectTxt}</p></Linkify>
                     </div>
                 </section>
             </div>

@@ -1,8 +1,16 @@
-/* TODO: Find a way to select the parent of the slideshow container and enter thisL
-  */
+p a {
+    color: var(--black);
+    border-bottom: 2px var(--accent) solid;
+    transition: 150ms ease-in-out;
+}
+
+p a:hover {
+    color: var(--accent);
+    border-bottom: 0 var(--accent) solid;
+    transition: 150ms ease-in-out;
+}
 
 .projectContent--wrapper > div:first-child {
-    /* z-index: 10; */
     background-color: #000;
 }
 
