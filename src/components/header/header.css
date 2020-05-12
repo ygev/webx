@@ -12,15 +12,10 @@
   box-shadow: var(--sqBorder);
   z-index: 2;
 }
-/* 
-.header__txt--major {
-  font-size: 16px;
+
+.link__minor {
+  display: none;
 }
-
-
-.header__txt--minor {
-  font-size: 14px;
-} */
 
 .header__txt--pixelate {
   font-family: "OnePixelRegular", sans-serif;
