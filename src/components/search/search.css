@@ -233,6 +233,7 @@
     height: calc(4 * var(--sqWidth));
     width: calc(4 * var(--sqWidth));
     background-size: 100%;
+    -webkit-background-size: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url("../../images/_data/profiles/profile--frame.svg");
