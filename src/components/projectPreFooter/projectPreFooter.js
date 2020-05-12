@@ -42,7 +42,6 @@ class PreFooter extends React.Component {
         return (
             <>
                 <Layout rows={[2, 2, 2]}>
-                <Fade delay={500} duration={500}>
                         <section className="projectPreFooter__back--wrapper">
                             <Link to="/">
                         <section className="projectPreFooter__back--wrapper">
@@ -50,8 +49,6 @@ class PreFooter extends React.Component {
                         </section>
                             </Link>
                         </section>
-                </Fade>
-                <Fade delay={800} duration={500}>
                         <section onMouseEnter={(e) => this.makeSwapperTeal(e)} 
                                  onMouseLeave={(e) => this.makeSwapperBlack(e)} 
                                  onClick={() => this.openRandomProject()}
@@ -61,7 +58,6 @@ class PreFooter extends React.Component {
                                 <img src={this.state.swapImgSrc} alt="" className="projectPreFooter__random--img"/>
                             </div>
                         </section>
-                </Fade>
                 </Layout>    
             </>
         )           
