@@ -1,21 +1,115 @@
-.aboutGallery {
+
+.aboutGallery__img {
+    height: calc(4*var(--sqWidth));
     grid-column: 1 / span 4;
-    grid-row: 2 / span 4;
-    height: var(--sqWidth);
     z-index: 3;
 }
 
-.aboutGallery__img {
-    width: calc(4 * var(--sqWidth));
+.aboutGallery__quote {
+    grid-column: 1 / span 4;
+    background-color: var(--white);
+    z-index: 3;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    position: relative;
 }
 
+.aboutGallery__quote--img {
+    position: absolute;
+    top: 0;
+}
+
+.aboutGallery__quote--wrapper {
+    padding: 36px;
+}
+
+.aboutGallery__quote--name {
+    padding-top: 6px;
+    font-family: "SuisseIntl-Medium";
+    
+}
+/* Quotes */
+
+.aboutGallery__quote--1 {
+    grid-row: 12 / 15;
+}
+
+.aboutGallery__quote--2 {
+    grid-row: 16 / 22;
+}
+
+/* Images */
+.aboutGallery__img--1 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--2 {
+    grid-row: 7 / span 10;
+}
+
+.aboutGallery__img--3 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--4 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--5 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--6 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--7 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--8 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--9 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--11 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--12 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--13 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--14 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--15 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--16 {
+    grid-row: 2 / span 4;
+}
+
+.aboutGallery__img--17 {
+    grid-row: 2 / span 4;
+}
 
 /* TABLET */
 @media only screen and (min-width: 768px){
 
-    .aboutGallery {
-        grid-column: 3 / span 7;
-    }
 }
 
 
@@ -23,12 +117,4 @@
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
 
-    .aboutGallery {
-        grid-column: 4 / span 10;
-        grid-row: 2 / span 6;
-    }
-
-    .aboutGallery__img {
-        width: calc(6 * var(--sqWidth));
-    }
 }
