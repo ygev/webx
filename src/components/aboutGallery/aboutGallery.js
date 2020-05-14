@@ -4,11 +4,7 @@ import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";
 import Layout from "../layout/layout";
-import heart from "../../images/heart.svg";
-import arrowDown from "../../images/arrowDown.svg";
 import Pixelator from "../pixelator/pixelator";
-import aboutGallaryQuote from "../aboutGalleryQuote/aboutGalleryQuote";
-
 import Fade from "react-reveal/Fade";
 import "./aboutGallery.css";
 import quotations from "../../images/about/quotations.svg";
@@ -33,9 +29,8 @@ import img17 from "../../images/about/17.png";
 
 export default (props) => (
   <>
-    <Fade delay={0} duration={350}>
       <Layout rows={[123, 66, 48]}>
-        <Fade cascade delay={1000} duration={600}>
+        <Fade cascade duration={600}>
           <img
             src={img1}
             alt=""
@@ -298,6 +293,5 @@ export default (props) => (
           />
         </Fade>
       </Layout>
-    </Fade>
   </>
 );
