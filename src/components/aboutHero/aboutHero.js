@@ -11,6 +11,11 @@ import Pixelator from "../pixelator/pixelator";
 import Fade from "react-reveal/Fade";
 import "./aboutHero.css";
 
+
+function scrollToGallery() {
+  document.getElementById("firstImage").scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 export default (props) => (
   <>
     <Layout rows={[6, 6, 6]}>
@@ -31,6 +36,14 @@ export default (props) => (
           Historically, MICA's Artwalk Exhibition has been a physical space for viewers to come in and experience in-person degree projects by our graduating class. Due to COVID-19, this pandemic rejuvenated a team of graduating students in the BFA Graphic Design program to spearhead, lead, and invent this alternative virtual exhibition for their class.{" "}
         </h4>
         </main>
+      </Fade>
+
+      <Fade delay={1500} duration={500}>
+        <aside className="aboutLinkDown">
+          <div onClick={() => scrollToGallery()} className="arrowDown--wrapper">
+            <img src={arrowDown} alt="" className="arrowDown" />
+          </div>
+        </aside>
       </Fade>
     </Layout>
   </>

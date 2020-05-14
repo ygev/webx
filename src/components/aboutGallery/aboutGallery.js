@@ -31,7 +31,7 @@ export default (props) => (
   <>
       <Layout rows={[123, 66, 48]}>
         <Fade cascade duration={600}>
-          <img
+          <img id="firstImage"
             src={img1}
             alt=""
             className="aboutGallery__img aboutGallery__img--1 "
