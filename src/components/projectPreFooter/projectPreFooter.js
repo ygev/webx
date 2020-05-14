@@ -35,7 +35,7 @@ class PreFooter extends React.Component {
 
     openRandomProject(){
         const randomStudent = Projects[Math.floor(Math.random() * Projects.length)]
-        window.location.href = "/" + randomStudent.whatIsYourPreferredFirstName + randomStudent.whatIsYourPreferredLastName;
+        window.location.href = "/webx/" + randomStudent.whatIsYourPreferredFirstName + randomStudent.whatIsYourPreferredLastName;
     }
 
     render() {
