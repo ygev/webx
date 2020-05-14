@@ -11,6 +11,8 @@
   box-shadow: var(--sqBorder);
   z-index: 10;
   transition: 150ms ease-in-out;
+  position: sticky;
+  top: 0;
 }
 
 .link__minor {
