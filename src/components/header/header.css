@@ -9,7 +9,7 @@
   -webkit-box-shadow: var(--sqBorder);
   -moz-box-shadow: var(--sqBorder);
   box-shadow: var(--sqBorder);
-  z-index: 10;
+  z-index: 100;
   transition: 150ms ease-in-out;
   position: sticky;
   top: 0;
