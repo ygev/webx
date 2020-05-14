@@ -1,12 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../layout/layout"
 import Linkify from 'react-linkify';
 import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
 import "./projectContent.css"
-import Fade from 'react-reveal/Fade';
 import { Slide } from 'react-slideshow-image';
 
 
@@ -55,10 +53,10 @@ class ProjectContent extends React.Component {
 
     // Image Sorting Functions
     getModuleFromPath(email, number, ext, summaryOrProcess) {
-        if (summaryOrProcess == "summary") {
+        if (summaryOrProcess==="summary") {
             console.log("../../images/_data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
             return require("../../images/_data/projects/" + email + "/ProjectFinalImages/final-" + number + "." + ext);
-        } else if (summaryOrProcess == "process") {
+        } else if (summaryOrProcess==="process") {
             return require("../../images/_data/projects/" + email + "/ProjectProcessImages/process-" + number + "." + ext);
         } else {
             throw "summaryOrProcess invalid value"
@@ -73,7 +71,7 @@ class ProjectContent extends React.Component {
             let extensions = ["png", "jpeg", "jpg", "gif", "mp4"]
             var mod = this.loadModule(email, number, extensions, summaryOrProcess);
 
-            if (mod == null) {
+            if (mod===null) {
                 break;
             } else {
                 modules.push(mod);
@@ -87,14 +85,14 @@ class ProjectContent extends React.Component {
 
     loadModule(email, number, extensions, summaryOrProcess) {
         let ext = "";
-        if (extensions.length == 0) {
+        if (extensions.length===0) {
             return null;
         } else {
             ext = extensions.shift();
         }
 
         try {
-            if (ext == 'mp4'){
+            if (ext==='mp4'){
                 return <div className="each-slide">
                         <video preload="yes" autoPlay="autoplay" loop muted playsInline className="each-slide__img" controls> <source src={this.getModuleFromPath(email, number, ext, summaryOrProcess)} type="video/mp4"/></video>
                     </div>;
@@ -104,7 +102,7 @@ class ProjectContent extends React.Component {
                     </div>;
             }
         } catch (e) {
-            if (e.code == 'MODULE_NOT_FOUND') {
+            if (e.code==='MODULE_NOT_FOUND') {
                 return this.loadModule(email, number, extensions, summaryOrProcess);
             } else {
                 throw e;

@@ -36,7 +36,7 @@ class Search extends React.Component {
 
     loadModule(email, filename, extensions) {
         let ext = "";
-        if (extensions.length == 0) {
+        if (extensions.length===0) {
             return require("../../images/404.svg");
         } else {
             ext = extensions.shift();
@@ -45,7 +45,7 @@ class Search extends React.Component {
         try {
             return this.getModuleFromPath(email, filename, ext);
         } catch (e) {
-            if (e.code == 'MODULE_NOT_FOUND') {
+            if (e.code==='MODULE_NOT_FOUND') {
                 return this.loadModule(email, filename, extensions);
             } else {
                 throw e;
@@ -117,7 +117,7 @@ class Search extends React.Component {
         );
 
         for (let item of currentLetterItems) {
-          if (currentLetter == argLetter) {
+          if (currentLetter===argLetter) {
             document
               .getElementsByClassName("glossary__randomize")[0]
               .classList.remove("glossary__item--active");
@@ -148,7 +148,7 @@ class Search extends React.Component {
         let currentLetterItems = document.getElementsByClassName(
           "letter-" + currentLetter
         );
-        if (currentLetterItems.length == 1) {
+        if (currentLetterItems.length===1) {
           document
             .getElementsByClassName("glossary__letter")
             [i].classList.remove("glossary__letter--ghost");
@@ -187,7 +187,7 @@ class Search extends React.Component {
     for (var i = 0; i < 26; i++) {
       // iterate through the alphabet
       let thisLetter = (i + 10).toString(36); // thisLetter = a, b, c...
-      if (this.initialLetterState[thisLetter] == true) {
+      if (this.initialLetterState[thisLetter]===true) {
         letters.push(
           <p
             className="glossary__item glossary__letter"

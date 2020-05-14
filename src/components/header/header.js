@@ -38,10 +38,18 @@ function toggleNav() {
     headerWrapper.style.backgroundColor = 'initial';
     navLinks.classList.remove("link__minor--mobile--wrapper--active");
     navLinks.classList.add("link__minor--mobile--wrapper--inactive");
-    var i;
     for (i = 0; i < navItem.length; i++) {
       navItem[i].classList.remove("link__minor--mobile--text--active");
     }
+  }
+}
+
+function scrollOurPixels() {
+  console.log("im running!")
+  var hash = window.location.hash || "";
+  if (hash === "#about"){
+    console.log("i am still running")
+    window.onload = function(){document.getElementById("searchScrollPoint").scrollIntoView({ behavior: 'smooth', block: 'start' });};
   }
 }
 
@@ -58,11 +66,11 @@ export default props => (
                <img src={navBar} alt="" className="link__minor--img link__minor--img--inactive"/>
            </nav>
            <section className="link__minor">
-              <Link to="/">
-                  <h3 aria-label="All Projects" className="header__txt header__txt--minor">
+           <Link to="">
+                  <h3 onClick={() => scrollOurPixels()} aria-label="All Projects" className="header__txt header__txt--minor">
                     <span className="header__txt--pixelate">O</span>ur <span className="header__txt--pixelate">P</span>ixels
                   </h3>
-              </Link>
+           </Link>
               <Link to="/about">
                   <h3 aria-label="About Page" className="header__txt header__txt--minor">
                     <span className="header__txt--pixelate">O</span>ur <span className="header__txt--pixelate">S</span>tory

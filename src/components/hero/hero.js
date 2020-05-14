@@ -1,12 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";
 import Layout from "../layout/layout";
 import smiley from "../../images/smileyFace.svg";
 import arrowDown from "../../images/arrowDown.svg";
-import Pixelator from "../pixelator/pixelator";
 import Fade from "react-reveal/Fade";
 import "./hero.css";
 

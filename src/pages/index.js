@@ -8,7 +8,17 @@ import profilePlaceholder from "../images/_data/profiles/profile--placeholder.sv
 import Footer from "../components/footer/footer";
 
 
+
+
 class Index extends React.Component {
+
+  scrollOurPixels() {
+    var hash = window.location.hash || "";
+    if (hash === "#about"){
+      console.log("i am still running")
+      window.onload = function(){document.getElementById("searchScrollPoint").scrollIntoView({ behavior: 'smooth', block: 'start' });};
+    }
+  }
 
   render() {
     return (

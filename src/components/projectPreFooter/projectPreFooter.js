@@ -10,7 +10,6 @@ import arrowLeft from "../../images/arrowLeft.svg"
 import randomizerPixelBlack from "../../images/randomizer--pixel.svg"
 import randomizerPixelTeal from "../../images/randomizer--teal--pixel.svg"
 import Projects from "../../../data/students.json";
-import Fade from 'react-reveal/Fade'
 
 class PreFooter extends React.Component {
     constructor(props) {

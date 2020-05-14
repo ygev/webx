@@ -4,7 +4,6 @@ import "../../css/global.css"
 import "../../css/reset.css"
 import "../../css/type.css"
 import "./homePreFooter.css"
-import Fade from 'react-reveal/Fade';
 
 export default props => (
     <>

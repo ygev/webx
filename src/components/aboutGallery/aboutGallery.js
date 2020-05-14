@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";

@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";
 import Layout from "../layout/layout";
-import Linkify from 'react-linkify';
 import heart from "../../images/heart.svg";
 import arrowDown from "../../images/arrowDown.svg";
 import Pixelator from "../pixelator/pixelator";

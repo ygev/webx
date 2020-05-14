@@ -10,7 +10,7 @@ import iconInstagram from "../../images/linkInstagram.svg";
 import Fade from "react-reveal/Fade";
 
 function renderInstagram(username) {
-  if(typeof username == `undefined` || username == ""){
+  if(typeof username===`undefined` || username===""){
     return null;
   }
   else {
@@ -33,7 +33,7 @@ function renderInstagram(username) {
 }
 
 function renderWebsite(website) {
-  if(typeof website == `undefined` || website == ""){
+  if(typeof website===`undefined` || website===""){
     return null;
   }
   else {
@@ -54,7 +54,7 @@ function renderWebsite(website) {
 
 
 function addAt(username) {
-  if(typeof username == `undefined`){
+  if(typeof username===`undefined`){
     return null;
   }
   else if(username[0] !== "@") {
@@ -66,11 +66,11 @@ function addAt(username) {
 }
 
 function removeAt(username) {
-  if(typeof username == `undefined`){
+  if(typeof username===`undefined`){
     // document.getElementsByClassName("projectHero__link--iconinsta")[0].style.display = "none";
     return null;
   }
-  else if (username[0] == "@") {
+  else if (username[0]==="@") {
     return username.substr(1);
   }
   else {
@@ -80,7 +80,7 @@ function removeAt(username) {
 
 function cleanLink(website) {
   var cleanedLink;
-  if(typeof website == `undefined`){
+  if(typeof website===`undefined`){
     return null;
   }
   else if(website.startsWith("https://www") || website.startsWith("http://www")|| website.startsWith("www")) {
@@ -100,7 +100,7 @@ function cleanLink(website) {
 }
 
 function uncleanLink(website) {
-  if(typeof website == `undefined`){
+  if(typeof website===`undefined`){
     return null;
   }
   else if(website.startsWith("www")) {
@@ -122,7 +122,7 @@ function getPicture(email, filename) {
 
 function loadModule(email, filename, extensions) {
   let ext = "";
-  if (extensions.length == 0) {
+  if (extensions.length===0) {
     return null;
   } else {
     ext = extensions.shift();
@@ -131,7 +131,7 @@ function loadModule(email, filename, extensions) {
   try {
     return getModuleFromPath(email, filename, ext);
   } catch (e) {
-    if (e.code == 'MODULE_NOT_FOUND') {
+    if (e.code==='MODULE_NOT_FOUND') {
       return loadModule(email, filename, extensions);
     } else {
       throw e;
