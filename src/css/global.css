@@ -25,6 +25,14 @@ body {
   overflow-x: hidden;
 }
 
+#searchScrollPoint {
+  height: calc(0.5 * var(--sqWidth));
+  width: 100vw;
+  position: absolute;
+  z-index:10;
+  bottom: 0;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   :root {
     --sqWidth: calc(100vw / 8);

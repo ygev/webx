@@ -46,6 +46,7 @@ export default (props) => (
           </aside>
         </Fade>
       </Layout>
+    <div id="searchScrollPoint"></div>
   </div>
     </>
 );

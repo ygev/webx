@@ -16,8 +16,6 @@ class Index extends React.Component {
         <SEO title="Pixelation" />
         <Header />
         <Hero />
-        <div id="searchScrollPoint">
-        </div>
         <Search studentName="Our Pixels" projectName="Pick a pixel to view." profilePicture={profilePlaceholder}/>
         <HomePreFooter />
         <Footer />

@@ -1,3 +1,7 @@
+.sucker__slipper {
+  position: relative;
+}
+
 .hero {
   grid-column: 1 / span 4;
   grid-row: 1 / 6;
