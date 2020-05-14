@@ -32,14 +32,6 @@ export default (props) => (
         </h4>
         </main>
       </Fade>
-
-      <Fade delay={1500} duration={500}>
-        <aside className="aboutLinkDown">
-          <div className="arrowDown--wrapper">
-            <img src={arrowDown} alt="" className="arrowDown" />
-          </div>
-        </aside>
-      </Fade>
     </Layout>
   </>
 );
