@@ -39,7 +39,7 @@ class Header extends React.Component {
       navLinks.classList.remove("link__minor--mobile--wrapper--active");
       navLinks.classList.add("link__minor--mobile--wrapper--inactive");
       headerText.style.color = 'initial';
-      headerWrapper.style.backgroundColor = 'initial';
+      headerWrapper.style.backgroundColor = '#ffffff';
       navLinks.classList.remove("link__minor--mobile--wrapper--active");
       navLinks.classList.add("link__minor--mobile--wrapper--inactive");
       for (i = 0; i < navItem.length; i++) {
