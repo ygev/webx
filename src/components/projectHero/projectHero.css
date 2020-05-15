@@ -3,6 +3,7 @@
     grid-column: 1 / span 4;
     grid-row: 2 / 4;
     width: calc(4*var(--sqWidth));
+    height: calc(2*var(--sqWidth));
     object-fit: cover;
     box-shadow: var(--sqBorder);
     -webkit-box-shadow: var(--sqBorder);
