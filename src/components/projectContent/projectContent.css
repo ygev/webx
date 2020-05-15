@@ -43,7 +43,7 @@ p a:hover {
 
 .react-slideshow-container .nav {
     background: rgba(0,0,0,0) !important;
-    height: calc(4 * var(--sqWidth)) !important;
+    height: calc(3 * var(--sqWidth)) !important;
     border-radius: 0 !important;
     width: 50% !important;
 }
