@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
 }
 
-#searchScrollPoint {
+#ourPixels {
   height: calc(0.5 * var(--sqWidth));
   width: 100vw;
   position: absolute;

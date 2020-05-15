@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 import "./hero.css";
 
 function scrollToSearch() {
-  document.getElementById("searchScrollPoint").scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.getElementById("ourPixels").scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 export default (props) => (
@@ -44,7 +44,7 @@ export default (props) => (
           </aside>
         </Fade>
       </Layout>
-    <div id="searchScrollPoint"></div>
+    <div id="ourPixels"></div>
   </div>
     </>
 );
