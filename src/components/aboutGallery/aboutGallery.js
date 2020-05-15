@@ -1,13 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";
 import Layout from "../layout/layout";
-import heart from "../../images/heart.svg";
-import arrowDown from "../../images/arrowDown.svg";
 import Pixelator from "../pixelator/pixelator";
-import aboutGallaryQuote from "../aboutGalleryQuote/aboutGalleryQuote";
 
 import Fade from "react-reveal/Fade";
 import "./aboutGallery.css";
@@ -381,9 +377,9 @@ export default (props) => (
               To the class of 2020 — Congratulations!
             </p>
             <p className="aboutGallery__quote--text">
-              To the class of 2020 — CoMay your paths drip with abundance as you
+              May your paths drip with abundance as you
               graduate in this halted world, which you shall
-              redefine!ngratulations!
+              redefine!
             </p>
             <p className="aboutGallery__quote--name aboutGallery__faculty--name">
               Zvezdana Stojmirovic
