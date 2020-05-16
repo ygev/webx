@@ -67,6 +67,10 @@ p a:hover {
     max-height: calc( 4 * var(--sqWidth));
   }
 
+  .react-slideshow-wrapper.slide {
+    width: auto !important;
+  }
+
   /* summary & Process Buttons*/
  .project__label {
      background-color: var(--white);
