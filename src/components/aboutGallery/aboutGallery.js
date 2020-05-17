@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "gatsby";
 import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";
 import Layout from "../layout/layout";
+import heart from "../../images/heart.svg";
+import arrowDown from "../../images/arrowDown.svg";
 import Pixelator from "../pixelator/pixelator";
-
 import Fade from "react-reveal/Fade";
 import "./aboutGallery.css";
 import quotations from "../../images/about/quotations.svg";
@@ -32,12 +34,13 @@ import img20 from "../../images/about/20.png";
 
 export default (props) => (
   <>
-    <Layout rows={[165, 92, 67]}>
+    <Layout rows={[159, 89, 66]}>
       <Fade cascade delay={1000} duration={600}>
         <img
           src={img1}
           alt=""
-          className="aboutGallery__img aboutGallery__img--1 "
+          className="aboutGallery__img aboutGallery__img--1"
+          id="firstImage"
         />
         <img
           src={img2}
@@ -377,9 +380,9 @@ export default (props) => (
               To the class of 2020 — Congratulations!
             </p>
             <p className="aboutGallery__quote--text">
-              May your paths drip with abundance as you
+              To the class of 2020 — CoMay your paths drip with abundance as you
               graduate in this halted world, which you shall
-              redefine!
+              redefine!ngratulations!
             </p>
             <p className="aboutGallery__quote--name aboutGallery__faculty--name">
               Zvezdana Stojmirovic
