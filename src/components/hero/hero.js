@@ -15,7 +15,7 @@ function scrollToSearch() {
 export default (props) => (
   <>
   <div className="sucker__slipper">
-      <Layout rows={[7, 7, 6]}>
+    <Layout rows={[8, 7, 6]}>
         <Fade delay={1200} duration={350}>
           <main className="hero">
             <p className="hero__brow">MICA GD BFA 2020 Degree Show</p>
