@@ -1,116 +1,128 @@
 .aboutHero {
-    grid-column: 1  / span 4;
-    grid-row: 1 / 6;
-    box-shadow: var(--sqBorder);
-    -webkit-box-shadow: var(--sqBorder);
-    -moz-box-shadow: var(--sqBorder);
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 6vw;
-    padding-right: 6vw;
-    z-index: 1;
+  grid-column: 1 / span 4;
+  grid-row: 1 / 7;
+  box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  z-index: 1;
+}
+
+.aboutHero__lead--wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vw;
+  margin-top: 3vw;
+}
+
+.aboutHero__smiley {
+  height: 6.5vw;
+}
+
+.aboutHero__brow {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.aboutLinkDown {
+  grid-column: 4 / span 4;
+  grid-row: 7 / 7;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
+  transition: 150ms ease-in-out;
+}
+
+.arrowDown:hover {
+  transition: 150ms ease-in-out;
+}
+
+.arrowDown--wrapper {
+  background-color: var(--accent);
+  width: var(--sqWidth);
+  height: var(--sqWidth);
+  box-shadow: var(--sqBorder);
+  -webkit-box-shadow: var(--sqBorder);
+  -moz-box-shadow: var(--sqBorder);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutHero__paragraph {
+  margin-bottom: 16px;
+}
+
+.aboutHero__link {
+  color: var(--black);
+  border-bottom: 2px var(--accent) solid;
+  transition: 150ms ease-in-out;
+}
+
+.aboutHero__link:hover {
+  border-bottom: 0 var(--accent) solid;
+  color: var(--accent);
+  transition: 150ms ease-in-out;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .aboutHero {
+    grid-column: 2 / span 8;
+    grid-row: 2 / 7;
   }
-  
+
   .aboutHero__lead--wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3vw;
-    margin-top: 3vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
   }
-  
+
   .aboutHero__smiley {
-    height: 6.5vw;
+    height: 5vw;
   }
-  
-  .aboutHero__brow {
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
+
   .aboutLinkDown {
-    grid-column: 4 / span 4;
+    grid-column: 1 / 2;
     grid-row: 6 / 7;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: var(--sqBorder);
-    -webkit-box-shadow: var(--sqBorder);
-    -moz-box-shadow: var(--sqBorder);
-    transition: 150ms ease-in-out;
   }
-  
-  .arrowDown:hover {
-    transition: 150ms ease-in-out;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .aboutHero {
+    grid-column: 4 / 12;
+    grid-row: 2 / 6;
   }
-  
-  .arrowDown--wrapper {
-    background-color: var(--accent);
-    width: var(--sqWidth);
-    height: var(--sqWidth);
-    box-shadow: var(--sqBorder);
-    -webkit-box-shadow: var(--sqBorder);
-    -moz-box-shadow: var(--sqBorder);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+
+  .aboutHero__lead--wrapper {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
   }
-  
-  
-  /* TABLET */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  
-    .aboutHero {
-      grid-column: 2 / span 8;
-      grid-row: 2 / 6;
-    }
-    
-    .aboutHero__lead--wrapper {
-      margin-bottom: 2vw;
-      margin-top: 2vw;
-    }
-  
-    .aboutHero__smiley {
-      height: 5vw;
-    }
-  
-    .aboutLinkDown {
-      grid-column: 1 / 2;
-      grid-row: 6 / 7;
-    }
-  
+
+  .aboutHero__smiley {
+    height: 2.8vw;
   }
-    
-  /* DESKTOP */
-  @media only screen and (min-width: 1024px) {
-  
-    .aboutHero {
-      grid-column: 4 / 12;
-      grid-row: 2 / 6;
-    }
-  
-    .aboutHero__lead--wrapper {
-      margin-top: 1vw;
-      margin-bottom: 1vw;
-    }
-  
-    .aboutHero__smiley {
-      height: 2.8vw;
-    }
-  
-    .aboutHero__paragraph {
-      max-width: 60vw;
-    }
-  
-    .aboutLinkDown {
-      grid-column: 2 / 3;
-      grid-row: 5 / 6;
-    }
-  
-    .arrowDown {
-      width: 4vw;
-      height: 4vw;
-    }
+
+  .aboutHero__paragraph {
+    max-width: 60vw;
   }
+
+  .aboutLinkDown {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+
+  .arrowDown {
+    width: 4vw;
+    height: 4vw;
+  }
+}
