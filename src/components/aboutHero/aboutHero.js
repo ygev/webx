@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import "../../css/global.css";
 import "../../css/reset.css";
 import "../../css/type.css";
@@ -9,14 +10,15 @@ import Pixelator from "../pixelator/pixelator";
 import Fade from "react-reveal/Fade";
 import "./aboutHero.css";
 
-
 function scrollToGallery() {
-  document.getElementById("firstImage").scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document
+    .getElementById("firstImage")
+    .scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export default (props) => (
   <>
-    <Layout rows={[6, 6, 6]}>
+    <Layout rows={[7, 6, 6]}>
       <Fade delay={1200} duration={500}>
         <main className="aboutHero">
           <header className="aboutHero__lead--wrapper">
@@ -30,9 +32,40 @@ export default (props) => (
               />
             </h1>
           </header>
-         <h4 className="aboutHero__paragraph">
-          Historically, MICA's Artwalk Exhibition has been a physical space for viewers to come in and experience in-person degree projects by our graduating class. Due to COVID-19, this pandemic rejuvenated a team of graduating students in the BFA Graphic Design program to spearhead, lead, and invent this alternative virtual exhibition for their class.{" "}
-        </h4>
+          <h4 className="aboutHero__paragraph">
+            Historically, MICA's Artwalk Exhibition has been a physical space
+            for viewers to come in and experience in-person degree projects by
+            our graduating class. Due to COVID-19, this pandemic rejuvenated a
+            team of graduating students in the BFA Graphic Design program to
+            spearhead, lead, and invent this alternative virtual exhibition for
+            their class.
+          </h4>
+          <p className="aboutHero__social">
+            Follow us on instagram{" "}
+            <a
+              href={"https://www.instagram.com/mica_gd/?hl=en"}
+              className="aboutHero__link"
+            >
+              @mica_gd
+            </a>
+          </p>
+          <p>
+            <a
+              href={"https://www.instagram.com/explore/tags/micagd2020/?hl=en"}
+              className="aboutHero__link"
+            >
+              #MICAGD2020
+            </a>
+            {"      "}
+            <a
+              href={
+                "https://www.instagram.com/explore/tags/webxhibition/?hl=en"
+              }
+              className="aboutHero__link"
+            >
+              #webxhibition
+            </a>
+          </p>
         </main>
       </Fade>
 
