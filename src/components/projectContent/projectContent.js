@@ -9,7 +9,6 @@ import { Slide } from 'react-slideshow-image';
 
 
 const properties = {
-    duration: 50000,
     transitionDuration: 500,
     infinite: true,
     indicators: true,
