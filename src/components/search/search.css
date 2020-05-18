@@ -187,6 +187,10 @@
     font-size: 4vw;
   }
 
+  .cta__project {
+    font-size: 1vw;
+  }
+  
   .search__title {
     width: calc(3 * var(--sqWidth));
     height: calc(0.5 * var(--sqWidth));
@@ -207,6 +211,10 @@
     font-size: 2vw;
   }
 
+  .cta__project {
+    font-size: 1.4vw;
+  }
+  
   .search__desktop--wrapper {
     display: block;
   }
