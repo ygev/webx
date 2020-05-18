@@ -51,8 +51,7 @@ export default (props) => (
           <img src={quotations} alt="" className="aboutGallery__quote--img" />
           <div className="aboutGallery__quote--wrapper">
             <p className="aboutGallery__quote--text">
-              Because without the other pixels, the single block of pixel is
-              nothing.
+              Without the other pixels, a single block of pixel is nothing. Without even one pixel, our family is incomplete.
             </p>
             <p className="aboutGallery__quote--name">Tony Kim</p>
           </div>
