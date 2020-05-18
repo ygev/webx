@@ -42,7 +42,7 @@ class PreFooter extends React.Component {
             <>
                 <Layout rows={[2, 2, 2]}>
                         <section className="projectPreFooter__back--wrapper">
-                            <Link to="/">
+                            <Link to="/#ourPixels">
                         <section className="projectPreFooter__back--wrapper">
                                 <img src={arrowLeft} alt="Go Back to the Home Page" className="projectPreFooter__back"/>
                         </section>
