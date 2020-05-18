@@ -9,8 +9,10 @@ import { Slide } from 'react-slideshow-image';
 
 
 const properties = {
-    duration: 0,
+    duration: 100000000000,
     transitionDuration: 500,
+    pauseOnHover: true, 
+    autoplay: false,
     infinite: true,
     indicators: true,
     arrows: true
