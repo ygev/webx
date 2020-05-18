@@ -41,7 +41,7 @@ export default (props) => (
             their class.
           </h4>
           <p className="aboutHero__social">
-            Follow us on instagram{" "}
+            Follow us on Instagram{" "}
             <a
               href={"https://www.instagram.com/mica_gd/?hl=en"}
               className="aboutHero__link"
@@ -49,21 +49,39 @@ export default (props) => (
               @mica_gd
             </a>
           </p>
-          <p>
+          <p className="aboutHero__social">Tag us{" "} 
             <a
-              href={"https://www.instagram.com/explore/tags/micagd2020/?hl=en"}
+              href={"https://www.instagram.com/explore/tags/webxhibition/?hl=en"}
               className="aboutHero__link"
             >
-              #MICAGD2020
+              #webxhibition
             </a>
             {"      "}
             <a
               href={
-                "https://www.instagram.com/explore/tags/webxhibition/?hl=en"
+                "https://www.instagram.com/explore/tags/micapixelation/?hl=en"
               }
               className="aboutHero__link"
             >
-              #webxhibition
+              #micapixelation
+            </a>
+            {"      "}
+            <a
+              href={
+                "https://www.instagram.com/explore/tags/micagd2020/?hl=en"
+              }
+              className="aboutHero__link"
+            >
+              #micagd2020
+            </a>
+            {"      "}
+            <a
+              href={
+                "https://www.instagram.com/explore/tags/micaartwalk2020/?hl=en"
+              }
+              className="aboutHero__link"
+            >
+              #micaartwalk2020
             </a>
           </p>
         </main>
