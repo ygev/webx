@@ -53,7 +53,7 @@ export default (props) => (
             <p className="aboutGallery__quote--text">
               Without the other pixels, a single block of pixel is nothing. Without even one pixel, our family is incomplete.
             </p>
-            <p className="aboutGallery__quote--name">Tony Kim</p>
+            <p className="aboutGallery__quote--name">Webx Founders</p>
           </div>
         </section>
         <img
