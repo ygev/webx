@@ -248,9 +248,6 @@ class Search extends React.Component {
               </h3>
               <h4 className="cta__project">{this.state.projectName}</h4>
             </div>
-            <Link to="/project">
-              <img src={arrowRightTeal} alt="" className="cta__arrow" />
-            </Link>
           </section>
             <div className="search__info--wrapper">
               <div className="search__desktop--wrapper">
