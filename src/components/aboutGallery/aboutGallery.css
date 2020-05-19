@@ -159,7 +159,7 @@
 }
 
 .aboutGallery__faculty {
-  grid-row: 125 / span 18;
+  grid-row: 125 / span 19;
 }
 
 .aboutGallery__img--18 {
@@ -442,7 +442,7 @@
   }
 
   .aboutGallery__faculty {
-    grid-row: 52 / span 13;
+    grid-row: 52 / span 18;
     grid-column: 6 / span 7;
   }
 

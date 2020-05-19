@@ -315,7 +315,7 @@ export default (props) => (
               class; I have had the luxury to see and experience your work,
               partake in the thoughtful ways you interact, and persevered with
               you during this strange time. You are all wonderful; fabulous
-              things await you; good luck & good designing.
+              things await you; good luck and good designing.
             </p>
             <p className="aboutGallery__quote--name aboutGallery__faculty--name">
               Kristian Bjørnard
@@ -390,7 +390,11 @@ export default (props) => (
               Congrats class of 2020 for making moving art in an unprecedented
               time. You should be proud of what you have created this year!
             </p>
-            <p className="aboutGallery__quote--name">Dare Turner</p>
+            <p className="aboutGallery__quote--name aboutGallery__faculty--name">Dare Turner</p>
+            <p className="aboutGallery__quote--text">
+            Dear MICA GD Seniors. You did it! I am in awe of your talent, your insight, your pluck, your resilience. You took a hard situation and turned it into an opportunity. I’m so proud of all of you, and I look forward to the day we might celebrate together in person. Congratulations!
+            </p>
+            <p className="aboutGallery__quote--name aboutGallery__faculty--name">Isaac Gertman</p>
           </div>
         </section>
 
