@@ -1,9 +1,9 @@
 :root {
   /* Color Variables */
-  --accent: #11edd3; /* Use for Accents */
-  --black: #161616; /* Use for Text */
-  --gray: #bbbbbb; /* Use for Grid */
-  --white: #ffffff;
+  --accent: hsl(173, 87%, 50%); /* Use for Accents */
+  --black: #000; /* Use for Text */
+  --gray: #aaa; /* Use for Grid */
+  --white: rgb(241, 241, 229);
 
   /* Square-Wise Sizing Variables */
   --sqWidth: calc(100vw / 4);

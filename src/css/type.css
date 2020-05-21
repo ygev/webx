@@ -39,7 +39,7 @@
       format("truetype"); /* Safari, Android, iOS */
 }
 
-/* MOBILE/
+/* MOBILE/*
 
 /* ex. PIXELS / lead */
 h1 {
@@ -48,6 +48,10 @@ h1 {
   line-height: 150%;
   letter-spacing: 0px;
   text-transform: uppercase;
+}
+
+* {
+  color: var(--black);
 }
 
 /* ex. MY LITTLE PROJECT / head */
