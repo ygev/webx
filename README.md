@@ -1,15 +1,20 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="src/images/favicon.png" width="60" />
+    <img alt="Heart Favicon" src="src/images/favicon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
   Pixelation · Web Exhibition
 </h1>
+<p align="center">
+<a href="https://pixelation.micagraphicdesign.org/"><img width="300" align="center" alt="Click to See the Pixelation Exhibition" src="https://i.imgur.com/IOhpBy1.gif"/></a>
+</p>
 
 ## 🎓 Maryland Institute College of Art's Graphic Design BFA 2020 Exhibition
 Historically, MICA's Artwalk Exhibition has been a physical space for viewers to come in and experience in-person degree projects by our graduating class. Due to COVID-19, this pandemic rejuvenated a team of graduating students in the BFA Graphic Design program to spearhead, lead, and invent this alternative virtual exhibition for their class. 
+
+<img src="https://i.imgur.com/yudjbrU.png" alt="Screenshot of the Pixelation homepage."/>
 
 ## 🙌 Team
 * [Yana Gevorgyan](https://www.yg.is)
