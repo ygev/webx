@@ -27,20 +27,3 @@ Thank you to faculty [Kristian Bjørnard](https://www.ookb.co/), [Isaac Gertman]
 
 Thank you to MICA Graphic Design 2020 Students for four years of hard work and adaptability in the face of hardship.
 
-## 📋 Documentation for Tabletop.js Data Layer
-
-###  **Project Page Data**
-
-| Field in Google Forms | React Component       |      React Prop      | Character Limit | Numeration Style |
-|:---------------------:|-----------------------|:--------------------:|:---------------:|------------------|
-| Project Title         |``ProjectHero``           | ``projectName``          | 30 characters   | -                |
-| Name                  | ``ProjectHero``           | ``studentName``          | -               | -                |
-| Website               | ``ProjectHero``           | ``studentWebsite``       | -               | -                |
-| Instagram Handle*     | ``ProjectHero``           | ``studentInstagram``     | -               | -                |
-| Project Cover Image   | ``ProjectHero``           | ``projectCoverImg``      | -               | -                |
-| Project Summary       | ``ProjectTxt``            | ``projectTxt``           | 500 characters  | -                |
-| Project Pictures      | ``ProjectGallery``        | ``projectImg``           | -               | ``A``, ``B``, ``C``...       |
-| Process Summary       | ``ProjectProcess``        | ``projectProcess``       | 600 characters  | -                |
-| Process Pictures      | ``ProjectGalleryProcess`` | ``processImg``           | -               | ``A``, ``B``, ``C``...       |
-
-*For instagram and the website, need to write a function to split() https://instagram.com and https://www respectively.
