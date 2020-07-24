@@ -17,7 +17,7 @@ Historically, MICA's Artwalk Exhibition has been a physical space for viewers to
 <img src="https://i.imgur.com/yudjbrU.png" alt="Screenshot of the Pixelation homepage."/>
 
 ## 🙌 Team
-* [Yana Gevorgyan](https://www.yg.is)
+* [Yana](https://www.yg.is)
 
 * [Tony Kim](https://www.kimtony.com)
 
