@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "",
+  pathPrefix: "/webx",
   siteMetadata: {
     title: `Pixelation · MICA GD 2020`,
     description: `Pixelation is an online exhibition for the Maryland Insititute College of Art's Graphic Design Class of 2020.`,
